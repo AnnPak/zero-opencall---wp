@@ -1,20 +1,20 @@
 @font-face {
     font-family: "ONY-FORM";
-    src: url("/wp-content/themes/assets/webfonts/ONY-FORM-Regular.woff");
+    src: url("/wp-content/themes/zero/assets/webfonts/ONY-FORM-Regular.woff");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ONY-FORM";
-    src: url("/wp-content/themes/assets/webfonts/ONY-FORM-Medium.woff");
+    src: url("/wp-content/themes/zero/assets/webfonts/ony-form-medium-webfont.woff");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "ONY-FORM";
-    src: url("/wp-content/themes/assets/webfonts/ONY-FORM-Bold.woff");
+    src: url("/wp-content/themes/zero/assets/webfonts/ony-form-bold-webfont.woff");
     font-weight: 900;
     font-style: normal;
 }
@@ -483,12 +483,14 @@ a.liked span.sl-count,
 }
 
 @-webkit-keyframes load1 {
+
     0%,
     80%,
     100% {
         box-shadow: 0 0 rgba(0, 0, 0, 0.2);
         height: .6em;
     }
+
     40% {
         box-shadow: 0 -.3em rgba(0, 0, 0, 0.2);
         height: 1em;
@@ -496,12 +498,14 @@ a.liked span.sl-count,
 }
 
 @keyframes load1 {
+
     0%,
     80%,
     100% {
         box-shadow: 0 0 rgba(0, 0, 0, 0.2);
         height: .6em;
     }
+
     40% {
         box-shadow: 0 -.3em rgba(0, 0, 0, 0.2);
         height: 1em;
@@ -600,9 +604,12 @@ a.liked span.sl-count,
     font-weight: 600;
     border-radius: 100px;
     font-size: 18px;
+    min-width: 270px;
+    text-align: center;
     color: #000;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 input.input_ui {
@@ -659,7 +666,7 @@ input.input_ui {
 
 section.homepage__header {
     height: 82vh;
-    min-height: 600px;
+    min-height: 700px;
     border-bottom: 1px solid #B3B3B3;
 }
 
@@ -729,4 +736,124 @@ input[type=submit].button_form {
     width: 380px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Homepage about */
+section.homepage__banner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section.homepage__about {
+    padding-top: 15px;
+    padding-bottom: 95px;
+}
+
+
+.about-col {
+    padding-top: 100px;
+}
+
+.about-col .title_ui {
+    margin-bottom: 15px;
+}
+
+.about-col__descript {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.homepage__about a.button_ui {
+    margin-top: 30px;
+}
+
+.homepage__about .title_ui {
+    max-width: 1440px;
+}
+
+/* Form block */
+
+section.homepage__form-block {
+    background: linear-gradient(180deg, #1DFF18 0%, rgba(234, 255, 234, 0) 42.71%);
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.form-block__title {
+    font-size: 76px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #B3B3B3;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.form-block__body form {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.form-block__body input[type=submit].button_form {
+    background: #000;
+    color: #fff;
+}
+
+.footer__bottom-button a.button_ui {
+    padding: 13px 42px;
+}
+
+.footer__bottom-button {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.footer__bottom {
+    border-top: 1px solid #bdbdbd;
+}
+
+.footer__bottom .title_ui {
+    padding-top: 35px;
+}
+
+.footer__bottom-qr {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.footer__bottom-qr span {
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 17px;
+}
+
+.footer__bottom-social {
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.footer__bottom-social a {
+    color: #000;
+    margin: 0px 10px;
+}
+
+.footer__bottom-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }

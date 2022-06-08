@@ -8,24 +8,44 @@
  *
  * @package wpbstarter
  */
+?>
 
- if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 
 	</div><!-- #content -->
 
-    <?php get_template_part( 'footer-widget' ); ?>
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wpbstarter' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'wpbstarter' ), 'WordPress' );
-				?>
-			</a>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-<?php endif; ?>
-</div><!-- #page -->
+	<footer class="footer__bottom">
+	<div class="container-fluid h-100">
+		<div class="row border_row h-100">
+			<div class="col-lg-6">
+				<div class="footer__bottom-wrapper">
+					<div class="title_ui">
+						A contemporary fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion.
+					</div>
+					<div class="footer__bottom-button">
+						<a href="#" class="button_ui">Know more at ZERO10.APP</a>
+					</div>
+					<div class="footer__bottom-qr">
+						<img src="<?= get_template_directory_uri(); ?>/assets/img/qrcode_black.png">
+						<span> Download on the App Store </span>
+					</div>
+					<div class="footer__bottom-social">
+						<a href="#">INSTAGRAM</a>
+						<a href="#">TIKTOK</a>
+						<a href="#">FACEBOOK</a>
+						<a href="#">TWITTER</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__bottom-img">
+					<img src="<?= get_template_directory_uri(); ?>/assets/img/demo_phone.png">
+				</div>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
 
 <?php wp_footer(); ?>
 
