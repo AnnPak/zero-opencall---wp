@@ -49,7 +49,11 @@ get_header(); ?>
 </section>
 <section class="homepage__banner">
 	<div class="container-fluid">
-		<img src="<?= get_template_directory_uri(); ?>/assets/img/demo_banner.png" width="100%">
+		<div class="homepage__banner-background" style="background-image:url(<?= get_template_directory_uri(); ?>/assets/img/demo_banner.png);">
+		MAKE DIGITAL GREAT AGAIN<br>
+using zero10 tech.
+		</div>
+
 	</div>
 </section>
 <section class="homepage__about">

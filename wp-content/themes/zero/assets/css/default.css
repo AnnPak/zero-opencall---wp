@@ -773,6 +773,18 @@ section.homepage__about {
     max-width: 1440px;
 }
 
+.homepage__banner-background {
+    height: 260px;
+    border-radius: 20px;
+    padding: 25px;
+    font-size: 76px;
+    color: #fff;
+    line-height: 95%;
+/* or 72px */
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+
 /* Form block */
 
 section.homepage__form-block {
@@ -857,3 +869,4 @@ section.homepage__form-block {
     justify-content: center;
     height: 100%;
 }
+
