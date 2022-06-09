@@ -32,6 +32,15 @@ get_header(); ?>
                     <div class="header-form_body">
                         <div class="works-items items-col-2"> 
                             <div class="works-item">  
+                                <div class="works-auth_block">
+                                    <div class="works-auth_wrapper">
+                                        <div class="works-auth_close">x</div>
+                                        <div class="works-auth_text">Just a quick move to leave a vote</div>
+                                        <div class="works-auth_buttons-auth">
+                                        <?=do_shortcode('[xs_social_login provider="google" class="custom-class" btn-text="Button Text for Google"]')?> 
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="work-item__wrapper">
                                     <div class="works-item__img">
                                         <img src="<?= get_template_directory_uri(); ?>/assets/img/demo_product.png">
