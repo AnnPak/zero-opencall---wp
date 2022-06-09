@@ -58,10 +58,7 @@ button.close-search:focus {
 }
 
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { 
-    padding-right: 15px;
-    padding-left: 15px;
-}
+
 
 /*--------------------------------------------------------------
 # Accessibility

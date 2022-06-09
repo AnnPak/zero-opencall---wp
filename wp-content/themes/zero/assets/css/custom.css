@@ -1,1 +1,16 @@
 /* Custom CSS */
+
+
+.works-items {
+    display: flex;
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.works-items.items-col-2 .works-item {
+    width: 50%;
+}
+
+.works-item {
+    border: 1px solid #eee;
+}
