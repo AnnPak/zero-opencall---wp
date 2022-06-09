@@ -9,9 +9,9 @@ get_header(); ?>
     <div class="container-fluid h-100">
         <div class="row border_row h-100">
             <div class="col-lg-6">
-                <div class="faq__title">
+                <h1 class="faq__title sticky-top">
                     Frequently <br> Asked Questions
-                </div>
+                </h1>
             </div>
             <div class="col-lg-6 faq__qestions-block">
                 <div class="faq__qestions-wrapper" id="qestionsWrapper">
@@ -23,7 +23,7 @@ get_header(); ?>
                         while ( have_rows('faq_group') ) : the_row();?>
                             <div class="faq__qestion-wrapper">
                                 <h2 class="qestion-wrapper__header accordion-header" id="questionItem<?=$count ?>">
-                                    <button class="qestion-wrapper__button accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQestion<?=$count ?>" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="qestion-wrapper__button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQestion<?=$count ?>" aria-expanded="true" aria-controls="collapseOne">
                                         <div class="qestion-wrapper__qestion">
                                             <p class="qestion__count"><?=$count ?>.</p>
                                             <p class="qestion__title"><?= the_sub_field('faq_question') ?></p>
