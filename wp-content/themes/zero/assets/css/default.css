@@ -972,3 +972,116 @@ section.homepage__form-block {
 .footer__bottom-contact_mobile {
     display: none;
 }
+
+/* FAQ */
+
+
+.faq__section .faq__title {
+    margin-top: 21px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #000000;
+}
+
+.faq__qestions-block{
+    padding: 0;
+}
+
+.faq__qestion-wrapper {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.faq__qestion-wrapper .qestion-wrapper__button{
+    padding: 25px 15px;
+    font-family: 'ONY-FORM';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 110%;
+    background-color: #fff;
+    color: #000000;
+    box-shadow: none;
+    border: none;
+}
+
+.faq__qestion-wrapper .qestion-wrapper__button:focus{
+    border: none;
+}
+
+.faq__qestion-wrapper .qestion-wrapper__button::after{
+    background-image: url(/wp-content/themes/zero/assets/img/plus.svg);
+    margin-right: 6px;
+}
+
+.faq__qestion-wrapper .qestion-wrapper__button:not(.collapsed)::after{
+    background-image: url(/wp-content/themes/zero/assets/img/minus.svg);
+    margin-top: -14px;
+}
+
+.faq__qestion-wrapper .qestion-wrapper__button:not(.collapsed){
+    box-shadow: none;
+}
+
+.faq__qestion-wrapper .qestion-wrapper__button .qestion-wrapper__qestion{
+    display: flex;
+    align-items: flex-start;
+    margin-right: 54px;
+}
+
+.faq__qestion-wrapper .qestion-wrapper__qestion .qestion__count,
+.faq__qestion-wrapper .qestion-wrapper__qestion .qestion__title{
+    margin-bottom: 0;
+    font-family: 'ONY-FORM';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 110%;
+}
+
+.faq__qestion-wrapper .qestion-wrapper__qestion .qestion__count{
+    margin-right: 35px;
+}
+
+.qestion-wrapper__body {
+    margin-left: 49px;
+    padding-top: 0;
+    padding-bottom: 25px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 110%;
+}
+
+@media(max-width: 991px){
+    .faq__qestions-block{
+        margin-top: 80px;
+        border-top: 1px solid #E1E1E1;
+    } 
+}
+
+@media(max-width: 576px){
+    .faq__section .faq__title{
+        font-size: 38px;
+    }
+
+    .faq__qestion-wrapper .qestion-wrapper__qestion .qestion__count, 
+    .faq__qestion-wrapper .qestion-wrapper__qestion .qestion__title{
+        font-size: 20px;
+    }
+
+    .qestion-wrapper__body{
+        margin-left: 43px;
+        padding-top: 0;
+        font-size: 18px;
+    }
+
+    .faq__qestion-wrapper .qestion-wrapper__button{
+        padding: 20px 15px; 
+    }
+
+    .qestion-wrapper__body{
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+}
+
