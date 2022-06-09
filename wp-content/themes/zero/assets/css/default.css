@@ -978,6 +978,7 @@ section.homepage__form-block {
 
 .faq__section .faq__title {
     margin-top: 21px;
+    top: 3em;
     font-weight: 600;
     font-size: 48px;
     line-height: 100%;
@@ -1015,8 +1016,7 @@ section.homepage__form-block {
 }
 
 .faq__qestion-wrapper .qestion-wrapper__button:not(.collapsed)::after{
-    background-image: url(/wp-content/themes/zero/assets/img/minus.svg);
-    margin-top: -14px;
+    background-image: url(/wp-content/themes/zero/assets/img/minus-btn.svg);
 }
 
 .faq__qestion-wrapper .qestion-wrapper__button:not(.collapsed){
