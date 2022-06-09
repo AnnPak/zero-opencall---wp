@@ -45,9 +45,41 @@
 						));
 						?>
 					</div>
+					<div class="site-header__mobile-menu">
+						<img src="<?= get_template_directory_uri(); ?>/assets/img/menu.svg" data-bs-toggle="modal" data-bs-target="#menuModal">
+					</div>
 				</div>
 			</div>
 		</header><!-- #masthead -->
+
+
+
+		<!-- Modal -->
+		<div class="modal mobile-menu" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="container-fluid h-100">
+						<div class="mobile-menu__close">
+							<img src="<?= get_template_directory_uri(); ?>/assets/img/menu.svg" data-bs-dismiss="modal" aria-label="Close">
+						</div> 
+						<div class="mobile-menu__body">
+							<div class="mobile-menu__nav">
+								<?php
+								wp_nav_menu(array(
+									'theme_location'  => 'primary_menu',
+									'container'       => 'div',
+									'depth'           => 4,
+									'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
+									'walker'          => new wp_bootstrap_navwalker()
+								));
+								?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="bottom-bar fixed-bottom">
 			<div class="container-fluid">
 				<div class="bottom-bar__wrapper">
@@ -56,6 +88,6 @@
 					<a href="#">Cookie policy</a>
 					<a href="#">Terms & Conditions</a>
 				</div>
-			</div>		
+			</div>
 		</div>
 		<div id="content" class="site-content">

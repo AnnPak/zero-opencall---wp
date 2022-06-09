@@ -1,19 +1,184 @@
-/* Medium Layout: 1280px. */
-@media only screen and (min-width: 992px) and (max-width: 1200px) { 
-  
-    
-}
-/* Tablet Layout: 768px. */
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
- 
-    
-}
-/* Mobile Layout: 320px. */
-@media only screen and (max-width: 767px) { 
- 
-    
-}
-/* Wide Mobile Layout: 480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) { 
+@media (max-width: 991px) { 
 
+   
+    .site-header__mobile-menu {
+        display: block;
+    }
+    .site-header__menu {
+        display: none;
+    }
+    .header-form__head {
+        border-top: 1px solid #B3B3B3;
+    }
+    
+    .header-banner__bottom {
+        margin-top: 75px;
+    }
+    
+    section.homepage__header {
+        height: auto;
+    }
+    
+   
+    .header-form_body {
+        display: flex;
+        flex-flow: row;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .homepage__header-form .header-form_body-title {
+        text-align: left;
+        margin: 0;
+        height: 100%;
+        width: 50%;
+        padding-top: 60px;
+        padding-right: 25px;
+    }
+    
+    .header-form_body form {
+        height: 100%;
+        width: 50%;
+        border-left: 1px solid #B3B3B3;
+        padding: 60px 60px;
+    }
+    
+    .bottom-bar__wrapper a:last-child {
+        margin-right: 60px;
+    }
+    .homepage__banner-background {
+        font-size: 65px;
+        line-height: 62px;
+    }
+
+    .homepage__banner-background br {
+        display: none;
+    }
+    .about-col__descript {
+        margin-bottom: 25px;
+    }
+    footer.footer__bottom .row {
+        flex-flow: column-reverse;
+    }
+    
+    .footer__bottom-img {
+        padding-top: 60px;
+    }
+    
+    section.homepage__form-block {
+        padding-bottom: 60px;
+    }
+    
+    .footer__bottom .title_ui {
+        padding-top: 50px;
+    }
+    
+    .footer__bottom-button {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .footer__bottom-qr {
+        display: none;
+    }
+    .footer__bottom-qr-mobile { 
+        display: block;
+    }
+    .footer__bottom-qr-mobile {
+        text-align: center;
+    }
+    
+    .footer__bottom .button_ui {
+        max-width: 320px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 680px) { 
+    .footer__bottom-contact_mobile {
+        display: block;
+    }
+    .about-col {
+        padding-top: 50px;
+    }
+    .title_ui {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .homepage__banner-background {
+        font-size: 46px;
+        line-height: 44px;
+        height: 350px;
+        background-size: auto 100%;
+        background-position: center;
+    }
+    
+    .header-form_body {
+        flex-flow: column;
+        height: auto;
+        align-items: center;
+    }
+    
+    .header-form_body form {
+        width: 100%;
+        border: 0px;
+        padding: 0px 0px 40px 0px;
+    }
+    
+    .homepage__header-form .header-form_body-title {
+        text-align: center;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .header-banner__title {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .header-banner__title h1.title_ui {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .header-banner__title h1.title_ui br {
+        display: none;
+    }
+    .bottom-bar.fixed-bottom {
+        display: none;
+    }
+    .footer__bottom-contact {
+        display: flex;
+        align-items: end;
+        padding: 50px 0px 25px 0px;
+    }
+    
+    .footer__bottom-social {
+        padding: 0px;
+        flex-flow: column;
+        width: 50%;
+    }
+    
+    .footer__bottom-contact_mobile {
+        display: flex;
+        flex-flow: column;
+        width: 50%;
+    }
+    
+    .footer__bottom-social a {
+        margin: 0px;
+        text-align: left;
+    }
+    
+    .footer__bottom-contact_mobile a {
+        font-size: 12px;
+        line-height: 13px;
+        text-align: left;
+        margin-bottom: 5px;
+        letter-spacing: -0.02em;
+        color: #000;
+    }
+  
 }
