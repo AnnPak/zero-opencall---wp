@@ -30,7 +30,7 @@ get_header(); ?>
                                         </div>
                                     </button>
                                 </h2>
-                                <div id="collapseQestion<?=$count ?>" class="accordion-collapse collapse show" aria-labelledby="questionItem<?=$count ?>" data-bs-parent="#qestionsWrapper">
+                                <div id="collapseQestion<?=$count ?>" class="accordion-collapse collapse" aria-labelledby="questionItem<?=$count ?>" data-bs-parent="#qestionsWrapper">
                                     <div class="qestion-wrapper__body accordion-body">
                                         <?= the_sub_field('faq_answer') ?>
                                     </div>
