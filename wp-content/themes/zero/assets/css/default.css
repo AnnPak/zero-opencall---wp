@@ -757,7 +757,7 @@ span.wpcf7-list-item {
     visibility: visible;
 }
 .wpcf7-list-item-label {
-    margin-left: 3px;
+    margin-left: 12px;
     display: inline-flex;
     align-items: baseline;
     user-select: none;
