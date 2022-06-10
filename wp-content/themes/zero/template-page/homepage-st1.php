@@ -32,7 +32,7 @@ get_header(); ?>
 					<div class="header-form_body">
 						<div class="header-form_body-title">?Stay tune about the future of AR fashion. Subscribe?</div>
 
-						<? echo do_shortcode('[contact-form-7 id="29" title="Sign up"]'); ?>
+						<? echo do_shortcode('[contact-form-7 id="35" title="Sign up"]'); ?>
 						
 					</div>
 				</div>
@@ -84,15 +84,7 @@ using zero10 tech.
 		<div class="form-block__body">
 			<div class="header-form_body-title">?Stay tune about the future of AR fashion. Subscribe?</div>
 
-			<form>
-				<input type="text" class="input_ui" name="nickname" placeholder="Name or Nickname">
-				<input type="text" class="input_ui" name="email" placeholder="E-mail">
-				<div class="checkbox_ui">
-					<input type="checkbox" class="custom-checkbox" id="checkbox" name="accept">
-					<label for="checkbox">An end-user license agreement is a legal contract entered into between a software.</label>
-				</div>
-				<input type="submit" class="button_form" value="Apply">
-			</form>
+			<? echo do_shortcode('[contact-form-7 id="35" title="Sign up"]'); ?>
 		</div>
 	</div>
 </section>
