@@ -154,6 +154,7 @@ function wpbstarter_scripts()
 	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), '4.4.1', 'all');
 	wp_enqueue_style('fontawesome', get_template_directory_uri() . '/assets/css/fontawesome-all.css', array(), '5.13.0', 'all');
 	wp_enqueue_style('wpbstarter-defaultcss', get_template_directory_uri() . '/assets/css/default.css', array(), '1.0', 'all');
+	wp_enqueue_style('swiper-css', get_template_directory_uri() . '/assets/css/swiper.css', array(), '1.0', 'all');
 	wp_enqueue_style('wpbstarter-customcss', get_template_directory_uri() . '/assets/css/custom.css', array(), '1.0', 'all');
 	wp_enqueue_style('sinanav', get_template_directory_uri() . '/assets/css/sina-nav.css', array(), '1.0', 'all');
 	wp_enqueue_style('wpbstarter-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), '2.1', 'all');
@@ -171,6 +172,7 @@ function wpbstarter_scripts()
 	wp_enqueue_script('sinanavjs', get_template_directory_uri() . '/assets/js/sina-nav.js', array('jquery'), '2.1.0', true);
 	wp_enqueue_script('bootstrap-bundled-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), '4.4.1', true);
 	wp_enqueue_script('wpbstarter-navigationjs', get_template_directory_uri() . '/assets/js/navigation.js', array(), '1.0', true);
+	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/assets/js/swiper.js', array(), '', true);
 	wp_enqueue_script('wpbstarter-themejs', get_template_directory_uri() . '/assets/js/theme-script.js', array(), '', true);
 	wp_enqueue_script('wpbstarter-skip-link-focus-fix-js', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '1.0', true);
 	wp_enqueue_script('wpbstarter-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true);
@@ -528,11 +530,11 @@ function sl_format_count( $number ) {
  * @since    0.5
  */
 function get_like_count( $like_count ) {
-	$like_text = __( 'Like', 'YourThemeTextDomain' );
+	$like_text = __( '0', 'YourThemeTextDomain' );
 	if ( is_numeric( $like_count ) && $like_count > 0 ) { 
 		$number = sl_format_count( $like_count );
 	} else {
-		$number = $like_text;
+		$number = 0;
 	}
 	$count = '<span class="sl-count">' . $number . '</span>';
 	return $count;
