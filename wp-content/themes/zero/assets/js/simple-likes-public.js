@@ -1,6 +1,10 @@
-(function($) {
+(function ($) {
     'use strict';
-    $(document).on('click', '.sl-button', function() {
+    $(document).on('click', '.works-auth_close', function () {
+        $(this).parents('.works-item').removeClass('nonuath');
+    });
+
+    $(document).on('click', '.sl-button', function () {
         var button = $(this);
         var post_id = button.attr('data-post-id');
         var security = button.attr('data-nonce');
@@ -22,15 +26,15 @@
                     nonce: security,
                     is_comment: iscomment,
                 },
-                beforeSend: function() {
+                beforeSend: function () {
                     loader.html('&nbsp;<div class="loader">Loading...</div>');
                 },
-                success: function(response) {
+                success: function (response) {
                     var icon = response.icon;
                     var count = response.count;
                     allbuttons.html(icon + count);
                     if (response.status === 'unauth') {
-                        alert('требуется авторизация');
+                        $('.works-item[data-postid="'+post_id+'"]').addClass('nonuath');
                         var unlike_text = simpleLikes.unlike;
                         allbuttons.prop('title', unlike_text);
                         allbuttons.addClass('liked');
@@ -42,6 +46,7 @@
                         } else {
                             var unlike_text = simpleLikes.unlike;
                             allbuttons.prop('title', unlike_text);
+                          
                             allbuttons.addClass('liked');
                         }
                     }

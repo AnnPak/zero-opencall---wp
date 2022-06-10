@@ -30,21 +30,24 @@ get_header(); ?>
                         PARTICIPANTS
                     </div>
                     <div class="header-form_body">
-                        <div class="works-items items-col-2"> 
-                            <div class="works-item">  
-                                <div class="work-item__wrapper">
-                                    <div class="works-item__img">
-                                        <img src="<?= get_template_directory_uri(); ?>/assets/img/demo_product.png">
-                                    </div>
-                                    <div class="works-item__info-wrapper">
-                                        <div class="works-item__title-block">
-                                            <div class="works-item__name">MACHO 3000</div>
-                                            <div class="works-item__about">Dazed dress</div>
-                                        </div>
-                                        <div class="works-item__like">25</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="works-items items-col-2">
+                            <?php
+                            $args = array(
+                                'post_type' => 'participants',
+                                'orderby' => 'menu_order', 
+                                'order' => 'DESC', // по убыванию (сначала - свежие посты)
+                            );
+
+                            $query = new WP_Query($args);
+                            if ($query->have_posts()) :
+                                while ($query->have_posts()) : $query->the_post();
+                                    get_template_part('template-parts/content', get_post_type());
+                                endwhile;
+                                wp_reset_postdata();
+                            else :
+                                echo 'Ничего не найдено';
+                            endif;
+                            ?>
                         </div>
 
 

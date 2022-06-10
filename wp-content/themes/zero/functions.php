@@ -154,6 +154,7 @@ function wpbstarter_scripts()
 	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), '4.4.1', 'all');
 	wp_enqueue_style('fontawesome', get_template_directory_uri() . '/assets/css/fontawesome-all.css', array(), '5.13.0', 'all');
 	wp_enqueue_style('wpbstarter-defaultcss', get_template_directory_uri() . '/assets/css/default.css', array(), '1.0', 'all');
+	wp_enqueue_style('swiper-css', get_template_directory_uri() . '/assets/css/swiper.css', array(), '1.0', 'all');
 	wp_enqueue_style('wpbstarter-customcss', get_template_directory_uri() . '/assets/css/custom.css', array(), '1.0', 'all');
 	wp_enqueue_style('sinanav', get_template_directory_uri() . '/assets/css/sina-nav.css', array(), '1.0', 'all');
 	wp_enqueue_style('wpbstarter-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), '2.1', 'all');
@@ -171,6 +172,7 @@ function wpbstarter_scripts()
 	wp_enqueue_script('sinanavjs', get_template_directory_uri() . '/assets/js/sina-nav.js', array('jquery'), '2.1.0', true);
 	wp_enqueue_script('bootstrap-bundled-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), '4.4.1', true);
 	wp_enqueue_script('wpbstarter-navigationjs', get_template_directory_uri() . '/assets/js/navigation.js', array(), '1.0', true);
+	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/assets/js/swiper.js', array(), '', true);
 	wp_enqueue_script('wpbstarter-themejs', get_template_directory_uri() . '/assets/js/theme-script.js', array(), '', true);
 	wp_enqueue_script('wpbstarter-skip-link-focus-fix-js', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '1.0', true);
 	wp_enqueue_script('wpbstarter-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true);
@@ -483,7 +485,8 @@ function sl_get_ip() {
  */
 function get_liked_icon() {
 	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart"></i> */
-	$icon = '<span class="sl-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path id="heart-full" d="M124 20.4C111.5-7 73.7-4.8 64 19 54.3-4.9 16.5-7 4 20.4c-14.7 32.3 19.4 63 60 107.1C104.6 83.4 138.7 52.7 124 20.4z"/>&#9829;</svg></span>';
+	$icon = '<span class="sl-icon"><svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M6 0L11.1962 9H0.803848L6 0Z" fill="black"/></svg></span>';
 	return $icon;
 } // get_liked_icon()
 
@@ -493,7 +496,8 @@ function get_liked_icon() {
  */
 function get_unliked_icon() {
 	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart-o"></i> */
-	$icon = '<span class="sl-icon"><svg role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0" y="0" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve"><path id="heart" d="M64 127.5C17.1 79.9 3.9 62.3 1 44.4c-3.5-22 12.2-43.9 36.7-43.9 10.5 0 20 4.2 26.4 11.2 6.3-7 15.9-11.2 26.4-11.2 24.3 0 40.2 21.8 36.7 43.9C124.2 62 111.9 78.9 64 127.5zM37.6 13.4c-9.9 0-18.2 5.2-22.3 13.8C5 49.5 28.4 72 64 109.2c35.7-37.3 59-59.8 48.6-82 -4.1-8.7-12.4-13.8-22.3-13.8 -15.9 0-22.7 13-26.4 19.2C60.6 26.8 54.4 13.4 37.6 13.4z"/>&#9829;</svg></span>';
+	$icon = '<span class="sl-icon"><svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M6 0L11.1962 9H0.803848L6 0Z" fill="black"/></svg></span>';
 	return $icon;
 } // get_unliked_icon()
 
@@ -526,11 +530,11 @@ function sl_format_count( $number ) {
  * @since    0.5
  */
 function get_like_count( $like_count ) {
-	$like_text = __( 'Like', 'YourThemeTextDomain' );
+	$like_text = __( '0', 'YourThemeTextDomain' );
 	if ( is_numeric( $like_count ) && $like_count > 0 ) { 
 		$number = sl_format_count( $like_count );
 	} else {
-		$number = $like_text;
+		$number = 0;
 	}
 	$count = '<span class="sl-count">' . $number . '</span>';
 	return $count;
@@ -577,6 +581,20 @@ function show_user_likes( $user ) { ?>
 		</tr>
 	</table>
 <?php } // show_user_likes()
+
+/* Redirect wp-admin */
+function wph_noadmin() {
+    if (is_admin() && !current_user_can('administrator') && is_user_logged_in()) {
+        wp_redirect(home_url());
+        exit;
+    } 
+	if(!current_user_can('administrator')) { 
+		add_filter('show_admin_bar', '__return_false');
+	}
+}
+add_action('init', 'wph_noadmin'); 
+
+
 
 
 /**
