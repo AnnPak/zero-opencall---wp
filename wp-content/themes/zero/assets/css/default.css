@@ -54,7 +54,6 @@ button:focus,
 .search-box input.form-control:focus,
 button.close-search:focus {
     outline: none;
-    border: 1px dashed #999999;
 }
 
 
@@ -394,37 +393,15 @@ button.close-search {
 }
 
 
-/* Colors */
-
-a.liked {
-    color: #da1b1b;
-}
-
-a.liked:hover,
-a.liked:active,
-a.liked:focus {
-    color: #666666;
-}
-
-a.liked span.sl-count,
-.sl-count {
-    color: #666666;
-}
-
-
 /* Icon */
 
 .sl-icon {
     margin-right: 0.3125em;
     font-family: 'Arial Unicode MS', Arial, sans-serif;
     vertical-align: middle;
+    margin-top: -1px;
 }
 
-.sl-icon svg {
-    fill: currentColor;
-    width: 1em;
-    height: 1em;
-}
 
 .sl-icon svg:after {
     content: "";
@@ -870,8 +847,8 @@ section.homepage__about {
     padding: 25px;
     font-size: 76px;
     color: #fff;
-    line-height: 95%;
-    /* or 72px */
+    line-height: 72px;
+    background-size: cover;
     letter-spacing: -0.04em;
     text-transform: uppercase;
 }
@@ -1053,36 +1030,148 @@ section.homepage__form-block {
     line-height: 110%;
 }
 
-@media(max-width: 991px){
-    .faq__qestions-block{
-        margin-top: 80px;
-        border-top: 1px solid #E1E1E1;
-    } 
+
+/* Works, stage 2 */
+
+.works-items {
+    display: flex;
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
 }
 
-@media(max-width: 576px){
-    .faq__section .faq__title{
-        font-size: 38px;
-    }
-
-    .faq__qestion-wrapper .qestion-wrapper__qestion .qestion__count, 
-    .faq__qestion-wrapper .qestion-wrapper__qestion .qestion__title{
-        font-size: 20px;
-    }
-
-    .qestion-wrapper__body{
-        margin-left: 43px;
-        padding-top: 0;
-        font-size: 18px;
-    }
-
-    .faq__qestion-wrapper .qestion-wrapper__button{
-        padding: 20px 15px; 
-    }
-
-    .qestion-wrapper__body{
-        padding-top: 0;
-        padding-bottom: 20px;
-    }
+.works-items.items-col-2 .works-item {
+    width: 50%;
 }
 
+.works-item {
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.works-auth_buttons-auth a {
+    color: #fff;
+    padding: 13px 19px;
+    display: block;
+    width: 100%;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+}
+
+.works-auth_buttons-auth .g-button {
+    background: #DF4933;
+}
+
+.works-auth_buttons-auth .f-button {
+    background: #1777F2;
+}
+
+.works-auth_text {
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    max-width: 310px;
+    margin: 10px auto;
+}
+
+.works-auth_block {
+    position: absolute;
+    top: 0px;
+    display: none;
+    left: 0px;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.nonuath .works-auth_block { 
+    display: flex;
+}
+
+.works-auth_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    padding: 15px;
+}
+
+.works-auth_close {
+    text-align: right;
+}
+
+.sl-button {
+    border: 1px solid #DBDBDB;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    padding: 10px 25px;
+}
+
+.works-item__info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+span#sl-loader {
+    position: absolute;
+    top: 0px;
+}
+
+.works-item__like {
+    position: relative;
+}
+
+.sl-button .sl-count {
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    color: #000;
+}
+
+.sl-button img {
+    width: 11px;
+}
+
+.sl-button svg {
+    width: 12px;
+}
+
+a.sl-button.sl-button-5.liked {
+    background: #1DFF18;
+    border: 1px solid #1DFF18;
+}
+
+.product__image {
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.swiper-thumbs {
+    height: 270px;
+}
+
+.product__image-thumb {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}

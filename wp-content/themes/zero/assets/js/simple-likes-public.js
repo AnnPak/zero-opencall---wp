@@ -46,6 +46,7 @@
                         } else {
                             var unlike_text = simpleLikes.unlike;
                             allbuttons.prop('title', unlike_text);
+                          
                             allbuttons.addClass('liked');
                         }
                     }
