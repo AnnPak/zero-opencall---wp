@@ -726,7 +726,7 @@ span.wpcf7-list-item {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
-    top: 3px;
+    top: 4px;
     left: -11px;
 }
 .wpcf7-checkbox input[type=checkbox] + span:after {
@@ -741,7 +741,7 @@ span.wpcf7-list-item {
     background-color: #000000;
     height: 16px;
     width: 16px;
-    top: 3px;
+    top: 4px;
     left: -11px;
     visibility: hidden;
     font-size: 18px;
