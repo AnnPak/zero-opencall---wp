@@ -1175,10 +1175,14 @@ section.homepage__form-block {
     justify-content: space-between;
     flex-flow: column;
     padding: 15px;
+    z-index: 2;
 }
 
 .works-auth_close {
-    text-align: right;
+    width: 50px;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
 }
 
 .sl-button {
@@ -1219,13 +1223,14 @@ section.homepage__form-block {
 
 span#sl-loader {
     position: absolute;
-    top: 5px;
+    top: 7px;
     right: 0;
     left: 32px;
 }
 
 .works-item__like {
     position: relative;
+    z-index: 1;
 }
 
 .sl-button .sl-count {
@@ -1234,6 +1239,10 @@ span#sl-loader {
     letter-spacing: -0.02em;
     font-weight: 600;
     color: #000;
+}
+
+.sl-button span.hidden{
+    visibility: hidden;
 }
 
 .sl-button img {
