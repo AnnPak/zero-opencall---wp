@@ -862,6 +862,17 @@ input[type=submit].button_form {
     margin-right: auto;
 }
 
+@media(max-width: 901px){
+    section.homepage__header.homepage__header_st2{
+        height: inherit;
+        min-height: inherit;
+    }
+
+    .works-items.items-col-4 .works-item {
+        width: 50%;
+    }
+}
+
 /* Homepage about */
 section.homepage__banner {
     padding-top: 15px;
@@ -1253,7 +1264,7 @@ span#sl-loader {
     width: 12px;
 }
 
-a.sl-button.sl-button-5.liked {
+a.sl-button.sl-button.liked {
     background: #1DFF18;
     border: 1px solid #1DFF18;
 }
@@ -1271,7 +1282,6 @@ a.sl-button.sl-button-5.liked {
     overflow: hidden;
     width: 100%;
 }
-
 
 .swiper-thumbs {
     height: 270px;
