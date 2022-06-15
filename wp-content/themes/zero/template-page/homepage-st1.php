@@ -89,5 +89,9 @@ using zero10 tech.
 	</div>
 </section>
 
+<div class="modal__form-submit">
+	Application has been send. Thanks!
+</div>
+
 <?php
 get_footer();
