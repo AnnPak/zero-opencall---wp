@@ -42,11 +42,19 @@
     }); // end 
 
 
-    jQuery(window).load(function () {
 
+    document.addEventListener('wpcf7submit', function(event) {
 
+        if ('35' == event.detail.contactFormId) {
+            $(".modal__form-submit").addClass('show');
+            
+            setTimeout(function(){
+                $(".modal__form-submit").removeClass('show');
+            }, 4000);
+        }
 
-    }); // end
+    }, false);
 
+   
 
 }(jQuery));	
