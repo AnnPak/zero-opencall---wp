@@ -833,7 +833,7 @@ section.homepage__header.homepage__header_st2{
     border-color: #FB5656;
 }
 
-.wpcf7-not-valid-tip{
+.header-form_body form .wpcf7-not-valid-tip{
     position: absolute;
     top: 5px;
     left: 22px;
@@ -842,7 +842,7 @@ section.homepage__header.homepage__header_st2{
     color: #FB5656;
 }
 
-.accept span.wpcf7-not-valid-tip{
+.header-form_body form .accept span.wpcf7-not-valid-tip{
     position: absolute;
     top: -21px;
     left: 0;
@@ -850,8 +850,15 @@ section.homepage__header.homepage__header_st2{
 
 }
 
-.wpcf7-checkbox.wpcf7-not-valid input[type=checkbox] + span:before{
+.header-form_body form .wpcf7-checkbox.wpcf7-not-valid input[type=checkbox] + span:before{
     border-color: #FB5656;
+}
+
+.header-form_body form .wpcf7-response-output{
+    display: none;
+}
+.header-form_body form.submitting .wpcf7-spinner{
+    margin: 15px auto;
 }
 
 .header-form_body-title {
@@ -885,6 +892,27 @@ input[type=submit].button_form {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.modal__form-submit {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: -100%;
+    background: #000000;;
+    border-radius: 8px;
+    padding: 23px 30px 18px;
+    z-index: 5000;
+    transition: 0.5s;
+    width: fit-content;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+.modal__form-submit.show{
+    
+    top: 50px;
 }
 
 @media(max-width: 901px){
