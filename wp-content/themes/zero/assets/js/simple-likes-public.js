@@ -16,6 +16,7 @@
             allbuttons = $('.sl-button-' + post_id);
         }
         var loader = allbuttons.next('#sl-loader');
+        
         if (post_id !== '') {
             $.ajax({
                 type: 'POST',
@@ -27,6 +28,7 @@
                     is_comment: iscomment,
                 },
                 beforeSend: function () {
+                    $(`.sl-button-${post_id} span`).addClass('hidden');
                     loader.html('&nbsp;<div class="loader">Loading...</div>');
                 },
                 success: function (response) {
@@ -51,6 +53,7 @@
                         }
                     }
                     loader.empty();
+                    // $(`${allbuttons} .sl-icon`).removeClass('hidden');
                 }
             });
 
