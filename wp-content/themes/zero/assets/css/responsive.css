@@ -37,17 +37,40 @@
     
     .header-form_body form {
         height: 100%;
+        width: 67%;
+        max-width: none;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .header-form_body form .wpcf7-list-item-label{
+        font-size: 14px;
+    }
+
+    .wpcf7-checkbox input[type=checkbox] + span:before{
+        top: 6px;
+    }
+
+    .header-form_body .wpcf7 {
         width: 50%;
         border-left: 1px solid #B3B3B3;
-        padding: 60px 60px;
+    }
+
+    .header-form_body form .form-control{
+        min-width: 250px;
     }
     
     .bottom-bar__wrapper a:last-child {
         margin-right: 60px;
     }
     .homepage__banner-background {
+        height: 310px;
         font-size: 65px;
         line-height: 62px;
+    }
+    
+    .footer__bottom-qr {
+        margin-top: 40px;
     }
 
     .homepage__banner-background br {
@@ -75,16 +98,6 @@
     .footer__bottom-button {
         margin-top: 40px;
         margin-bottom: 10px;
-    }
-    
-    .footer__bottom-qr {
-        display: none;
-    }
-    .footer__bottom-qr-mobile { 
-        display: block;
-    }
-    .footer__bottom-qr-mobile {
-        text-align: center;
     }
     
     .footer__bottom .button_ui {
@@ -120,7 +133,7 @@
     .homepage__banner-background {
         font-size: 46px;
         line-height: 44px;
-        height: 350px;
+        height: 355px;
         background-size: auto 100%;
         background-position: center;
     }
@@ -129,6 +142,17 @@
         flex-flow: column;
         height: auto;
         align-items: center;
+    }
+    .footer__bottom-qr {
+        display: none;
+    }
+
+    .footer__bottom-qr-mobile {
+        text-align: center;
+    }
+
+    .footer__bottom-qr-mobile { 
+        display: block;
     }
     
     .header-form_body form {
@@ -234,4 +258,31 @@
     .works-items.items-col-2 .works-item {
         width: 100%;
     }
+
+    .header-form_body .wpcf7{
+        border: none;
+        width: 90%;
+    }
+
+    .homepage__about a.button_ui {
+        margin: 0 auto;
+        margin-top: 30px;
+        display: block;
+        width: 270px;
+        padding: 16px 25px;
+    }
+
+    .about-col .about-col__descript{
+        margin-top: 29px;
+        margin-bottom: 40px;
+    }
+
+    .about-col .title_ui{
+        font-size: 48px;
+    }
+
+    section.homepage__about{
+        margin-bottom: 0;
+    }
+
 }
