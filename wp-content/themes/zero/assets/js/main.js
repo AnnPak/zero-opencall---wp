@@ -55,6 +55,11 @@
 
     }, false);
 
+    $('.vote-block__vote-button .sl-button .sl-button-5').click(function(){
+        console.log('lol')
+        $('.vote-block__vote-button .sl-button sl-button-5 .sl-icon').after('<span class="sl-vote"> VOTE </span>')
+    })
+
    
 
 }(jQuery));	
