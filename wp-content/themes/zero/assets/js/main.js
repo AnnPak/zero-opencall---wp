@@ -43,7 +43,7 @@
 
 
 
-    document.addEventListener('wpcf7submit', function(event) {
+    document.addEventListener('wpcf7mailsent', function(event) {
 
         if ('35' == event.detail.contactFormId) {
             $(".modal__form-submit").addClass('show');
@@ -54,6 +54,11 @@
         }
 
     }, false);
+
+    $('.vote-block__vote-button .sl-button .sl-button-5').click(function(){
+        console.log('lol')
+        $('.vote-block__vote-button .sl-button sl-button-5 .sl-icon').after('<span class="sl-vote"> VOTE </span>')
+    })
 
    
 
