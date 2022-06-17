@@ -499,11 +499,22 @@ button.close-search {
 /* Header */
 
 .site-header {
+    height: 110px;
     border-bottom: 1px solid #B3B3B3;
     background: #fff;
     padding-bottom: 15px;
     padding-top: 15px;
     z-index: 1021;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+.site-header.smaller{
+    height: 70px;
+
 }
 
 .site-header .site-header__wrapper {
@@ -552,6 +563,15 @@ button.close-search {
 
 .site-header__mobile-menu {
     display: none;
+}
+
+header#mastheadx .container-fluid,
+header#mastheadx .site-header__wrapper,
+header#mastheadx .site-header__logo,
+header#mastheadx .site-header__logo,
+header#mastheadx .site-header__logo a,
+header#mastheadx .site-header__logo a img{
+    height: 100%;
 }
 
 
