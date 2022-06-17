@@ -28,7 +28,7 @@
 	} ?>
 
 	<div id="page" class="site sscroll">
-		<header id="mastheadx" class="site-header sticky-top" role="banner">
+		<header id="mastheadx" class="site-header fixed-top" role="banner">
 			<div class="container-fluid">
 				<div class="site-header__wrapper">
 					<div class="site-header__logo">

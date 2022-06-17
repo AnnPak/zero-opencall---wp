@@ -55,6 +55,16 @@
 
     }, false);
 
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        console.log(scroll)
+        if (scroll >= 10) {
+                    $("#mastheadx").addClass('smaller');
+        } else {
+                    $("#mastheadx").removeClass("smaller");
+                }
+    });
+
    
 
 }(jQuery));	
