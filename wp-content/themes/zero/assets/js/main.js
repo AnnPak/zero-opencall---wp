@@ -43,7 +43,7 @@
 
 
 
-    document.addEventListener('wpcf7submit', function(event) {
+    document.addEventListener('wpcf7mailsent', function(event) {
 
         if ('35' == event.detail.contactFormId) {
             $(".modal__form-submit").addClass('show');
