@@ -421,6 +421,47 @@ function sl_shortcode() {
 	return get_simple_likes_button( get_the_ID(), 0 );
 } // shortcode()
 
+function get_likes_button_item_page( $post_id, $is_comment = NULL ) {
+	$is_comment = ( NULL == $is_comment ) ? 0 : 1;
+	$output = '';
+	$nonce = wp_create_nonce( 'simple-likes-nonce' ); // Security
+	if ( $is_comment == 1 ) {
+		$post_id_class = esc_attr( ' sl-comment-button-' . $post_id );
+		$comment_class = esc_attr( ' sl-comment' );
+		$like_count = get_comment_meta( $post_id, "_comment_like_count", true );
+		$like_count = ( isset( $like_count ) && is_numeric( $like_count ) ) ? $like_count : 0;
+	} else {
+		$post_id_class = esc_attr( ' sl-button-' . $post_id );
+		$comment_class = esc_attr( '' );
+		$like_count = get_post_meta( $post_id, "_post_like_count", true );
+		$like_count = ( isset( $like_count ) && is_numeric( $like_count ) ) ? $like_count : 0;
+	}
+	$count = get_like_count( $like_count );
+	$icon_empty = get_unliked_icon();
+	$icon_full = get_liked_icon();
+	// Loader
+	$loader = '<span id="sl-loader"></span>';
+	// Liked/Unliked Variables
+	if ( already_liked( $post_id, $is_comment ) ) {
+		$class = esc_attr( ' liked' );
+		$title = __( 'Unlike', 'YourThemeTextDomain' );
+		$icon = $icon_full;
+	} else {
+		$class = '';
+		$title = __( 'Like', 'YourThemeTextDomain' );
+		$icon = $icon_empty;
+	}
+	$output = '<span class="sl-wrapper"><a href="' . admin_url( 'admin-ajax.php?action=process_simple_like' . '&post_id=' . $post_id . '&nonce=' . $nonce . '&is_comment=' . $is_comment . '&disabled=true' ) . '" class="sl-button' . $post_id_class . $class . $comment_class . '" data-nonce="' . $nonce . '" data-post-id="' . $post_id . '" data-iscomment="' . $is_comment . '" title="' . $title . '">' . $icon . '<span> VOTE </span>' . $count . '</a>' . $loader . '</span>';
+	return $output;
+} // get_likes_button_item_page()
+
+
+add_shortcode( 'jmliker', 'vote_btn_shortcode' );
+function vote_btn_shortcode() {
+	return get_likes_button_item_page( get_the_ID(), 0 );
+} // shortcode()
+
+
 /**
  * Utility retrieves post meta user likes (user id array), 
  * then adds new user id to retrieved array
@@ -536,7 +577,7 @@ function get_like_count( $like_count ) {
 	} else {
 		$number = 0;
 	}
-	$count = '<span class="sl-count">' . $number . '</span>';
+	$count = '<span class="sl-vote"> VOTE </span> <span class="sl-count">' . $number . '</span>';
 	return $count;
 } // get_like_count()
 
