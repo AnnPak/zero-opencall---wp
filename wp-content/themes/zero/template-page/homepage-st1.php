@@ -55,19 +55,19 @@ using zero10 tech.
 		<a href="#" class="button_ui">Check F.A.Q.</a>
 		<div class="about-col">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6 col-12">
 					<div class="title_ui">???????</div>
 					<div class="about-col__descript">
 						The AR items bundle by Tommy Cash is united by the surreal infusion of post-Soviet aesthetic and consists of 3 digital items.
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6 col-12">
 					<div class="title_ui">???????</div>
 					<div class="about-col__descript">
 						The AR items bundle by Tommy Cash is united by the surreal infusion of post-Soviet aesthetic and consists of 3 digital items. The AR items bundle by Tommy Cash is united virginity leaf as a wearable NFT inspired by Adam’s Fig Leaf.
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6 col-12">
 					<div class="title_ui">???????</div>
 					<div class="about-col__descript">
 						The AR items bundle by Tommy Cash is united by the surreal infusion of post-Soviet aesthetic and consists of 3 digital items and a virginity leaf.
