@@ -499,11 +499,22 @@ button.close-search {
 /* Header */
 
 .site-header {
+    height: 110px;
     border-bottom: 1px solid #B3B3B3;
     background: #fff;
     padding-bottom: 15px;
     padding-top: 15px;
     z-index: 1021;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+.site-header.smaller{
+    height: 70px;
+
 }
 
 .site-header .site-header__wrapper {
@@ -552,6 +563,15 @@ button.close-search {
 
 .site-header__mobile-menu {
     display: none;
+}
+
+header#mastheadx .container-fluid,
+header#mastheadx .site-header__wrapper,
+header#mastheadx .site-header__logo,
+header#mastheadx .site-header__logo,
+header#mastheadx .site-header__logo a,
+header#mastheadx .site-header__logo a img{
+    height: 100%;
 }
 
 
@@ -773,6 +793,10 @@ span.wpcf7-list-item {
 
 
 /* homepage */
+
+#content{
+    margin-top: 110px;
+}
 
 section.homepage__header {
     height: 82vh;
@@ -1046,7 +1070,6 @@ section.homepage__form-block {
     padding-top: 45px;
     justify-content: center;
     padding-bottom: 35px;
-    font-weight: 600px;
 }
 
 .footer__bottom-social a {
@@ -1323,7 +1346,6 @@ a.sl-button.sl-button.liked {
     background: #1DFF18;
     border: 1px solid #1DFF18;
 }
-
 
 /* Item */
 
