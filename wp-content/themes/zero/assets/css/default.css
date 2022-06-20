@@ -1646,3 +1646,9 @@ a.sl-button.sl-button.liked {
 section.homepage__header.terms-page{
     height: auto;
 }
+
+/* info page */
+
+section.homepage__about.info-page{
+    padding-top: 24px;
+}
