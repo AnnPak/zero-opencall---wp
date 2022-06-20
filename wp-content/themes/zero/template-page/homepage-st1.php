@@ -32,7 +32,7 @@ get_header(); ?>
 					<div class="header-form_body">
 						<div class="header-form_body-title">?Stay tune about the future of AR fashion. Subscribe?</div>
 
-						<? echo do_shortcode('[contact-form-7 id="35" title="Sign up"]'); ?>
+						<? echo do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
 						
 					</div>
 				</div>
@@ -84,7 +84,7 @@ using zero10 tech.
 		<div class="form-block__body">
 			<div class="header-form_body-title">?Stay tune about the future of AR fashion. Subscribe?</div>
 
-			<? echo do_shortcode('[contact-form-7 id="35" title="Sign up"]'); ?>
+			<? echo do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
 		</div>
 	</div>
 </section>

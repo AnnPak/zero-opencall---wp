@@ -56,13 +56,17 @@
     }, false);
 
     $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        console.log(scroll)
+        let scroll = $(window).scrollTop();
+        
         if (scroll >= 10) {
                     $("#mastheadx").addClass('smaller');
         } else {
                     $("#mastheadx").removeClass("smaller");
                 }
+    });
+
+    $(".work-item__wrapper").hover(function() {
+        $(this).closest(".works-item").toggleClass("hovered")
     });
 
    
