@@ -2,7 +2,10 @@
     <div class="works-auth_block">
         <div class="works-auth_wrapper">
             <div class="works-auth_close">
-                <img src="<?= get_template_directory_uri(); ?>/assets/img/icon/close.svg">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.77675 1.76618L48.2336 47.223L47.2235 48.2332L1.7666 2.77633L2.77675 1.76618Z" fill="black" />
+                    <path d="M1.7666 47.223L47.2235 1.76617L48.2336 2.77633L2.77675 48.2332L1.7666 47.223Z" fill="black" />
+                </svg>
             </div>
             <div class="works-auth_text">Just a quick move to leave a vote</div>
             <div class="works-auth_buttons-auth">
