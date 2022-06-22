@@ -839,11 +839,6 @@ section.homepage__header {
     border-bottom: 1px solid #B3B3B3;
 }
 
-section.homepage__header.homepage__header_st2{
-    height: 100vh;
-    min-height: 1056px;
-}
-
 .border_row .col-lg-6:first-child {
     border-right: 1px solid #B3B3B3;
 }
@@ -889,6 +884,7 @@ section.homepage__header.homepage__header_st2{
     font-weight: 600;
     padding: 15px 0px;
     letter-spacing: -0.03em;
+    text-transform: uppercase;
 }
 
 .homepage-form .wpcf7-not-valid{
@@ -1095,8 +1091,10 @@ section.homepage__form-block {
     color: #fff;
 }
 
-.form-block__body input[type=submit].button_form:hover{
+.form-block__body input[type=submit].button_form:hover,
+.form-block__body input[type=submit].button_form:focus{
     background: #4F4F4F;
+    box-shadow: none;
 }
 
 .form-block__body .wpcf7-list-item-label{
@@ -1401,6 +1399,7 @@ section.homepage__form-block {
 
 .works-item__info-wrapper .works-item__name{
     font-weight: 600;
+    text-transform: uppercase;
     font-size: 18px;
     line-height: 110%;
     letter-spacing: -0.02em;
@@ -1451,6 +1450,11 @@ span#sl-loader {
 a.sl-button.sl-button.liked {
     background: #1DFF18;
     border: 1px solid #1DFF18;
+}
+
+section.homepage__header.homepage__header_st2{
+    height: 100vh;
+    min-height: 1056px;
 }
 
 /* Item */
@@ -1527,12 +1531,6 @@ a.sl-button.sl-button.liked {
     font-weight: 600;
 }
 
-
-/* .item-page__vote-block .sl-button span.sl-vote{
-    display: block;
-    margin-right: 11px;
-} */
-
 .item-page__vote-block .sl-button svg {
     width: 18px;
     height: 18px;
@@ -1582,8 +1580,6 @@ a.sl-button.sl-button.liked {
 
 .text-next {
 	display: none;
-    /* transition: transform 0.5s;
-    transform: translateY(-81px); */
 }
 
 .text-more::before{
@@ -1599,10 +1595,6 @@ a.sl-button.sl-button.liked {
     transform: translateX(-100%);
     z-index: -1;
 }
-
-/* .text-next.show{
-    transform: translateY(0);
-} */
 
 .item-page__descr-block .vote-block__description .descr-block__read-more{
     font-weight: 400;
@@ -1689,5 +1681,101 @@ section.homepage__header.terms-page{
 
 section.homepage__about.info-page{
     padding-top: 24px;
+}
+
+/* homepage stage 3 */
+
+
+section.homepage__header.homepage__header_st3{
+    height: auto;
+    border-bottom: none;
+}
+
+section.homepage__header.homepage__header_st3 .header-form__head{
+    border-bottom: none;
+    border-top: 1px solid #B3B3B3;
+}
+
+.items-winner .works-item{
+    width: 100%;
+}
+
+.items-winner .works-item .works-item__name{
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+}
+
+.items-winner .works-item .works-item__about{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%; 
+    letter-spacing: -0.01em;
+}
+
+.winner-item__btn{
+    margin-bottom: -17px;
+    display: inline-block;
+    background: #000000;
+    border-radius: 50px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 105%;
+    padding: 23px 45px;
+    font-weight: 600;
+}
+
+.winner-item__btn:hover{
+    background: #4F4F4F;
+    color: #fff;
+}
+
+.works-item__week{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.items-winner .works-item:last-child{
+    border-bottom: none;
+}
+
+.works-item.subscribe-item {
+    padding: 26px 16px 21px;
+}
+
+
+.subscribe-item__title{
+    font-weight: 600;
+    font-size: 48px;   
+    letter-spacing: -0.03em;
+    text-transform: uppercase; 
+}
+
+.subscribe-item__subtitle{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    margin-top: 14px;
+}
+
+.subscribe-item__bottom{
+    margin-top: 136px;
+}
+
+.subscribe-form input[type=submit].button_form{
+    width: 100%;
+    max-width: 329px;
+    background: #000000;
+    color: #fff;
+    max-width: none;
+    padding: 23px;
+    font-size: 19px;
 }
 

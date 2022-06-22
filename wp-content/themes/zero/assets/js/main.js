@@ -66,6 +66,11 @@
                 }
     });
 
+    $(".work-item__wrapper").hover(function() {
+        $(this).closest(".works-item").toggleClass("hovered")
+    });
+
+
 
     
 
