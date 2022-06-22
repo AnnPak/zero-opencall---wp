@@ -40,7 +40,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
-<section class="homepage__banner">
+<section class="homepage__banner" id="info-block">
 	<div class="container-fluid">
 		<div class="homepage__banner-background" style="background-image:url(<?= get_template_directory_uri(); ?>/assets/img/demo_banner.png);">
 		MAKE DIGITAL GREAT AGAIN<br>
@@ -49,7 +49,7 @@ using zero10 tech.
 
 	</div>
 </section>
-<section class="homepage__about">
+<section class="homepage__about sticky-top">
 	<div class="container-fluid">
 		<div class="title_ui"> A contemporary fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion. A fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion. </div>
 		<a href="#" class="button_ui">Check F.A.Q.</a>
@@ -78,7 +78,7 @@ using zero10 tech.
 
 	</div>
 </section>
-<section class="homepage__form-block">
+<section class="homepage__form-block" id="sign-up-block">
 	<div class="container-fluid">
 		<div class="form-block__title">SIGN UP</div>
 		<div class="form-block__body">

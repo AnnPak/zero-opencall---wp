@@ -18,6 +18,9 @@
     font-weight: 900;
     font-style: normal;
 }
+html{
+    background-color: #000;
+}
 
 body {
     margin: 0;
@@ -565,6 +568,7 @@ button.close-search {
 }
 
 .site-header__logo a span {
+    white-space: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 27px;
@@ -607,6 +611,9 @@ header#mastheadx .site-header__logo a img{
 
 .bottom-bar__wrapper a {
     color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
 .bottom-bar__wrapper a:last-child {
@@ -637,15 +644,15 @@ header#mastheadx .site-header__logo a img{
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     border-radius: 100px;
     color: #000;
     display: inline-flex;
-    padding: 9px 31px;
+    padding: 17px 30px;
 }
 
 .mobile-menu__nav .menu li {
-    margin: 10px 0px;
+    margin-bottom: 15px;
 }
 
 .mobile-menu__close {
@@ -723,6 +730,11 @@ input.input_ui {
     border-radius: 8px;
     padding: 21px;
     margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+input.input_ui::placeholder{
+    color: #000;
 }
 
 .checkbox_ui .custom-checkbox {
@@ -759,8 +771,8 @@ span.wpcf7-list-item {
     display: block;
     position: absolute;
     content: '';
-    width: 1em;
-    height: 1em;
+    width: 20px;
+    height: 20px;
     flex-shrink: 0;
     flex-grow: 0;
     border: 1px solid #adb5bd;
@@ -782,8 +794,8 @@ span.wpcf7-list-item {
     background-size: 50% 50%;
     border-color: #000000;
     background-color: #000000;
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
     top: 4px;
     left: -11px;
     visibility: hidden;
@@ -800,7 +812,7 @@ span.wpcf7-list-item {
     visibility: visible;
 }
 .wpcf7-list-item-label {
-    margin-left: 12px;
+    margin-left: 27px;
     display: inline-flex;
     align-items: baseline;
     user-select: none;
@@ -827,11 +839,6 @@ section.homepage__header {
     border-bottom: 1px solid #B3B3B3;
 }
 
-section.homepage__header.homepage__header_st2{
-    height: 100vh;
-    min-height: 1056px;
-}
-
 .border_row .col-lg-6:first-child {
     border-right: 1px solid #B3B3B3;
 }
@@ -841,6 +848,7 @@ section.homepage__header.homepage__header_st2{
 }
 
 .header-banner__title h1.title_ui {
+    color: #000;
     margin-bottom: 35px;
     margin-top: 25px;
 }
@@ -867,6 +875,7 @@ section.homepage__header.homepage__header_st2{
 }
 
 .header-form__head {
+    color: #000;
     font-size: 48px;
     text-align: center;
     border-bottom: 1px solid #B3B3B3;
@@ -874,6 +883,8 @@ section.homepage__header.homepage__header_st2{
     margin-right: calc(var(--bs-gutter-x) * -0.5);
     font-weight: 600;
     padding: 15px 0px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
 }
 
 .homepage-form .wpcf7-not-valid{
@@ -911,20 +922,21 @@ section.homepage__header.homepage__header_st2{
     border-color: #FB5656;
 }
 
-.header-form_body form .wpcf7-response-output{
+form .wpcf7-response-output{
     display: none;
 }
-.header-form_body form.submitting .wpcf7-spinner{
+form.submitting .wpcf7-spinner{
     margin: 15px auto;
 }
 
 .header-form_body-title {
+    color: #000;
     font-size: 30px;
     line-height: 33px;
     text-align: center;
     max-width: 420px;
     font-weight: 600;
-    margin: 60px auto 30px auto;
+    margin: 48px auto 30px auto;
     letter-spacing: -0.02em;
 }
 
@@ -996,9 +1008,14 @@ section.homepage__banner {
     padding-bottom: 15px;
 }
 
+.site-content section.homepage__banner{
+    padding-top: 68px;
+    margin-top: -50px;
+}
+
 section.homepage__about {
     padding-top: 15px;
-    padding-bottom: 95px;
+    padding-bottom: 70px;
 }
 
 
@@ -1041,9 +1058,11 @@ section.homepage__about {
 /* Form block */
 
 section.homepage__form-block {
-    background: linear-gradient(180deg, #1DFF18 0%, rgba(234, 255, 234, 0) 42.71%);
+    position: relative;
+    z-index: 1050;
+    background: linear-gradient(180deg, #1DFF18 0%, rgb(247 253 247) 42.71%);
     padding-bottom: 25px;
-    padding-top: 25px;
+    padding-top: 13px;
 }
 
 .form-block__title {
@@ -1052,7 +1071,7 @@ section.homepage__form-block {
     text-align: center;
     letter-spacing: -0.04em;
     text-transform: uppercase;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #B3B3B3;
     margin-left: calc(var(--bs-gutter-x) * -0.5);
     margin-right: calc(var(--bs-gutter-x) * -0.5);
@@ -1070,6 +1089,16 @@ section.homepage__form-block {
 .form-block__body input[type=submit].button_form {
     background: #000;
     color: #fff;
+}
+
+.form-block__body input[type=submit].button_form:hover,
+.form-block__body input[type=submit].button_form:focus{
+    background: #4F4F4F;
+    box-shadow: none;
+}
+
+.form-block__body .wpcf7-list-item-label{
+    text-align: left;
 }
 
 .footer__bottom-button a.button_ui {
@@ -1097,7 +1126,7 @@ section.homepage__form-block {
 }
 
 .footer__bottom-qr span {
-    margin-top: 13px;
+    margin-top: 16px;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: -0.02em;
@@ -1117,6 +1146,7 @@ section.homepage__form-block {
     font-size: 20px;
     line-height: 21px;
     text-align: center;
+    font-weight: 600;
     letter-spacing: -0.02em;
     text-transform: uppercase;
 }
@@ -1152,6 +1182,10 @@ section.homepage__form-block {
     line-height: 100%;
     letter-spacing: -0.03em;
     color: #000000;
+}
+
+.faq__qestions-wrapper{
+    margin-bottom: 53px;
 }
 
 .faq__qestions-block{
@@ -1214,6 +1248,7 @@ section.homepage__form-block {
 .faq__qestion-wrapper .qestion-wrapper__qestion .qestion__count,
 .faq__qestion-wrapper .qestion-wrapper__qestion .qestion__title{
     margin-bottom: 0;
+    margin-right: 20px;
     font-family: 'ONY-FORM';
     font-style: normal;
     font-weight: 600;
@@ -1222,7 +1257,8 @@ section.homepage__form-block {
 }
 
 .faq__qestion-wrapper .qestion-wrapper__qestion .qestion__count{
-    margin-right: 35px;
+    margin-right: 20px;
+    width: 33px;
 }
 
 .qestion-wrapper__body {
@@ -1363,6 +1399,7 @@ section.homepage__form-block {
 
 .works-item__info-wrapper .works-item__name{
     font-weight: 600;
+    text-transform: uppercase;
     font-size: 18px;
     line-height: 110%;
     letter-spacing: -0.02em;
@@ -1413,6 +1450,11 @@ span#sl-loader {
 a.sl-button.sl-button.liked {
     background: #1DFF18;
     border: 1px solid #1DFF18;
+}
+
+section.homepage__header.homepage__header_st2{
+    height: 100vh;
+    min-height: 1056px;
 }
 
 /* Item */
@@ -1489,12 +1531,6 @@ a.sl-button.sl-button.liked {
     font-weight: 600;
 }
 
-
-/* .item-page__vote-block .sl-button span.sl-vote{
-    display: block;
-    margin-right: 11px;
-} */
-
 .item-page__vote-block .sl-button svg {
     width: 18px;
     height: 18px;
@@ -1544,8 +1580,6 @@ a.sl-button.sl-button.liked {
 
 .text-next {
 	display: none;
-    /* transition: transform 0.5s;
-    transform: translateY(-81px); */
 }
 
 .text-more::before{
@@ -1561,10 +1595,6 @@ a.sl-button.sl-button.liked {
     transform: translateX(-100%);
     z-index: -1;
 }
-
-/* .text-next.show{
-    transform: translateY(0);
-} */
 
 .item-page__descr-block .vote-block__description .descr-block__read-more{
     font-weight: 400;
@@ -1652,3 +1682,100 @@ section.homepage__header.terms-page{
 section.homepage__about.info-page{
     padding-top: 24px;
 }
+
+/* homepage stage 3 */
+
+
+section.homepage__header.homepage__header_st3{
+    height: auto;
+    border-bottom: none;
+}
+
+section.homepage__header.homepage__header_st3 .header-form__head{
+    border-bottom: none;
+    border-top: 1px solid #B3B3B3;
+}
+
+.items-winner .works-item{
+    width: 100%;
+}
+
+.items-winner .works-item .works-item__name{
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+}
+
+.items-winner .works-item .works-item__about{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%; 
+    letter-spacing: -0.01em;
+}
+
+.winner-item__btn{
+    margin-bottom: -17px;
+    display: inline-block;
+    background: #000000;
+    border-radius: 50px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 105%;
+    padding: 23px 45px;
+    font-weight: 600;
+}
+
+.winner-item__btn:hover{
+    background: #4F4F4F;
+    color: #fff;
+}
+
+.works-item__week{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.items-winner .works-item:last-child{
+    border-bottom: none;
+}
+
+.works-item.subscribe-item {
+    padding: 26px 16px 21px;
+}
+
+
+.subscribe-item__title{
+    font-weight: 600;
+    font-size: 48px;   
+    letter-spacing: -0.03em;
+    text-transform: uppercase; 
+}
+
+.subscribe-item__subtitle{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    margin-top: 14px;
+}
+
+.subscribe-item__bottom{
+    margin-top: 136px;
+}
+
+.subscribe-form input[type=submit].button_form{
+    width: 100%;
+    max-width: 329px;
+    background: #000000;
+    color: #fff;
+    max-width: none;
+    padding: 23px;
+    font-size: 19px;
+}
+
