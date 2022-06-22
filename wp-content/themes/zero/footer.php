@@ -26,7 +26,7 @@
 						<a href="#" class="button_ui">Know more at ZERO10.APP</a>
 					</div>
 					<div class="footer__bottom-qr">
-						<img src="<?= get_template_directory_uri(); ?>/assets/img/qrcode_black.png">
+						<img src="<?= get_template_directory_uri(); ?>/assets/img/qrcode_black.svg">
 						<span> Download on the App Store </span>
 					</div>
 					<div class="footer__bottom-qr-mobile">
@@ -43,7 +43,7 @@
 							<a href="mailto:support@zero10.app">support@zero10.app</a>
 							<a href="#">Privacy & Legal</a>
 							<a href="#">Cookie policy</a>
-							<a href="#">Terms & Conditions</a>
+							<a href="/terms-conditions">Terms & Conditions</a>
 						</div>
 					</div>
 

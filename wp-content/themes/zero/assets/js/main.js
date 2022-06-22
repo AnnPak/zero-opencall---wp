@@ -43,21 +43,22 @@
 
 
 
-    document.addEventListener('wpcf7mailsent', function(event) {
+    document.addEventListener('wpcf7mailsent', function (event) {
 
         if ('35' == event.detail.contactFormId) {
             $(".modal__form-submit").addClass('show');
-            
-            setTimeout(function(){
+
+            setTimeout(function () {
                 $(".modal__form-submit").removeClass('show');
             }, 4000);
         }
 
     }, false);
 
+
+    //  уменьшение хедереа при прокрутке
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
-        
         if (scroll >= 10) {
                     $("#mastheadx").addClass('smaller');
         } else {
@@ -69,6 +70,21 @@
         $(this).closest(".works-item").toggleClass("hovered")
     });
 
-   
+
+
+    
+
+    // function offsetAnchor(e) {
+    //     if (location.hash.length !== 0) {
+    //         window.scrollTo(0, $(e.target.hash).position().top - 150);
+    //     }
+    // }
+
+    // $(document).on('click', 'a[href^="/#"]', function (e) {
+    //     window.setTimeout(function () {
+    //         offsetAnchor(e);
+    //     }, 10);
+    // });
+
 
 }(jQuery));	
