@@ -393,11 +393,13 @@ button.close-search {
     font-size: 1em;
     line-height: 1;
     font-weight: normal;
-    transition: background-color 0.5s, width 2s;
+    width: 77px;
+    transition: border 1s, background-color 1s, width 0.5s;
 }
 .sl-button:not(.liked):hover{
     background: #1DFF18;
-    border: 1px solid #1DFF18;
+    border: 1.5px solid #1DFF18;
+    width: 111px;
 }
 
 .sl-button:not(.liked):hover .sl-vote{
@@ -568,7 +570,7 @@ button.close-search {
 }
 
 .site-header__logo a span {
-    white-space: normal;
+    white-space: nowrap;
     font-weight: 700;
     font-size: 26px;
     line-height: 27px;
@@ -1523,6 +1525,8 @@ section.homepage__header.homepage__header_st2{
 .item-page__vote-block .sl-button span.sl-vote{
     font-weight: 600;
     font-size: 26px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
 }
 
 .sl-vote{
@@ -1692,7 +1696,6 @@ section.homepage__header.homepage__header_st3{
 }
 
 section.homepage__header.homepage__header_st3 .header-form__head{
-    border-bottom: none;
     border-top: 1px solid #B3B3B3;
 }
 
@@ -1746,7 +1749,7 @@ section.homepage__header.homepage__header_st3 .header-form__head{
 }
 
 .works-item.subscribe-item {
-    padding: 26px 16px 21px;
+    padding: 21px 16px;
 }
 
 
@@ -1777,5 +1780,41 @@ section.homepage__header.homepage__header_st3 .header-form__head{
     max-width: none;
     padding: 23px;
     font-size: 19px;
+}
+
+.subscribe-form .form-control{
+    text-align: center;
+}
+
+
+/* stage 3 item page */
+.item-page__title-sub-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+span.title-sub__winner {
+    margin-right: 16px;
+}
+
+.vote-block__vote-button .stage-3 .sl-button{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 110%;
+    border: none;
+    background: #EFEFEF;
+    color: #000000;
+    cursor: default;
+}
+
+.vote-block__vote-button .item-page-winner__btn .sl-button{
+    background: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.vote-block__vote-button .item-page-winner__btn .sl-button:hover{
+    background: #4F4F4F;
+    border: none;
 }
 
