@@ -624,18 +624,30 @@ function show_user_likes( $user ) { ?>
 <?php } // show_user_likes()
 
 /* Redirect wp-admin */
-function wph_noadmin() {
-    if (is_admin() && !current_user_can('administrator') && is_user_logged_in()) {
-        wp_redirect(home_url());
-        exit;
-    } 
-	if(!current_user_can('administrator')) { 
-		add_filter('show_admin_bar', '__return_false');
-	}
+// function wph_noadmin() {
+//     if (is_admin() && !current_user_can('administrator') && is_user_logged_in()) {
+//         wp_redirect(home_url());
+//         exit;
+//     } 
+// 	if(!current_user_can('administrator')) { 
+// 		add_filter('show_admin_bar', '__return_false');
+// 	}
+// }
+// add_action('init', 'wph_noadmin'); 
+
+if(!current_user_can('administrator')) { 
+	add_filter('show_admin_bar', '__return_false');
 }
-add_action('init', 'wph_noadmin'); 
 
+function mt_redirect_admin() {
 
+	if ( ! current_user_can( 'administrator’' ) && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
+	wp_redirect( site_url() );
+	exit;
+	}
+
+}
+add_action( 'admin_init', 'mt_redirect_admin', 1 );
 
 
 /**
