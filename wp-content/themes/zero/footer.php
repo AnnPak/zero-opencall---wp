@@ -26,7 +26,7 @@
 						<a href="#" class="button_ui">Know more at ZERO10.APP</a>
 					</div>
 					<div class="footer__bottom-qr">
-						<img src="<?= get_template_directory_uri(); ?>/assets/img/qrcode_black.svg">
+						<img src="<?= get_template_directory_uri(); ?>/assets/img/qrcode_black-2.svg">
 						<span> Download on the App Store </span>
 					</div>
 					<div class="footer__bottom-qr-mobile">

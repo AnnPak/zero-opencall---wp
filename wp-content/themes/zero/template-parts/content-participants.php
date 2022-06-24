@@ -68,7 +68,10 @@
                     <div class="works-item__name"><?= get_field('works_author'); ?></div>
                     <div class="works-item__about"><?= get_field('works_name'); ?></div>
                 </div>
-                <div class="works-item__like"><? echo get_simple_likes_button(get_the_ID()); ?></div>
+                
+                <? if ($args['stageNum'] != 3) : ?>
+                    <div class="works-item__like"><? echo get_simple_likes_button(get_the_ID()); ?></div>
+                <?endif;?>
             </div>
         </a>
 

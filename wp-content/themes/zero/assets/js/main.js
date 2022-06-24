@@ -76,7 +76,7 @@
 
     // function offsetAnchor(e) {
     //     if (location.hash.length !== 0) {
-    //         window.scrollTo(0, $(e.target.hash).position().top - 150);
+    //         window.scrollTo(0, $(e.target.hash).position().top - 50);
     //     }
     // }
 
@@ -85,6 +85,7 @@
     //         offsetAnchor(e);
     //     }, 10);
     // });
+
 
 
 }(jQuery));	

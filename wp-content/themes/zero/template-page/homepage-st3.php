@@ -43,7 +43,7 @@ get_header(); ?>
                             if ($query->have_posts()) :
                                 while ($query->have_posts()) : $query->the_post();
                                     if (get_field('works_is-winner')) {
-                                        $isWinner = true;
+
                                         $params = ['isWinner' => true];
                                         get_template_part('template-parts/content', get_post_type(), $params);
                                         // hm_get_template_part( 'template_path', [ 'option' => 'value' ] );
@@ -101,7 +101,8 @@ get_header(); ?>
                             $query = new WP_Query($args);
                             if ($query->have_posts()) :
                                 while ($query->have_posts()) : $query->the_post();
-                                    get_template_part('template-parts/content', get_post_type());
+                                    $params = ['stageNum' => 3];
+                                    get_template_part('template-parts/content', get_post_type(), $params);
                                 endwhile;
 
 

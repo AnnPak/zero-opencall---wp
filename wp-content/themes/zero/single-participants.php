@@ -20,11 +20,33 @@ get_header();
                     <div class="col-lg-6">
                         <div class="item-page__title-block">
                             <div class="item-page__title"><?= get_field('works_author'); ?></div>
-                            <div class="item-page__title-sub"><span class="title-sub__category">Item </span><span class="title-sub__name"><?= get_field('works_name'); ?></span></div>
+
+                            <div class="item-page__title-sub-wrap">
+                                <div class="item-page__title-sub">
+                                    <span class="title-sub__category">Item </span>
+                                    <span class="title-sub__name"><?= get_field('works_name'); ?></span>
+                                </div>
+                                <? if (get_field('works_is-winner')) : ?>
+                                    <span class="title-sub__winner">The Winner of Week 1 </span>
+                                <? endif ?>
+                            </div>
+
+
                         </div>
                         <div class="item-page__vote-block">
                             <div class="vote-block__vote-button">
-                                <?php echo get_simple_likes_button(get_the_ID()); ?>
+                                <? if (get_field('works_is-winner')) : ?>
+                                    <span class="sl-wrapper stage-3 item-page-winner__btn">
+                                        <a href="#" class="sl-button sl-button-43 stage-3__app-btn" >TRY ON IN THE APP </a>
+                                    </span>
+                                <?else:?>
+                                    <span class="sl-wrapper stage-3">
+                                        <a href="#" class="sl-button sl-button-43 stage-3__app-btn" >VOTING IS OVER </a>
+                                    </span>
+                                <? endif ?>
+                                <?php
+                                // echo get_simple_likes_button(get_the_ID()); 
+                                ?>
                             </div>
 
                             <div class="vote-block__share">
@@ -65,7 +87,7 @@ get_header();
                         <div class="item-page__descr-block">
                             <div class="vote-block__description">
                                 <p><?= get_field('works_descriptions'); ?></p>
-                                <div class="descr-block__read-more">+ read more</div>
+                                <div class="descr-block__read-more ">+ read more</div>
 
                                 <?
                                 // $str = get_field('works_descriptions');;
