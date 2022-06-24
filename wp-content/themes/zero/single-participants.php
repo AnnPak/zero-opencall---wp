@@ -37,11 +37,11 @@ get_header();
                             <div class="vote-block__vote-button">
                                 <? if (get_field('works_is-winner')) : ?>
                                     <span class="sl-wrapper stage-3 item-page-winner__btn">
-                                        <a href="#" class="sl-button sl-button-43" >TRY ON IN THE APP </a>
+                                        <a href="#" class="sl-button sl-button-43 stage-3__app-btn" >TRY ON IN THE APP </a>
                                     </span>
                                 <?else:?>
                                     <span class="sl-wrapper stage-3">
-                                        <a href="#" class="sl-button sl-button-43" >VOTING IS OVER </a>
+                                        <a href="#" class="sl-button sl-button-43 stage-3__app-btn" >VOTING IS OVER </a>
                                     </span>
                                 <? endif ?>
                                 <?php
@@ -87,7 +87,7 @@ get_header();
                         <div class="item-page__descr-block">
                             <div class="vote-block__description">
                                 <p><?= get_field('works_descriptions'); ?></p>
-                                <div class="descr-block__read-more">+ read more</div>
+                                <div class="descr-block__read-more ">+ read more</div>
 
                                 <?
                                 // $str = get_field('works_descriptions');;

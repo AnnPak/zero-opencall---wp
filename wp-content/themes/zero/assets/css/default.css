@@ -27,6 +27,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     font-family: "ONY-FORM";
+    color: #000;
 }
 
 img {
@@ -522,7 +523,7 @@ button.close-search {
     background: #fff;
     padding-bottom: 15px;
     padding-top: 15px;
-    z-index: 1030;
+    z-index: 2030;
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     -ms-transition: height 0.3s;
@@ -604,6 +605,7 @@ header#mastheadx .site-header__logo a img{
 
 .bottom-bar {
     background: #000;
+    z-index: 2030;
 }
 
 .bottom-bar__wrapper {
@@ -978,6 +980,7 @@ input[type=submit].button_form:hover,
 input[type=submit].button_form:focus
 .vote-block__vote-button .sl-wrapper a:focus{
     background: #80FF7D;
+    box-shadow: none;
 }
 
 .modal__form-submit {
@@ -1012,6 +1015,7 @@ input[type=submit].button_form:focus
     }
 }
 
+
 /* Homepage about */
 section.homepage__banner {
     padding-top: 15px;
@@ -1034,7 +1038,9 @@ section.homepage__about {
 
 
 .about-col {
-    padding-top: 100px;
+    margin-bottom: 32px;
+    padding-bottom: 30px;
+    padding-top: 85px;
 }
 
 .small-screen .about-col{
@@ -1055,10 +1061,12 @@ section.homepage__about {
 
 .homepage__about a.button_ui {
     margin-top: 30px;
+    height: 60px;
 }
 
 .homepage__about .title_ui {
     max-width: 1440px;
+    color: #000;
 }
 
 .homepage__banner-background {
@@ -1073,6 +1081,11 @@ section.homepage__about {
     text-transform: uppercase;
 }
 
+.header-form_body .wpcf7{
+    padding-bottom: 111px;
+}
+
+
 /* Form block */
 
 section.homepage__form-block {
@@ -1083,7 +1096,9 @@ section.homepage__form-block {
     background-size: contain;
     padding-bottom: 50px;
     padding-top: 15px;
-    z-index: 1022;
+    z-index: 2000;
+    padding-top: 55px;
+    margin-top: -55px;
 }
 
 section.homepage__form-block .container-fluid{
@@ -1133,7 +1148,7 @@ section.homepage__form-block .form-block__body {
 
 .form-block__body .header-form_body-title{
     margin-top: 44px;
-    margin-bottom: 38px;
+    margin-bottom: 58px;
 }
 
 .form-block__body .checkbox_ui{
@@ -1306,7 +1321,7 @@ section.homepage__form-block .form-block__body {
 
 .faq__qestion-wrapper .qestion-wrapper__qestion .qestion__count{
     margin-right: 20px;
-    width: 33px;
+    min-width: 33px;
 }
 
 .qestion-wrapper__body {
@@ -1316,6 +1331,8 @@ section.homepage__form-block .form-block__body {
     font-weight: 300;
     font-size: 20px;
     line-height: 110%;
+    max-width: 87%;
+    padding-left: 20px;
 }
 
 
@@ -1733,6 +1750,10 @@ section.homepage__about.info-page{
     padding-top: 24px;
 }
 
+section.homepage__header{
+    height: auto;
+}
+
 /* homepage stage 3 */
 
 
@@ -1864,4 +1885,15 @@ span.title-sub__winner {
     border: none;
 }
 
+.sl-button.stage-3__app-btn:not(.liked):hover{
+    width: auto;
+}
+
+.modal.mobile-menu{
+    z-index: 2030;
+}
+
+.about-col-section{
+    display: none;
+}
 
