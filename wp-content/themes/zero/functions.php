@@ -170,7 +170,7 @@ function wpbstarter_scripts()
 	wp_script_add_data('html5hiv', 'conditional', 'lt IE 9');
 
 	wp_enqueue_script('sinanavjs', get_template_directory_uri() . '/assets/js/sina-nav.js', array('jquery'), '2.1.0', true);
-	wp_enqueue_script('bootstrap-bundled-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), '4.4.1', true);
+	wp_enqueue_script('bootstrap-bundled-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array(), '5.1.3', true);
 	wp_enqueue_script('wpbstarter-navigationjs', get_template_directory_uri() . '/assets/js/navigation.js', array(), '1.0', true);
 	wp_enqueue_script('swiper-js', get_template_directory_uri() . '/assets/js/swiper.js', array(), '', true);
 	wp_enqueue_script('wpbstarter-themejs', get_template_directory_uri() . '/assets/js/theme-script.js', array(), '', true);
@@ -625,7 +625,7 @@ function show_user_likes( $user ) { ?>
 
 /* Redirect wp-admin */
 function wph_noadmin() {
-    if (is_admin() && !current_user_can('administrator') && is_user_logged_in()) {
+    if (is_admin() && !current_user_can('administrator') && is_user_logged_in() && ( !defined( 'DOING_AJAX' ) || ! DOING_AJAX )) {
         wp_redirect(home_url());
         exit;
     } 
@@ -635,7 +635,19 @@ function wph_noadmin() {
 }
 add_action('init', 'wph_noadmin'); 
 
+// if(!current_user_can('administrator')) { 
+// 	add_filter('show_admin_bar', '__return_false');
+// }
 
+// function mt_redirect_admin() {
+
+// 	if ( !current_user_can( 'administrator’' ) && ( !defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
+// 	wp_redirect( site_url() );
+// 	exit;
+// 	}
+
+// }
+// add_action( 'admin_init', 'mt_redirect_admin', 1 );
 
 
 /**
