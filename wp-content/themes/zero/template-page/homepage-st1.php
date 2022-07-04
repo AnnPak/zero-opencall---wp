@@ -12,13 +12,13 @@ get_header(); ?>
 			<div class="col-lg-6">
 				<div class="homepage__header-banner">
 					<div class="header-banner__title">
-						<h1 class="title_ui"> We selected 5 most progressive<br> fashion designers from all over<br> the world and digitally recreated<br> their most-wanted pieces. </h1>
+						<h1 class="title_ui"> Join a competition for digital fashion creators developed to support emerging talents and help them scale their visibility in the community. Three winners will get a rare chance to present their designs in the ZERO10 app and wear them in AR. </h1>
 						<a href="/#info-block" class="button_ui">Info and Prizes</a>
 					</div>
 					<div class="header-banner__bottom">
 						<div class="header-banner__bottom-items">
-							<span>1 winner per week</span>
-							<span>4 prizes </span>
+							<span>3 winners</span>
+							<span>3 prizes </span>
 						</div>
 					</div>
 				</div>
@@ -27,78 +27,57 @@ get_header(); ?>
 			<div class="col-lg-6">
 				<div class="homepage__header-form">
 					<div class="header-form__head">
-						SIGN UP
+						Join Open Call
 					</div>
 					<div class="header-form_body">
-						<div class="header-form_body-title">?Stay tune about the future of AR fashion. Subscribe?</div>
+						<div class="header-form_body-title">Submit your application today <br>and receive an email with technical specifications for entries.</div>
 
 						<? echo do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
-						
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="homepage__banner" id="info-block">
+<section class="homepage__banner-background" >
+		submit your digital
+		<br>
+		creations.
+</section>
+<section class="homepage__about desctop-screen" id="info-block">
 	<div class="container-fluid">
-		<div class="homepage__banner-background" style="background-image:url(<?= get_template_directory_uri(); ?>/assets/img/demo_banner.png);">
-		MAKE DIGITAL GREAT AGAIN<br>
-using zero10 tech.
+		<div class="title_ui"> Open call is a competition for digital fashion designers developed by ZERO10 to support emerging talents and a growing community of creators. Entries are open to everyone and not limited to skill level, design preferences, geography, and background*. </div>
+		<div class="homepage__about-subtitle">
+			<a href="/faq" class="button_ui">Check F.A.Q.</a>
+			<div class="subtitle-text">
+				We expect participants to be engaged in digital fashion, have gigabytes of ideas waiting to happen, and be familiar with 3D cloth-making programs. 
+				To pass moderation, a work submitted for the competition should meet the technical specifications and be uniquely your own.
+			</div>
 		</div>
-
 	</div>
 </section>
+
 <section class="sticky-top homepage__about desctop-screen">
 	<div class="container-fluid">
-		<div class="title_ui"> A contemporary fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion. A fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion. </div>
-		<a href="/faq" class="button_ui">Check F.A.Q.</a>
 		<div class="about-col homepage__about-col">
 			<div class="row">
 				<div class="col-lg-4 col-md-6 col-12">
-					<div class="title_ui">???????</div>
+					<div class="title_ui">Duration</div>
 					<div class="about-col__descript">
-						The AR items bundle by Tommy Cash is united by the surreal infusion of post-Soviet aesthetic and consists of 3 digital items.
+						Submissions will be open until July 20th. Over the span of two weeks, anyone can sign up for the competition and upload their design. Three winners will be selected by the community vote starting on July 21st and ending on August 4th. Winners will be announced a week after, and their digital clothes will be available in the ZERO10 app.
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
-					<div class="title_ui">???????</div>
+					<div class="title_ui">Voting</div>
 					<div class="about-col__descript">
-						The AR items bundle by Tommy Cash is united by the surreal infusion of post-Soviet aesthetic and consists of 3 digital items. The AR items bundle by Tommy Cash is united virginity leaf as a wearable NFT inspired by Adam’s Fig Leaf.
+						Winners will be voted by the community: ask friends and network to support you and other deserving talents. Participants can vote, too, but please don’t cheat. Rule of thumb: one vote per each work. The three top-voted designs will score a prize pack!
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
-					<div class="title_ui">???????</div>
+					<div class="title_ui">Prizes</div>
 					<div class="about-col__descript">
-						The AR items bundle by Tommy Cash is united by the surreal infusion of post-Soviet aesthetic and consists of 3 digital items and a virginity leaf.
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</section>
-<section class="about-col-section">
-	<div class="container-fluid">
-		
-		<div class="about-col">
-			<div class="row">
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="title_ui">???????</div>
-					<div class="about-col__descript">
-						1The AR items bundle by Tommy Cash is united by the surreal infusion of post-Soviet aesthetic and consists of 3 digital items.
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12 d-none d-md-block">
-					<div class="title_ui">???????</div>
-					<div class="about-col__descript">
-						2The AR items bundle by Tommy Cash is united by the surreal infusion of post-Soviet aesthetic and consists of 3 digital items. The AR items bundle by Tommy Cash is united virginity leaf as a wearable NFT inspired by Adam’s Fig Leaf.
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12 d-none d-md-block">
-					<div class="title_ui">???????</div>
-					<div class="about-col__descript">
-						3The AR items bundle by Tommy Cash is united by the surreal infusion of post-Soviet aesthetic and consists of 3 digital items and a virginity leaf.
+						Three winners will get a signature drop in the Zero10 app. Our team will adapt your design to AR and showcase it alongside the works of Tommy Cash or Barragán. Ultimately, $1000 for each winner tops the prize list!
 					</div>
 				</div>
 			</div>
@@ -108,11 +87,12 @@ using zero10 tech.
 </section>
 
 
-<section class="homepage__form-block" >
+<section class="homepage__form-block">
 	<div class="container-fluid" id="sign-up-block">
-		<div class="form-block__title">SIGN UP</div>
+		<div class="form-block__title d-none d-sm-block">Join Open Call</div>
+		<div class="form-block__title d-block d-sm-none">Join <br>Open Call</div>
 		<div class="form-block__body">
-			<div class="header-form_body-title">?Stay tune about the future of AR fashion. Subscribe?</div>
+			<div class="header-form_body-title">Submit your application today  and receive an email with technical specifications for entries.</div>
 
 			<? echo do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
 		</div>

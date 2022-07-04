@@ -20,14 +20,14 @@
 			<div class="col-lg-6">
 				<div class="footer__bottom-wrapper">
 					<div class="title_ui">
-						A contemporary fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion.
+					ZERO10 platform connects fashion brands and designers to users all over the world and makes it possible to present digital garments in Augmented Reality.
 					</div>
 					<div class="footer__bottom-button">
-						<a href="https://zero10.app/" class="button_ui">Know more at ZERO10.APP</a>
+						<a href="https://zero10.app/" class="button_ui">About ZERO10</a>
 					</div>
 					<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="footer__bottom-qr">
 						<img src="<?= get_template_directory_uri(); ?>/assets/img/qrcode_black-2.svg">
-						<span> Download on the App Store </span>
+						<span> Download the iOS app </span>
 					</ф>
 					<div class="footer__bottom-qr-mobile">
 						<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="button_ui button__black">Download on the App Store</a>
@@ -36,7 +36,7 @@
 						<div class="footer__bottom-social">
 							<a href="https://www.instagram.com/zero10.app/">INSTAGRAM</a>
 							<a href="https://www.tiktok.com/@zero10.app">TIKTOK</a>
-							<a href="https://www.facebook.com/zero10app">FACEBOOK</a>
+							<a href="#">DISCORD</a>
 							<a href="https://twitter.com/zero10_app">TWITTER</a>
 						</div>
 						<div class="footer__bottom-contact_mobile">
