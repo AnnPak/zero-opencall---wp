@@ -108,8 +108,8 @@ using zero10 tech.
 </section>
 
 
-<section class="homepage__form-block" id="sign-up-block">
-	<div class="container-fluid">
+<section class="homepage__form-block" >
+	<div class="container-fluid" id="sign-up-block">
 		<div class="form-block__title">SIGN UP</div>
 		<div class="form-block__body">
 			<div class="header-form_body-title">?Stay tune about the future of AR fashion. Subscribe?</div>

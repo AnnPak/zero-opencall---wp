@@ -18,9 +18,6 @@
     font-weight: 900;
     font-style: normal;
 }
-html{
-    background-color: #000;
-}
 
 body {
     margin: 0;
@@ -60,6 +57,10 @@ button.close-search:focus {
     outline: none;
 }
 
+div#page {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 
 
@@ -518,7 +519,9 @@ button.close-search {
 /* Header */
 
 .site-header {
+    max-width: 1920px;
     height: 110px;
+    margin: 0 auto;
     border-bottom: 1px solid #B3B3B3;
     background: #fff;
     padding-bottom: 15px;
@@ -1094,12 +1097,17 @@ section.homepage__form-block {
     background-repeat: no-repeat;
     background-color: #ffff;
     background-size: contain;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     padding-top: 15px;
     z-index: 2000;
-    padding-top: 55px;
-    margin-top: -55px;
 }
+
+section.homepage__form-block #sign-up-block.container-fluid {
+    padding-top: 82px;
+    margin-top: -82px;
+} 
+
+
 
 section.homepage__form-block .container-fluid{
     padding: 0;
@@ -1181,7 +1189,7 @@ section.homepage__form-block .form-block__body {
 }
 
 .footer__bottom-qr span {
-    margin-top: 16px;
+    margin-top: 3px;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: -0.02em;
@@ -1753,6 +1761,65 @@ section.homepage__about.info-page{
 section.homepage__header{
     height: auto;
 }
+
+
+.homepage__header_st2 .border_row .col-lg-6:first-child{
+    border-right: 0;
+}
+
+.homepage__header_st2 .header-form__head{
+    border-left: 1px solid #B3B3B3;
+}
+
+.homepage__header_st2 .works-items.items-col-2 .works-item{
+    border-left: 1px solid #B3B3B3;
+    border-bottom: 0;
+    border-top: 1px solid #B3B3B3;
+    border-right: 0;
+    /* width: 49.9%; */
+}
+
+section.homepage__header.homepage__header_st2{
+    border-bottom: 0;
+}
+
+.homepage__header_st2 .header-form__head{
+    border-bottom: 0;
+}
+
+.homepage__items_st2 .works-item{
+    border-top: 1px solid #B3B3B3;
+    border-bottom: 0;
+}
+
+.homepage__items_st2 .works-item:last-child{
+    border-right: 0;
+}
+
+.homepage__header_st2 .homepage__header-form{
+    width: 100%;
+}
+
+.homepage__header_st2 .header-form__head,
+.homepage__header_st2 .works-items{
+    width: 100%;
+    margin: 0;
+}
+
+
+.homepage__header_st2 .footer__bottom {
+    border-top: 0;
+}
+
+/* .homepage__header_st2 .col-lg-6.right-part{
+    width: calc(49.9% + 1px);
+} */
+
+.homepage__header_st2 .col-lg-6.left-part{
+    padding: 0;
+}
+
+section.homepage__header
 
 /* homepage stage 3 */
 

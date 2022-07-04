@@ -9,7 +9,7 @@ get_header(); ?>
 <section class="homepage__header homepage__header_st2">
     <div class="container-fluid h-100">
         <div class="row border_row h-100">
-            <div class="col-lg-6">
+            <div class="col-lg-6 right-part">
                 <div class="homepage__header-banner">
                     <div class="header-banner__title">
                         <h1 class="title_ui"> Open call is a competition for creators and digital fashion designers developed to support emerging talents and help them scale their visibility among the community and showcase their works in AR. </h1>
@@ -24,7 +24,7 @@ get_header(); ?>
                 </div>
 
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 left-part">
                 <div class="homepage__header-form">
                     <div class="header-form__head">
                         PARTICIPANTS
@@ -54,7 +54,7 @@ get_header(); ?>
                                         </div>
                                         </section>
 
-                                        <section class="homepage__items">
+                                        <section class="homepage__items homepage__items_st2">
                                             <div class="container-fluid h-100">
                                                 <div class="row border_row h-100">
                                                     <div class="col-lg-12">
