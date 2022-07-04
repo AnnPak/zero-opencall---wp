@@ -84,9 +84,9 @@
 			<div class="container-fluid">
 				<div class="bottom-bar__wrapper">
 					<a href="mailto:support@zero10.app">support@zero10.app</a>
-					<a href="#">Privacy & Legal</a>
-					<a href="#">Cookie policy</a>
-					<a href="#">Terms & Conditions</a>
+					<a href="/privacy-legal">Privacy & Legal</a>
+					<a href="/cookie-policy">Cookie policy</a>
+					<a href="/terms-conditions">Terms & Conditions</a>
 				</div>
 			</div>
 		</div>

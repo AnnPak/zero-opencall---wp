@@ -1,26 +1,19 @@
-@media (max-width: 1200px) { 
+@media (min-width: 1920px) { 
+    header#mastheadx,
+    div#page {
+        border-right: 1px solid #B3B3B3;
+        border-left: 1px solid #B3B3B3;
+    }
+
+  
+}
+
+/* @media (max-width: 1200px) { 
     .sticky-top.homepage__about{
         position: inherit;
     }
 
-    .homepage__about-col{
-        display: none;
-        padding-bottom: 85px;
-        padding-top: 0;
-    }
-
-    .about-col-section{
-        display: block;
-        position: sticky;
-        top: 0;
-        z-index: 1030;
-    }
-    .about-col{
-        padding-bottom: 85px;
-        padding-top: 0;
-    }
-
-}
+} */
 @media (max-width: 991px) { 
     .site-header__mobile-menu {
         display: block;
@@ -54,7 +47,7 @@
         margin: 0;
         height: 100%;
         width: 50%;
-        padding-top: 60px;
+        padding-top: 44px;
         padding-right: 25px;
     }
     
@@ -77,7 +70,7 @@
     .header-form_body .wpcf7 {
         width: 50%;
         border-left: 1px solid #B3B3B3;
-        margin-bottom: 10px;
+        padding-bottom: 0;
     }
 
     .header-form_body form .form-control{
@@ -157,16 +150,30 @@
 
     .homepage__about-col{
         display: block;
+        padding-top: 60px;
+        margin-bottom: 55px;
     }
 
     .about-col-section{
         display: none;
     }
-
-    .about-col {
-        padding-top: 80px;
-    }
    
+    section.homepage__form-block #sign-up-block.container-fluid {
+        padding-top: 70px;
+        margin-top: -70px;
+    }
+
+    .homepage__about-subtitle{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homepage__about-subtitle .subtitle-text{
+        order: -1;
+        margin-bottom: 30px;
+    }
+    
+
 }
 
 @media (max-width: 768px) { 
@@ -181,20 +188,17 @@
         height: 60px;
     }
 
-    .about-col {
-        padding-top: 80px;
-    }
-
-    section.homepage__form-block{
-        padding-top: 11px;
+    .wpcf7-list-item-label{
+        font-size: 14px;
     }
 
     .homepage__form-block .form-block__title{
-        padding-bottom: 17px;
+        padding-bottom:12px;
     }
 
-    .header-form_body-title{
+    .form-block__body .header-form_body-title{
         margin-top: 50px;
+        margin-bottom: 40px;
     }
 
     .form-block__body .wpcf7{
@@ -220,8 +224,14 @@
         padding-bottom: 61px;
     }
 
+    .header-banner__bottom{
+        position: inherit;
+    }
 
-
+    .about-col{
+        margin: 53px 0;
+        padding-top: 0;
+    }
 
 
 }
@@ -229,11 +239,6 @@
 @media (max-width: 680px) { 
     .footer__bottom-contact_mobile {
         display: block;
-    }
-
-    .about-col {
-        padding-top: 60px;
-        padding-bottom: 0;
     }
 
     .title_ui {
@@ -275,8 +280,10 @@
     .homepage__header-form .header-form_body-title {
         text-align: center;
         width: 100%;
-        padding: 40px 25px;
+        padding: 40px 13px;
+        font-size: 24px;
     }
+
 
     .header-banner__title {
         display: flex;
@@ -284,8 +291,9 @@
         align-items: center;
     }
     .header-banner__title h1.title_ui {
-        font-size: 38px;
-        line-height: 38px;
+        font-size: 30px;
+        line-height: 100%;
+        margin-top: -7px;
     }
 
     .header-banner__title h1.title_ui br {
@@ -362,8 +370,8 @@
     .header-form__head{
         font-size: 43px;
         line-height: 100%;
-        padding-top: 23px;
-        padding-bottom: 17px;
+        padding-top: 21px;
+        padding-bottom: 21px;
     }
 
     .works-items.items-col-2 .works-item {
@@ -377,14 +385,14 @@
 
     .homepage__about a.button_ui {
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 5px;
         display: block;
         width: 270px;
         padding: 16px 25px;
     }
 
     .about-col .about-col__descript{
-        margin-top: 29px;
+        margin-top: 20px;
         margin-bottom: 40px;
     }
 
@@ -399,6 +407,7 @@
 
     .header-form_body form .wpcf7-list-item-label{
         font-size: 16px;
+        margin-left: 23px;
     }
 
     .form-block__body input[type=submit].button_form {
@@ -406,7 +415,8 @@
     }
 
     .homepage__form-block .form-block__title{
-        font-size: 60px;
+        font-size: 50px;
+        line-height: 95%;
     }
 
     span#checkbox.form-control{
@@ -419,10 +429,6 @@
 
     input[type=submit].button_form{
         margin-top: 12px;
-    }
-
-    section.homepage__form-block{
-        margin-top: 36px;
     }
 
     .footer__bottom-img {
@@ -447,6 +453,19 @@
 
     .small-screen{
         margin-bottom: 0;padding-bottom: 0;
+    }
+
+    .homepage__about .title_ui{
+        font-size: 30px;
+    }
+
+    .homepage__about-col .title_ui{
+        font-size: 42px;
+        margin-bottom: 0;
+    }
+
+    .about-col{
+        margin-bottom: 19px;
     }
 
 }
