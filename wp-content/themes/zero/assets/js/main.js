@@ -70,9 +70,48 @@
         $(this).closest(".works-item").toggleClass("hovered")
     });
 
+    $('.nav-link').click(function(){
+        console.log('lol')
+        $('.mobile-menu__close img').click();
 
 
+    })  
     
+    if ($('.footer__bottom, .footer__bottom-img').length) {
+
+
+
+        const videoElement = document.getElementById('videoback');
+
+        videoElement.addEventListener('autostartNotAllowed', (e) => {
+
+            // message: "The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission."
+            // name: "NotAllowedError"
+            // reason: "autoplayDisabled"
+        });
+
+        videoElement.addEventListener('play', () => {
+            // remove play UI
+        });
+
+
+        Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+            get: function() {
+                return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+            }
+        });
+
+        $('body').on('click touchstart', function() {
+            const videoElement = document.getElementById('videoback');
+            if (videoElement.playing) {
+                // video is already playing so do nothing
+            } else {
+                // video is not playing
+                // so play video now
+                videoElement.play();
+            }
+        });
+    }
 
     // function offsetAnchor(e) {
     //     if (location.hash.length !== 0) {

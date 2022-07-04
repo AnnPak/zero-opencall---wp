@@ -933,7 +933,7 @@ section.homepage__header {
     background: none;
 }
 
-.header-form_body form .wpcf7-checkbox.wpcf7-not-valid input[type=checkbox] + span:before{
+.wpcf7-checkbox.wpcf7-not-valid input[type=checkbox] + span:before{
     border-color: #FB5656;
 }
 
@@ -1107,8 +1107,6 @@ section.homepage__form-block #sign-up-block.container-fluid {
     margin-top: -82px;
 } 
 
-
-
 section.homepage__form-block .container-fluid{
     padding: 0;
     padding-top: 9px;
@@ -1194,6 +1192,7 @@ section.homepage__form-block .form-block__body {
     font-size: 14px;
     letter-spacing: -0.02em;
     line-height: 17px;
+    color: #000;
 }
 
 .footer__bottom-social {
@@ -1765,6 +1764,7 @@ section.homepage__header{
 
 .homepage__header_st2 .border_row .col-lg-6:first-child{
     border-right: 0;
+    width: calc(50% - 0.1px);
 }
 
 .homepage__header_st2 .header-form__head{
@@ -1776,7 +1776,7 @@ section.homepage__header{
     border-bottom: 0;
     border-top: 1px solid #B3B3B3;
     border-right: 0;
-    /* width: 49.9%; */
+    width: calc(50% - 0.05vw);
 }
 
 section.homepage__header.homepage__header_st2{
@@ -1962,5 +1962,86 @@ span.title-sub__winner {
 
 .about-col-section{
     display: none;
+}
+
+.wpcf7-not-valid-tip{
+    position: absolute;
+    top: 4px;
+    left: 30px;
+    font-size: 12px;
+    color: #FB5656;
+}
+
+/* .cookie-attention {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background: rgba(35, 35, 35, 0.95);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    justify-content: space-between;
+    z-index: 99;
+    transition: 0.5s;
+} */
+
+div#cookie-law-info-bar {
+    width: 260px !important;
+    background-color: #000 !important;
+    top: 184px !important;
+    right: 10px !important;
+    left: auto !important;
+    border-radius: 20px;
+    padding: 12px 16px !important;
+    padding-bottom: 14px !important;
+}
+
+.cookie-attention {
+    text-align: left;
+}
+
+.cookie-attention .cookie-title{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.cookie-attention .cookie-info{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 110%;
+    color: #848484;
+    margin-bottom: 0;
+}
+
+.cookie-attention .cookie-info a{
+    font-weight: 400;
+    font-size: 12px;
+    color: #848484;
+    text-decoration: underline;
+}
+
+a#wt-cli-accept-all-btn {
+    width: 100%;
+    border-radius: 50px;
+    color: #000 !important;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+form .btn-check:focus+.btn-primary, .btn-primary:focus{
+    box-shadow: none;
+}
+
+.footer__bottom-img video#videoback{
+    max-width: 358px;
+    height: auto;
 }
 

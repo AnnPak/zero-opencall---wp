@@ -1,4 +1,12 @@
 @media (min-width: 1920px) { 
+    .header-banner__title h1.title_ui{
+        font-size: 42px;
+    }
+
+  
+}
+
+@media (min-width: 1400px) { 
     header#mastheadx,
     div#page {
         border-right: 1px solid #B3B3B3;
@@ -177,6 +185,11 @@
         padding-top: 80px;
     }
    
+    section.homepage__form-block #sign-up-block.container-fluid {
+        padding-top: 70px;
+        margin-top: -70px;
+    }
+
 }
 
 @media (max-width: 768px) { 

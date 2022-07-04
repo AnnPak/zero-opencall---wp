@@ -13,7 +13,7 @@ get_header(); ?>
 				<div class="homepage__header-banner">
 					<div class="header-banner__title">
 						<h1 class="title_ui"> We selected 5 most progressive<br> fashion designers from all over<br> the world and digitally recreated<br> their most-wanted pieces. </h1>
-						<a href="#" class="button_ui">Info and Prizes</a>
+						<a href="/#info-block" class="button_ui">Info and Prizes</a>
 					</div>
 					<div class="header-banner__bottom">
 						<div class="header-banner__bottom-items">
@@ -52,7 +52,7 @@ using zero10 tech.
 <section class="sticky-top homepage__about desctop-screen">
 	<div class="container-fluid">
 		<div class="title_ui"> A contemporary fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion. A fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion. </div>
-		<a href="#" class="button_ui">Check F.A.Q.</a>
+		<a href="/faq" class="button_ui">Check F.A.Q.</a>
 		<div class="about-col homepage__about-col">
 			<div class="row">
 				<div class="col-lg-4 col-md-6 col-12">
