@@ -41,9 +41,14 @@ get_header(); ?>
 	</div>
 </section>
 <section class="homepage__banner-background" >
+
 	<div class="homepage__banner-title">
 	submit your digital creations.
 	</div>
+	<video autoplay="" muted="" loop="" playsinline="" id="videoback" poster="<?= get_template_directory_uri(); ?>/assets/img/demo_banner.jpg">
+								<source src="<?= get_template_directory_uri(); ?>/assets/img/info-banner__video.mp4" type="video/mp4">
+								<source src="<?= get_template_directory_uri(); ?>/assets/img/info-banner__video.webm" type="video/webm">
+							</video>
 	
 </section>
 <section class="homepage__about desctop-screen" id="info-block">

@@ -264,14 +264,6 @@
         line-height: 30px;
     }
 
-    /* .homepage__banner-background {
-        font-size: 46px;
-        line-height: 44px;
-        height: 355px;
-        background-size: auto 100%;
-        background-position: center;
-    } */
-    
     .header-form_body {
         flex-flow: column;
         height: auto;
@@ -494,7 +486,6 @@
 
     .homepage__banner-background{
         height: 480px;
-        padding: 20px 10px;
     }
 
     .homepage__about-subtitle {

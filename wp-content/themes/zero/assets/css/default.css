@@ -1092,33 +1092,23 @@ section.homepage__banner {
 
 .homepage__banner-background {
     position: relative;
-    background-image: url(/wp-content/themes/zero/assets/img/demo_banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 530px;
-    padding: 20px 15px;
+    z-index: 5;
     color: #fff;
 }
 
-.homepage__banner-background::after {
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
+.homepage__banner-background video{
     width: 100%;
     height: 100%;
-    z-index: -1;
-    background-color: #6b6b6b54;
+    object-fit: cover;
 }
 
 .homepage__banner-title{
+    position: absolute;
+    top: 20px;
+    left: 15px;
     font-size: 76px;
-    line-height: 90%;
+    line-height: 95%;
     letter-spacing: -0.04em;
     margin: 0;
     text-transform: uppercase;
@@ -1268,7 +1258,7 @@ section.homepage__form-block .form-block__body {
 
 .footer__bottom-social {
     display: flex;
-    padding-top: 45px;
+    padding-top: 55px;
     justify-content: center;
     padding-bottom: 35px;
 }
