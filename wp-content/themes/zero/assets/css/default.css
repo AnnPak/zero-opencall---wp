@@ -791,7 +791,7 @@ span.wpcf7-list-item {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
-    top: 3px;
+    top: 2px;
     left: 0px;
     cursor: pointer;
 }
@@ -824,7 +824,7 @@ span.wpcf7-list-item {
 }
 .wpcf7-list-item-label {
     margin-left: 20px;
-    display: inline-flex;
+    /* display: inline-flex; */
     align-items: baseline;
     user-select: none;
     font-weight: 400;
@@ -1201,7 +1201,6 @@ section.homepage__form-block .form-block__body {
 .form-block__body form {
     max-width: 480px;
     margin: 0 auto;
-    text-align: center;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -2145,6 +2144,7 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
     cursor: pointer;
     padding: 0;
     width: 20px;
+    margin-top: 4px;
 }
  .wpcf7-acceptance input[type="checkbox"]:before {
     content: '';
@@ -2180,5 +2180,9 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
     height: 2px;
     box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
     transform: rotate(45deg);
+}
+
+.wpcf7-acceptance label{
+    display: flex;
 }
 
