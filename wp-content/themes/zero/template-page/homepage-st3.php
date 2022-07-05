@@ -26,7 +26,7 @@ get_header(); ?>
 
             </div>
             <div class="col-lg-6">
-                <div class="homepage__header-form">
+                <div>
                     <div class="header-form__head">
                         Winners
                     </div>
@@ -62,30 +62,15 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="col-lg-6">
-                <div class="homepage__header-form">
-                    <div class="header-form__head">
-                        PARTICIPANTS
-                    </div>
-                    <div class="header-form_body">
-                        <div class="works-items items-col-2">
-                           
-                        </div>
-
-
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </section>
 
-<section class="homepage__header homepage__header_st3">
+<section class="homepage__header homepage__header_st3 participants-section">
     <div class="container-fluid h-100">
         <div class="row border_row h-100">
             <div class="col-lg-12">
-                <div class="homepage__header-form">
+                <div class="participants-block">
                     <div class="header-form__head">
                         PARTICIPANTS
                     </div>

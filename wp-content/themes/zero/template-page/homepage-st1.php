@@ -41,9 +41,10 @@ get_header(); ?>
 	</div>
 </section>
 <section class="homepage__banner-background" >
-		submit your digital
-		<br>
-		creations.
+	<div class="homepage__banner-title">
+	submit your digital creations.
+	</div>
+	
 </section>
 <section class="homepage__about desctop-screen" id="info-block">
 	<div class="container-fluid">
@@ -92,7 +93,7 @@ get_header(); ?>
 		<div class="form-block__title d-none d-sm-block">Join Open Call</div>
 		<div class="form-block__title d-block d-sm-none">Join <br>Open Call</div>
 		<div class="form-block__body">
-			<div class="header-form_body-title">Submit your application today  and receive an email with technical specifications for entries.</div>
+			<div class="header-form_body-title">Submit your application today and receive an email with technical specifications for entries.</div>
 
 			<? echo do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
 		</div>
@@ -100,7 +101,7 @@ get_header(); ?>
 </section>
 
 <div class="modal__form-submit">
-	Application has been send. Thanks!
+Thank you! Check your inbox for the next steps.
 </div>
 
 <?php
