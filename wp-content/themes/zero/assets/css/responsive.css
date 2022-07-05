@@ -82,7 +82,7 @@
     }
     
     .footer__bottom-qr {
-        margin-top: 40px;
+        margin-top: 24px;
     }
 
     .homepage__banner-background br {
@@ -94,18 +94,10 @@
     footer.footer__bottom .row {
         flex-flow: column-reverse;
     }
-    
-    .footer__bottom-img {
-        padding-top: 60px;
-    }
-    
+      
     section.homepage__form-block {
         padding-bottom: 60px;
         background-size: inherit;
-    }
-    
-    .footer__bottom .title_ui {
-        padding-top: 50px;
     }
     
     .footer__bottom-button {
@@ -159,12 +151,24 @@
 
     .homepage__about-subtitle{
         flex-direction: column;
-        align-items: center;
+        margin-left: 12px;
+    }
+
+    .homepage__about a.button_ui{
+        margin: 0 auto;
     }
 
     .homepage__about-subtitle .subtitle-text{
         order: -1;
         margin-bottom: 30px;
+    }
+
+    .footer__bottom-img video#videoback{
+        margin: 60px 0;
+    }
+
+    .footer__bottom .title_ui{
+        padding-top: 0;
     }
     
 
@@ -174,8 +178,8 @@
     input[type=submit].button_form{
         height: 85px;
         max-width: 275px;
-        padding-top: 30px;
-        margin-top: 17px;
+        /* padding-top: 30px;
+        margin-top: 17px; */
     }
 
     input.input_ui{
@@ -193,6 +197,7 @@
     .form-block__body .header-form_body-title{
         margin-top: 50px;
         margin-bottom: 40px;
+        font-size: 24px;
     }
 
     .form-block__body .wpcf7{
@@ -234,7 +239,18 @@
     .homepage__banner-title p{
         font-size: 90px;
     }
+    
+    section.homepage__header{
+        margin-top: 140px;
+    }
 
+    .wpcf7-acceptance input[type="checkbox"]{
+        margin-top: 2px;
+    }
+
+    .checkbox_ui .wpcf7-list-item-label:before{
+        top: 1px;
+    }
 
 }
 
@@ -276,13 +292,13 @@
     .header-form_body form {
         width: 100%;
         border: 0px;
-        padding: 0px 0px 48px 0px;
+        padding: 0px 0px 38px 0px;
     }
     
     .homepage__header-form .header-form_body-title {
         text-align: center;
         width: 100%;
-        padding: 40px 13px;
+        padding: 40px 0;
         font-size: 24px;
     }
 
@@ -296,6 +312,7 @@
         font-size: 30px;
         line-height: 100%;
         margin-top: -7px;
+        margin-bottom: 20px;
     }
 
     .header-banner__title h1.title_ui br {
@@ -409,7 +426,7 @@
 
     .header-form_body form .wpcf7-list-item-label{
         font-size: 16px;
-        margin-left: 23px;
+        margin-left: 15px;
     }
 
     .form-block__body input[type=submit].button_form {
@@ -468,6 +485,7 @@
 
     .about-col{
         margin-bottom: 19px;
+        margin-top: 53px;
     }
 
     .homepage__banner-title{
@@ -476,14 +494,37 @@
 
     .homepage__banner-background{
         height: 480px;
+        padding: 20px 10px;
+    }
+
+    .homepage__about-subtitle {
+        margin-top: 30px;
+    }
+
+    .checkbox_ui{
+        margin-bottom: 13px;
+    }
+
+    section.homepage__form-block{
+        padding-bottom: 37px;
+    }
+
+    .footer__bottom-img video#videoback{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .header-banner__bottom {
+        margin-top: 63px;
+    }
+
+    #info-block{
+        margin-top: -35px;
     }
 
 }
 
 @media (max-width: 450px) { 
-    .homepage__banner-background{
-        background-size: cover;
-    }
     .homepage__banner-title{
         font-size: 46px;
     }

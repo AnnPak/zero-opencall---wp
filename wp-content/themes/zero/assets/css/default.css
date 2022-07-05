@@ -751,6 +751,10 @@ input.input_ui::placeholder{
     opacity: 0;
 }
 
+.checkbox_ui .wpcf7-not-valid-tip{
+    display: none;
+}
+
 span#checkbox {
     border: none;
     text-align: start;
@@ -838,7 +842,7 @@ span.wpcf7-list-item {
 }
 
 .checkbox_ui {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     margin-top: 25px;
 }
 
@@ -1046,9 +1050,9 @@ section.homepage__banner {
     margin-top: -50px;
 }
 
-section.homepage__about {
+#info-block {
     padding-top: 75px;
-    margin-top: -60px;
+    margin-top: -55px;
 }
 
 
@@ -1082,13 +1086,16 @@ section.homepage__about {
     color: #000;
     line-height: 110%;
 }
+.about-col .title_ui{
+    font-size: 42px;
+}
 
 .homepage__banner-background {
     position: relative;
-    background-image: url(/wp-content/themes/zero/assets/img/demo_banner.png);
+    background-image: url(/wp-content/themes/zero/assets/img/demo_banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -1133,7 +1140,7 @@ section.homepage__about {
 .homepage__about-subtitle {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-start;
     margin-top: 45px;
     max-width: 1400px;
 }
@@ -1226,11 +1233,6 @@ section.homepage__form-block .form-block__body {
     margin-bottom: 58px;
 }
 
-.form-block__body .checkbox_ui{
-    margin-top: 17px;
-    margin-bottom: 9px;
-}
-
 .footer__bottom-button a.button_ui {
     padding: 13px 42px;
 }
@@ -1246,7 +1248,7 @@ section.homepage__form-block .form-block__body {
 }
 
 .footer__bottom .title_ui {
-    padding-top: 35px;
+    padding-top: 21px;
 }
 
 .footer__bottom-qr {
@@ -2077,12 +2079,21 @@ span.title-sub__winner {
 div#cookie-law-info-bar {
     width: 260px !important;
     background-color: #000 !important;
-    top: 184px !important;
+    top: 207px !important;
     right: 10px !important;
     left: auto !important;
     border-radius: 20px;
     padding: 12px 16px !important;
     padding-bottom: 14px !important;
+    transition: all 0.5s ease;
+}
+
+div#cookie-law-info-bar.hide{
+    right: -1000px !important;
+}
+
+div#cookie-law-info-bar.scroll{
+    top: 169px !important;
 }
 
 .cookie-attention {
@@ -2101,7 +2112,8 @@ div#cookie-law-info-bar {
     font-weight: 400;
     line-height: 110%;
     color: #848484;
-    margin-bottom: 0;
+    margin-bottom: 2px;
+    margin-top: 5px;
 }
 
 .cookie-attention .cookie-info a{
@@ -2131,6 +2143,7 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
 .footer__bottom-img video#videoback{
     max-width: 358px;
     height: auto;
+    margin: 70px 0;
 }
 
 .privacy-policy-block h2,
@@ -2155,6 +2168,10 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
     height: 19px;
     background: #fcfcfc;
     border-radius: 0.3em;
+}
+
+.wpcf7-acceptance input[type="checkbox"][aria-invalid="true"] + .wpcf7-list-item-label:before{
+    border: 1px solid #FB5656;
 }
 
 

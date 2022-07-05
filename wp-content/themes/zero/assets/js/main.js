@@ -60,10 +60,12 @@
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
         if (scroll >= 10) {
-                    $("#mastheadx").addClass('smaller');
+            $('#cookie-law-info-bar').addClass('scroll');
+            $("#mastheadx").addClass('smaller');
         } else {
-                    $("#mastheadx").removeClass("smaller");
-                }
+            $('#cookie-law-info-bar').removeClass('scroll');
+            $("#mastheadx").removeClass("smaller");
+        }
     });
 
     $(".work-item__wrapper").hover(function() {
@@ -112,6 +114,10 @@
             }
         });
     }
+
+    $('#wt-cli-accept-all-btn').click(function(){
+        $('#cookie-law-info-bar').addClass('hide');
+    })
 
     // function offsetAnchor(e) {
     //     if (location.hash.length !== 0) {
