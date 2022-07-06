@@ -30,7 +30,7 @@ get_header(); ?>
 						Join Open Call
 					</div>
 					<div class="header-form_body">
-						<div class="header-form_body-title">Submit your application today <br>and receive an email with technical specifications for entries.</div>
+						<div class="header-form_body-title">Submit your application before July 20th and receive an email with technical specifications for entries.</div>
 
 						<? echo do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
 

@@ -20,18 +20,22 @@
 			<div class="col-lg-6">
 				<div class="footer__bottom-wrapper">
 					<div class="title_ui">
-					ZERO10 platform connects fashion brands and designers to users all over the world and makes it possible to present digital garments in Augmented Reality.
+						ZERO10 platform connects fashion brands and designers to users all over the world and makes it possible to present digital garments in Augmented Reality.
 					</div>
-					<div class="footer__bottom-button">
-						<a href="https://zero10.app/" class="button_ui">About ZERO10</a>
+					<div>
+						<div class="footer__bottom-button">
+							<a href="https://zero10.app/" class="button_ui">About ZERO10</a>
+						</div>
+						<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="footer__bottom-qr">
+							<img src="<?= get_template_directory_uri(); ?>/assets/img/qrcode_black-2.svg">
+							<span> Download the iOS app </span>
+						</a>
+							<div class="footer__bottom-qr-mobile">
+								<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="button_ui button__black">Download on the App Store</a>
+							</div>
+
 					</div>
-					<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="footer__bottom-qr">
-						<img src="<?= get_template_directory_uri(); ?>/assets/img/qrcode_black-2.svg">
-						<span> Download the iOS app </span>
-					</ф>
-					<div class="footer__bottom-qr-mobile">
-						<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="button_ui button__black">Download on the App Store</a>
-					</div>
+
 					<div class="footer__bottom-contact">
 						<div class="footer__bottom-social">
 							<a href="https://www.instagram.com/zero10.app/">INSTAGRAM</a>
@@ -51,11 +55,12 @@
 			</div>
 			<div class="col-lg-6">
 				<div class="footer__bottom-img">
-						<video autoplay="" muted="" loop="" playsinline="" id="videoback" poster="<?= get_template_directory_uri(); ?>/assets/img/phone-photo.png">
-								<source src="<?= get_template_directory_uri(); ?>/assets/img/main-1.mp4" type="video/mp4">
-								<source src="<?= get_template_directory_uri(); ?>/assets/img/main-2.webm" type="video/webm">
-							</video>
-					<!-- <img src="<?// get_template_directory_uri(); ?>/assets/img/demo_phone.png"> -->
+					<video autoplay="" muted="" loop="" playsinline="" id="videoback" poster="<?= get_template_directory_uri(); ?>/assets/img/phone-photo.png">
+						<source src="<?= get_template_directory_uri(); ?>/assets/img/main-1.mp4" type="video/mp4">
+						<source src="<?= get_template_directory_uri(); ?>/assets/img/main-2.webm" type="video/webm">
+					</video>
+					<!-- <img src="<? // get_template_directory_uri(); 
+									?>/assets/img/demo_phone.png"> -->
 				</div>
 
 			</div>
