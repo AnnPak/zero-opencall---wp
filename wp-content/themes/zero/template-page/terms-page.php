@@ -13,7 +13,7 @@ get_header(); ?>
 			<div class="col-lg-6">
 				<div class="homepage__header-banner">
 					<div class="header-banner__title">
-						<h1 class="title_ui"> Terms & Conditions</h1>
+						<h1 class="title_ui"> <?= the_title(); ?></h1>
 					</div>
 				</div>
 
@@ -28,5 +28,3 @@ get_header(); ?>
 	</div>
 </section>
 
-<?php
-get_footer();
