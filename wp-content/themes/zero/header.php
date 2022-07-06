@@ -20,6 +20,36 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function(f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function() {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '1225765341297338');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" src="https://www.facebook.com/tr?id=1225765341297338&ev=PageView
+&noscript=1" />
+	</noscript>
+	<!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -61,7 +91,7 @@
 					<div class="container-fluid h-100">
 						<div class="mobile-menu__close">
 							<img src="<?= get_template_directory_uri(); ?>/assets/img/menu.svg" data-bs-dismiss="modal" aria-label="Close">
-						</div> 
+						</div>
 						<div class="mobile-menu__body">
 							<div class="mobile-menu__nav">
 								<?php
@@ -84,9 +114,9 @@
 			<div class="container-fluid">
 				<div class="bottom-bar__wrapper">
 					<a href="mailto:support@zero10.app">support@zero10.app</a>
-					<a href="#">Privacy & Legal</a>
-					<a href="#">Cookie policy</a>
-					<a href="#">Terms & Conditions</a>
+					<a href="/privacy-legal">Privacy & Legal</a>
+					<a href="/cookie-policy">Cookie policy</a>
+					<a href="/terms-conditions">Terms & Conditions</a>
 				</div>
 			</div>
 		</div>

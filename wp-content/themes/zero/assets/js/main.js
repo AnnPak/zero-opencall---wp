@@ -60,19 +60,64 @@
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
         if (scroll >= 10) {
-                    $("#mastheadx").addClass('smaller');
+            $('#cookie-law-info-bar').addClass('scroll');
+            $("#mastheadx").addClass('smaller');
         } else {
-                    $("#mastheadx").removeClass("smaller");
-                }
+            $('#cookie-law-info-bar').removeClass('scroll');
+            $("#mastheadx").removeClass("smaller");
+        }
     });
 
     $(".work-item__wrapper").hover(function() {
         $(this).closest(".works-item").toggleClass("hovered")
     });
 
+    $('.nav-link').click(function(){
+        console.log('lol')
+        $('.mobile-menu__close img').click();
 
 
+    })  
     
+    if ($('.footer__bottom, .footer__bottom-img').length) {
+
+
+
+        const videoElement = document.getElementById('videoback');
+
+        videoElement.addEventListener('autostartNotAllowed', (e) => {
+
+            // message: "The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission."
+            // name: "NotAllowedError"
+            // reason: "autoplayDisabled"
+        });
+
+        videoElement.addEventListener('play', () => {
+            // remove play UI
+        });
+
+
+        Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+            get: function() {
+                return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+            }
+        });
+
+        $('body').on('click touchstart', function() {
+            const videoElement = document.getElementById('videoback');
+            if (videoElement.playing) {
+                // video is already playing so do nothing
+            } else {
+                // video is not playing
+                // so play video now
+                videoElement.play();
+            }
+        });
+    }
+
+    $('#wt-cli-accept-all-btn').click(function(){
+        $('#cookie-law-info-bar').addClass('hide');
+    })
 
     // function offsetAnchor(e) {
     //     if (location.hash.length !== 0) {
