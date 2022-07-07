@@ -70,7 +70,7 @@
                 </div>
                 
                 <?phpif ($args['stageNum'] != 3) : ?>
-                    <div class="works-item__like"><?phpecho get_simple_likes_button(get_the_ID()); ?></div>
+                    <div class="works-item__like"><?php echo get_simple_likes_button(get_the_ID()); ?></div>
                 <?endif;?>
             </div>
         </a>
