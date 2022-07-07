@@ -526,7 +526,7 @@ button.close-search {
     background: #fff;
     padding-bottom: 15px;
     padding-top: 15px;
-    z-index: 2030;
+    z-index: 2707;
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     -ms-transition: height 0.3s;
@@ -1166,7 +1166,7 @@ section.homepage__form-block {
     background-size: contain;
     padding-bottom: 70px;
     padding-top: 15px;
-    z-index: 2000;
+    z-index: 2700;
 }
 
 section.homepage__form-block #sign-up-block.container-fluid {
