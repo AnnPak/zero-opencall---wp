@@ -108,7 +108,7 @@ get_header(); ?>
                                 </div>
 
                                 <div class="subscribe-item__bottom">
-                                    <?phpecho do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
+                                    <?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
 
                                 </div>
 
