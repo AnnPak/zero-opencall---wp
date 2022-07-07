@@ -32,7 +32,7 @@ get_header(); ?>
 					<div class="header-form_body">
 						<div class="header-form_body-title">Submit your application before July 20th and receive an email with technical specifications for entries.</div>
 
-						<? echo do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
+						<?phpecho do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
 
 					</div>
 				</div>
@@ -100,7 +100,7 @@ get_header(); ?>
 		<div class="form-block__body">
 			<div class="header-form_body-title">Submit your application before July 20th and receive an email with technical specifications for entries.</div>
 
-			<? echo do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
+			<?phpecho do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
 		</div>
 	</div>
 </section>

@@ -56,8 +56,8 @@ get_header(); ?>
                                     </div>
                                 </div>
                             </div>
-                            <? $count++; ?>
-                    <? endwhile;
+                            <?php$count++; ?>
+                    <?phpendwhile;
 
                     else :
 
