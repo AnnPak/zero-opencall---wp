@@ -26,16 +26,16 @@ get_header();
                                     <span class="title-sub__category">Item </span>
                                     <span class="title-sub__name"><?= get_field('works_name'); ?></span>
                                 </div>
-                                <? if (get_field('works_is-winner')) : ?>
+                                <?phpif (get_field('works_is-winner')) : ?>
                                     <span class="title-sub__winner">The Winner of Week 1 </span>
-                                <? endif ?>
+                                <?phpendif ?>
                             </div>
 
 
                         </div>
                         <div class="item-page__vote-block">
                             <div class="vote-block__vote-button">
-                                <? if (get_field('works_is-winner')) : ?>
+                                <?phpif (get_field('works_is-winner')) : ?>
                                     <span class="sl-wrapper stage-3 item-page-winner__btn">
                                         <a href="#" class="sl-button sl-button-43 stage-3__app-btn" >TRY ON IN THE APP </a>
                                     </span>
@@ -43,7 +43,7 @@ get_header();
                                     <span class="sl-wrapper stage-3">
                                         <a href="#" class="sl-button sl-button-43 stage-3__app-btn" >VOTING IS OVER </a>
                                     </span>
-                                <? endif ?>
+                                <?phpendif ?>
                                 <?php
                                 // echo get_simple_likes_button(get_the_ID()); 
                                 ?>
@@ -102,7 +102,7 @@ get_header();
                                 ?>
 
                                 <!-- <div class="review-text">
-                                        <p class="text-prev"><? $textPrev ?></p><p class="text-next"><? $textNext ?></p>
+                                        <p class="text-prev"><?php$textPrev ?></p><p class="text-next"><?php$textNext ?></p>
                                         <a href="#" class="text-more descr-block__read-more">+ read more</a>
                                     </div> -->
 
@@ -144,21 +144,21 @@ get_header();
                                     <div class="product__image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)"></div>
 
                                 </div>
-                                <? while (the_repeater_field('works_photo-group')) : ?>
+                                <?phpwhile (the_repeater_field('works_photo-group')) : ?>
                                     <div class="swiper-slide">
                                         <div class="product__image" style="background-image:url(<?= get_sub_field('works_photo') ?>)"></div>
                                     </div>
-                                <? endwhile; ?>
+                                <?phpendwhile; ?>
                             </div>
 
                         </div>
                         <div class="gallery-thumbs">
 
-                            <? while (the_repeater_field('works_photo-group')) : ?>
+                            <?phpwhile (the_repeater_field('works_photo-group')) : ?>
                                 <div class="product__image-wrap">
                                     <div class="product__image-thumb" style="background-image:url(<?= get_sub_field('works_photo') ?>)"></div>
                                 </div>
-                            <? endwhile; ?>
+                            <?phpendwhile; ?>
                         </div>
 
                     </div>

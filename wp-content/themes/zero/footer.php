@@ -59,7 +59,7 @@
 						<source src="<?= get_template_directory_uri(); ?>/assets/img/main-1.mp4" type="video/mp4">
 						<source src="<?= get_template_directory_uri(); ?>/assets/img/main-2.webm" type="video/webm">
 					</video>
-					<!-- <img src="<? // get_template_directory_uri(); 
+					<!-- <img src="<?php// get_template_directory_uri(); 
 									?>/assets/img/demo_phone.png"> -->
 				</div>
 
