@@ -1410,6 +1410,11 @@ section.homepage__form-block .form-block__body {
     padding-left: 20px;
 }
 
+.qestion-wrapper__body a{
+    color: #000;
+    text-decoration: underline;
+}
+
 
 /* Works, stage 2 */
 
@@ -2044,7 +2049,7 @@ span.title-sub__winner {
 }
 
 .modal.mobile-menu{
-    z-index: 2030;
+    z-index: 2707;
 }
 
 .about-col-section{
