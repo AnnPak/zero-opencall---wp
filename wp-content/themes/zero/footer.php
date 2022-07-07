@@ -40,7 +40,7 @@
 						<div class="footer__bottom-social">
 							<a href="https://www.instagram.com/zero10.app/">INSTAGRAM</a>
 							<a href="https://www.tiktok.com/@zero10.app">TIKTOK</a>
-							<a href="#">DISCORD</a>
+							<a href="https://discord.com/invite/zero10?utm_source=stories&utm_medium=link&utm_campaign=discord">DISCORD</a>
 							<a href="https://twitter.com/zero10_app">TWITTER</a>
 						</div>
 						<div class="footer__bottom-contact_mobile">
