@@ -1,4 +1,4 @@
-<?phpif ($args['isWinner']) : ?>
+<?php if ($args['isWinner']) : ?>
 
     <div class="works-item" data-postid="<?= get_the_ID() ?>">
         <div class="works-auth_block">
@@ -39,7 +39,7 @@
 
     </div>
 
-<?phpelse : ?>
+<?php else : ?>
 
     <div class="works-item" data-postid="<?= get_the_ID() ?>">
         <div class="works-auth_block">
@@ -69,7 +69,7 @@
                     <div class="works-item__about"><?= get_field('works_name'); ?></div>
                 </div>
                 
-                <?phpif ($args['stageNum'] != 3) : ?>
+                <?php if ($args['stageNum'] != 3) : ?>
                     <div class="works-item__like"><?php echo get_simple_likes_button(get_the_ID()); ?></div>
                 <?endif;?>
             </div>
