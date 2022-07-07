@@ -44,7 +44,7 @@
 							<a href="https://twitter.com/zero10_app">TWITTER</a>
 						</div>
 						<div class="footer__bottom-contact_mobile">
-							<a href="mailto:support@zero10.app">support@zero10.app</a>
+							<a href="mailto:opencall@zero10.app">opencall@zero10.app</a>
 							<a href="/privacy-legal">Privacy & Legal</a>
 							<a href="/cookie-policy">Cookie policy</a>
 							<a href="/terms-conditions">Terms & Conditions</a>
@@ -55,7 +55,7 @@
 			</div>
 			<div class="col-lg-6">
 				<div class="footer__bottom-img">
-					<video autoplay="" muted="" loop="" playsinline="" id="videoback" poster="<?= get_template_directory_uri(); ?>/assets/img/phone-photo.png">
+					<video autoplay="" muted="" loop="" playsinline="" id="videoback" poster="<?= get_template_directory_uri(); ?>/assets/img/video-preview.png">
 						<source src="<?= get_template_directory_uri(); ?>/assets/img/main-1.mp4" type="video/mp4">
 						<source src="<?= get_template_directory_uri(); ?>/assets/img/main-2.webm" type="video/webm">
 					</video>
