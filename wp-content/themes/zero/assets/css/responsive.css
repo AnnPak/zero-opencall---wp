@@ -165,6 +165,7 @@
 
     .footer__bottom-img video#videoback{
         margin: 60px 0;
+        max-width: 260px;
     }
 
     .footer__bottom .title_ui{
@@ -440,6 +441,7 @@
 
     input[type=submit].button_form{
         margin-top: 12px;
+        padding-top: 30px;
     }
 
     .footer__bottom-img {
