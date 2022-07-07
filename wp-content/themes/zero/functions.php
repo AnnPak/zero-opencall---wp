@@ -181,7 +181,7 @@ function wpbstarter_scripts()
 		wp_enqueue_script('comment-reply');
 	}
 
-	wp_enqueue_script('like_post', get_template_directory_uri() . '/assets/js/post-like.js', array('jquery'), '1.0', true);
+	// wp_enqueue_script('like_post', get_template_directory_uri() . '/assets/js/post-like.js', array('jquery'), '1.0', true);
 	wp_localize_script('like_post', 'ajax_var', array(
 		'url' => admin_url('admin-ajax.php'),
 		'nonce' => wp_create_nonce('ajax-nonce')
