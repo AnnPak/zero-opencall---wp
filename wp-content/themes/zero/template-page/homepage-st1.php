@@ -18,7 +18,7 @@ get_header(); ?>
 					<div class="header-banner__bottom">
 						<div class="header-banner__bottom-items">
 							<span>3 winners</span>
-							<span>3 prizes </span>
+							<span>6 prizes </span>
 						</div>
 					</div>
 				</div>
@@ -43,7 +43,7 @@ get_header(); ?>
 <section class="homepage__banner-background" >
 
 	<div class="homepage__banner-title">
-	submit your digital creations.
+	submit your digital creations before July 20.
 	</div>
 	<video autoplay="" muted="" loop="" playsinline="" id="videoback" poster="<?= get_template_directory_uri(); ?>/assets/img/demo_banner.jpg">
 								<source src="<?= get_template_directory_uri(); ?>/assets/img/info-banner__video.mp4" type="video/mp4">
