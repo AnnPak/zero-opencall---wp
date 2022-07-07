@@ -28,3 +28,6 @@ get_header(); ?>
 	</div>
 </section>
 
+<?php wp_footer(); ?>
+
+
