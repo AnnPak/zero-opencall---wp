@@ -17,7 +17,11 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name=“facebook-domain-verification” content=“kmpuxjxuqd3yydvr0wziot9dnd5ti4" />
+	<meta name=“facebook-domain-verification” content="kmpuxjxuqd3yydvr0wziot9dnd5ti4" />
+	<meta property="og:image" content="/wp-content/themes/zero/assets/img/opengraf-st1.png"/>
+	<meta property="og:title" content="ZERO10 | Open Call"/>
+	<meta property="og:description" content="Join a competition for digital fashion creators."/>
+
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
