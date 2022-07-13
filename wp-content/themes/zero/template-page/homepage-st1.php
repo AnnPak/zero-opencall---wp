@@ -54,7 +54,7 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="title_ui"> Open call is a competition for digital fashion designers developed by ZERO10 to support emerging talents and a growing community of creators. Entries are open to everyone and not limited to skill level, design preferences, geography, and background*. </div>
 		<div class="homepage__about-subtitle">
-			<a href="/faq" class="button_ui">Check F.A.Q</a>
+			<a href="/faq" class="button_ui">Check FAQ</a>
 			<div class="subtitle-text">
 				We expect participants to be engaged in digital fashion, have gigabytes of ideas waiting to happen, and be familiar with 3D cloth-making programs. 
 				To pass moderation, a work submitted for the competition should meet the technical specifications and be uniquely your own.

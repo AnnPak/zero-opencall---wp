@@ -10,7 +10,7 @@ get_header(); ?>
 <section class="homepage__about info-page">
 	<div class="container-fluid">
 		<div class="title_ui"> A contemporary fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion. A fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion. </div>
-		<a href="#" class="button_ui">Check F.A.Q.</a>
+		<a href="#" class="button_ui">Check FAQ</a>
 		<div class="about-col">
 			<div class="row">
 				<div class="col-lg-4 col-md-6 col-12">
