@@ -15,7 +15,7 @@ get_header(); ?>
             </div>
             <div class="col-lg-6 faq__qestions-block">
                 <div class="faq__qestions-wrapper" id="qestionsWrapper">
-                    <?
+                    <?php
                     $count = 1;
                     if (have_rows('faq_group')) :
 
@@ -56,8 +56,8 @@ get_header(); ?>
                                     </div>
                                 </div>
                             </div>
-                            <?php$count++; ?>
-                    <?phpendwhile;
+                            <?php $count++; ?>
+                    <?php endwhile;
 
                     else :
 
