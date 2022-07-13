@@ -1094,7 +1094,7 @@ section.homepage__banner {
     position: relative;
     height: 530px;
     z-index: 5;
-    background-image: url(http://zerowp.demoserver.website/wp-content/themes/zero/assets/img/demo_banner.jpg);
+    background-image: url(/wp-content/themes/zero/assets/img/demo_banner.jpg);
     background-position: center;
     background-size: contain;
     color: #fff;
@@ -1144,7 +1144,7 @@ section.homepage__banner {
     left: -10px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 110%;
+    line-height: 118%;
     top: 1px;
 
 }
@@ -2119,6 +2119,7 @@ div#cookie-law-info-bar.scroll{
     color: #848484;
     margin-bottom: 2px;
     margin-top: 5px;
+    max-width: 186px;
 }
 
 .cookie-attention .cookie-info a{
@@ -2135,7 +2136,7 @@ a#wt-cli-accept-all-btn {
     text-align: center;
     font-weight: 400;
     font-size: 18px;
-    line-height: 110%;
+    line-height: 123%;
     margin-left: 0;
     margin-top: 15px;
     margin-bottom: 7px;

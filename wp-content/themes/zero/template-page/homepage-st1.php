@@ -12,8 +12,7 @@ get_header(); ?>
 			<div class="col-lg-6">
 				<div class="homepage__header-banner">
 					<div class="header-banner__title">
-						<h1 class="title_ui"> Join a competition for digital fashion creators developed to support emerging talents and help them scale their visibility in the community. Three winners will get a rare chance to present their designs in the ZERO10 app and wear them in AR. </h1>
-						<a href="/#info-block" class="button_ui">Info and Prizes</a>
+					<h1 class="title_ui"> Join a competition for digital fashion creators. Submit your own 3D garment designs to become one of the three winners selected by the community. Top voted submissions will be presented in AR in the ZERO10 app and their creators will get $1000 prizes. </h1>						<a href="/#info-block" class="button_ui">Info and Prizes</a>
 					</div>
 					<div class="header-banner__bottom">
 						<div class="header-banner__bottom-items">
@@ -55,7 +54,7 @@ get_header(); ?>
 	<div class="container-fluid">
 		<div class="title_ui"> Open call is a competition for digital fashion designers developed by ZERO10 to support emerging talents and a growing community of creators. Entries are open to everyone and not limited to skill level, design preferences, geography, and background*. </div>
 		<div class="homepage__about-subtitle">
-			<a href="/faq" class="button_ui">Check F.A.Q.</a>
+			<a href="/faq" class="button_ui">Check F.A.Q</a>
 			<div class="subtitle-text">
 				We expect participants to be engaged in digital fashion, have gigabytes of ideas waiting to happen, and be familiar with 3D cloth-making programs. 
 				To pass moderation, a work submitted for the competition should meet the technical specifications and be uniquely your own.
