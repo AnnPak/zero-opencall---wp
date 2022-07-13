@@ -864,7 +864,7 @@ section.homepage__header {
 }
 
 .header-banner__title .button_ui {
-    padding: 17px 65px;
+    height: 60px;
 }
 
 .header-banner__title h1.title_ui {
@@ -1007,7 +1007,7 @@ input[type=submit].button_form:focus
     right: 0;
     left: 0;
     top: -100%;
-    background: #000000;;
+    background: #000000;
     border-radius: 8px;
     padding: 23px 30px 18px;
     z-index: 5000;
@@ -1017,6 +1017,7 @@ input[type=submit].button_form:focus
     color: #fff;
     font-weight: 600;
     font-size: 18px;
+    margin: 0 10px;
 }
 .modal__form-submit.show{
     
@@ -1227,7 +1228,7 @@ section.homepage__form-block .form-block__body {
 }
 
 .footer__bottom-button a.button_ui {
-    padding: 13px 42px;
+    height: 60px;
 }
 
 .footer__bottom-button {
