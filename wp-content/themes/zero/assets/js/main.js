@@ -48,6 +48,8 @@
         if ('35' == event.detail.contactFormId) {
             $(".modal__form-submit").addClass('show');
 
+            $('.button_form').attr('disabled', 'false');
+
             setTimeout(function () {
                 $(".modal__form-submit").removeClass('show');
             }, 4000);
@@ -130,6 +132,23 @@
     //         offsetAnchor(e);
     //     }, 10);
     // });
+    
+    $('form.wpcf7-form').on('submit',function() {
+        
+        let form = $(this);
+        let button = form.find('input[type=submit]');
+        console.log(button)
+        button.attr("disabled", true);
+    })
+
+    document.addEventListener( 'wpcf7submit', function( ) {
+        console.log('wpcf7submit')
+
+        var button = $('.wpcf7-submit[disabled]');
+
+        button.prop('disabled', false);
+
+      }, false );
 
 
 
