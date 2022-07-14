@@ -137,14 +137,13 @@
         
         let form = $(this);
         let button = form.find('input[type=submit]');
-        console.log(button)
+
         button.attr("disabled", true);
     })
 
     document.addEventListener( 'wpcf7submit', function( ) {
-        console.log('wpcf7submit')
 
-        var button = $('.wpcf7-submit[disabled]');
+        let button = $('.wpcf7-submit[disabled]');
 
         button.prop('disabled', false);
 
