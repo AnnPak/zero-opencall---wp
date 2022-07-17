@@ -62,10 +62,10 @@
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
         if (scroll >= 10) {
-            $('#cookie-law-info-bar').addClass('scroll');
+            $('#cookie-law-info-bar, #subscrube-modal').addClass('scroll');
             $("#mastheadx").addClass('smaller');
         } else {
-            $('#cookie-law-info-bar').removeClass('scroll');
+            $('#cookie-law-info-bar, #subscrube-modal').removeClass('scroll');
             $("#mastheadx").removeClass("smaller");
         }
     });
@@ -120,18 +120,6 @@
     $('#wt-cli-accept-all-btn').click(function(){
         $('#cookie-law-info-bar').addClass('hide');
     })
-
-    // function offsetAnchor(e) {
-    //     if (location.hash.length !== 0) {
-    //         window.scrollTo(0, $(e.target.hash).position().top - 50);
-    //     }
-    // }
-
-    // $(document).on('click', 'a[href^="/#"]', function (e) {
-    //     window.setTimeout(function () {
-    //         offsetAnchor(e);
-    //     }, 10);
-    // });
     
     $('form.wpcf7-form').on('submit',function() {
         
@@ -149,6 +137,12 @@
 
       }, false );
 
+    $('.subscrube-modal__close-btn').on('click', function(){
+        $('#subscrube-modal').addClass('hide');
+    })
 
-
+    setTimeout(function(){
+        $('#subscrube-modal').removeClass('hide');
+    }, 180000)
+ 
 }(jQuery));	
