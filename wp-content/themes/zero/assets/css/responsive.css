@@ -193,7 +193,24 @@
     .homepage__header_st2 .header-banner__title{
         margin-bottom: 75px;
     }
+
+    .works-item_simple:nth-child(4n),
+    .works-item.empty-item:not(:last-child){
+        border-right: 1px solid #B3B3B3;
+    }
+
+    .works-item.empty-item{
+        display: none;
+    }
+
+    .works-item.empty-item.first-odd-item{
+        display: block;
+    }
     
+    .homepage__items_st2 .works-item:last-child, 
+    .works-item_simple:nth-child(4n){
+        border-right: 1px solid #B3B3B3;
+    }
 
 }
 
@@ -591,6 +608,9 @@
         border-right: 1px solid #B3B3B3;
     }
 
+    .works-item.empty-item.first-odd-item{
+        display: none;
+    }
 
 }
 

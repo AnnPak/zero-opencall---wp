@@ -41,7 +41,7 @@
 
 <?php else : ?>
 
-    <div class="works-item" data-postid="<?= get_the_ID() ?>">
+    <div class="works-item works-item_simple" data-postid="<?= get_the_ID() ?>">
         <div class="works-auth_block">
             <div class="works-auth_wrapper">
                 <div class="works-auth_close">
