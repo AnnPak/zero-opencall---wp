@@ -14,13 +14,48 @@
 
 </div><!-- #content -->
 
+<?php
+	$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+
+	$isStage2 = strpos($url,'test-stejdzh-2') != false;
+
+?>
+
+
+
 <footer class="footer__bottom">
 	<div class="container-fluid h-100">
 		<div class="row border_row h-100">
 			<div class="col-lg-6">
-				<div class="footer__bottom-wrapper">
-					<div class="title_ui">
-						ZERO10 platform connects fashion brands and designers to users all over the world and makes it possible to present digital garments in Augmented Reality.
+
+				<?php if ($isStage2):?>
+					<div class="footer__bottom-wrapper footer__bottom-wrapper_stage2">
+						<div class="title_ui">
+							A contemporary fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion. 
+						</div>
+						<div>
+							<div class="footer__bottom-button">
+								<a href="https://zero10.app/" class="button_ui">Know more at ZERO10.APP</a>
+							</div>
+
+							<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="footer__bottom-qr">
+								<img src="<?= get_template_directory_uri(); ?>/assets/img/qrcode_black-2.svg">
+								<span> Download the iOS app </span>
+							</a>
+
+							<div class="footer__bottom-qr-mobile">
+								<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="button_ui button__black">Download on the App Store</a>
+							</div>
+
+						</div>
+
+					</div>
+				<?php else:?>
+
+					<div class="footer__bottom-wrapper">
+						<div class="title_ui">
+							ZERO10 platform connects fashion brands and designers to users all over the world and makes it possible to present digital garments in Augmented Reality.
+						</div>
 					</div>
 					<div>
 						<div class="footer__bottom-button">
@@ -28,11 +63,14 @@
 						</div>
 						<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="footer__bottom-qr">
 							<img src="<?= get_template_directory_uri(); ?>/assets/img/qrcode_black-2.svg">
+
 							<span> Download the iOS app </span>
+						
 						</a>
-							<div class="footer__bottom-qr-mobile">
-								<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="button_ui button__black">Download on the App Store</a>
-							</div>
+						
+						<div class="footer__bottom-qr-mobile">
+							<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="button_ui button__black">Download on the App Store</a>
+						</div>
 
 					</div>
 
@@ -51,16 +89,16 @@
 						</div>
 					</div>
 
-				</div>
+					
+				<?endif;?>
 			</div>
+			
 			<div class="col-lg-6">
 				<div class="footer__bottom-img">
 					<video autoplay="" muted="" loop="" playsinline="" id="videoback" poster="<?= get_template_directory_uri(); ?>/assets/img/video-preview.png">
 						<source src="<?= get_template_directory_uri(); ?>/assets/img/main-1.mp4" type="video/mp4">
 						<source src="<?= get_template_directory_uri(); ?>/assets/img/main-2.webm" type="video/webm">
 					</video>
-					<!-- <img src="<?php// get_template_directory_uri(); 
-									?>/assets/img/demo_phone.png"> -->
 				</div>
 
 			</div>
