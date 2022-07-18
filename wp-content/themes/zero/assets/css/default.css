@@ -1940,6 +1940,17 @@ section.homepage__header.homepage__header_st2{
 
 .subscribe-section__form-container form input{
     height: 60px;
+    cursor: pointer;
+}
+
+.subscribe-section__form-container form input:hover{
+    border: 1px solid #000000;
+}
+
+.subscribe-section__form-container form input:focus{
+    border-color: #C9C9C9;
+    box-shadow: none;
+    cursor: auto;
 }
 
 .footer__bottom-wrapper.footer__bottom-wrapper_stage2{
@@ -1953,6 +1964,37 @@ section.homepage__header.homepage__header_st2{
 .subscribe-item__bottom .subscribe-form input[type=submit].button_form{
     height: 60px;
     line-height: 0;
+}
+
+form.subscribe-form{
+    position: relative;
+}
+
+.subscribe-form .wpcf7-not-valid-tip{
+    transform: translate(69%, 0);
+    min-width: 116px;
+}
+
+.subscribe-form .wpcf7-spinner{
+    position: absolute;
+    left: 32%;
+    margin-top: 16px;
+}
+
+.subscribe-form .form-control:focus::-webkit-input-placeholder {
+    color: transparent
+  }
+  
+.subscribe-form .form-control:focus::-moz-placeholder {
+color: transparent
+}
+
+.subscribe-form .form-control:focus:-moz-placeholder {
+color: transparent
+}
+
+.subscribe-form .form-control:focus:-ms-input-placeholder {
+color: transparent
 }
 
 /* homepage stage 3 */
@@ -2053,6 +2095,25 @@ section.homepage__header.participants-section{
     margin-top: 136px;
 }
 
+.subscribe-item__bottom .form-control{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.subscribe-item__bottom .form-control:focus{
+    border-color: #C9C9C9;
+    box-shadow: none;
+    cursor: auto;
+}
+
+.subscribe-item__bottom .form-control:hover{
+    border: 1px solid #000000;
+}
+
+.subscribe-form input[type=submit].button_form:hover{
+    background: #4F4F4F;
+}
+
 .subscribe-form input[type=submit].button_form{
     width: 100%;
     max-width: 329px;
@@ -2118,20 +2179,6 @@ span.title-sub__winner {
     font-size: 12px;
     color: #FB5656;
 }
-
-/* .cookie-attention {
-    position: fixed;
-    top: 50px;
-    right: 10px;
-    background: rgba(35, 35, 35, 0.95);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    justify-content: space-between;
-    z-index: 99;
-    transition: 0.5s;
-} */
 
 div#cookie-law-info-bar {
     width: 260px !important;
