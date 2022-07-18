@@ -24,10 +24,7 @@
     .header-form__head {
         border-top: 1px solid #B3B3B3;
     }
-    
-    .header-banner__bottom {
-        margin-top: 75px;
-    }
+
     
     section.homepage__header {
         height: auto;
@@ -122,8 +119,11 @@
     .works-items.items-col-4 .works-item {
         width: 50%;
     }
-    .border_row .col-lg-6:first-child{
-        border-right: none;
+
+    .homepage__header_st2 .border_row .col-lg-6:first-child,
+    .site-header,
+    .footer__bottom .border_row .col-lg-6{
+        border-right: 1px solid #B3B3B3
     }
 
     section.homepage__about.desctop-screen.sticky-top{
@@ -175,6 +175,24 @@
     .form-block__body .header-form_body-title{
         margin-bottom: 42px;
     }
+
+    .homepage__header_st2 .border_row .col-lg-6,
+    .homepage__header_st2 .border_row .col-lg-6:first-child{
+        width: 100%;
+    }
+
+    .homepage__header_st2 .header-form__head{
+        border-left: 0;
+        border-right: 1px solid #B3B3B3;
+    }
+    .homepage__header_st2 .works-items.items-col-2 .works-item{
+        border-right: 1px solid #B3B3B3;
+        border-left: 0;
+    }
+
+    .homepage__header_st2 .header-banner__title{
+        margin-bottom: 75px;
+    }
     
 
 }
@@ -183,8 +201,11 @@
     input[type=submit].button_form{
         height: 85px;
         max-width: 275px;
-        /* padding-top: 30px;
-        margin-top: 17px; */
+    }
+
+    .subscribe-form input[type=submit].button_form{
+        height: 60px;
+        line-height: 0;
     }
 
     input.input_ui{
@@ -255,6 +276,10 @@
 
     .checkbox_ui .wpcf7-list-item-label:before{
         top: 1px;
+    }
+
+    section.homepage__header.homepage__header_st2{
+        margin-top: 108px;
     }
 
 }
@@ -395,7 +420,7 @@
         padding-bottom: 21px;
     }
 
-    .works-items.items-col-2 .works-item {
+    .homepage__header_st2 .works-items.items-col-2 .works-item {
         width: 100%;
     }
 
@@ -512,8 +537,9 @@
         margin: 50px 0;
     }
 
-    .header-banner__bottom {
-        margin-top: 63px;
+    .homepage__header_st2 .header-banner__title {
+        margin-bottom: 63px;
+        top: 8em;
     }
 
     #info-block{
@@ -544,6 +570,25 @@
         font-weight: 600;
         margin-top: 16px;
         margin-bottom: 8px;
+    }
+
+    .subscribe-section {
+        padding-top: 60px;
+    }
+
+    .subscribe-section .footer__bottom-social{
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 15px;
+
+    }
+
+    .works-items.items-col-4 .works-item{
+        width: 100%;
+    }
+
+    .homepage__items_st2 .works-item:last-child{
+        border-right: 1px solid #B3B3B3;
     }
 
 
