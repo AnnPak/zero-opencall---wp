@@ -1465,8 +1465,12 @@ section.homepage__form-block .form-block__body {
     border-radius: 100px;
     text-align: center;
     font-size: 18px;
+    max-width: 329px;
+    font-weight: 600;
     line-height: 20px;
     letter-spacing: -0.02em;
+    max-width: 329px;
+    margin: 0 auto;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
