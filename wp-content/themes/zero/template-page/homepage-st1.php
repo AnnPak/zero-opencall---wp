@@ -29,7 +29,7 @@ get_header(); ?>
 						Join Open Call
 					</div>
 					<div class="header-form_body">
-						<div class="header-form_body-title">Submit your application before July 20th and receive an email with technical specifications for entries.</div>
+						<div class="header-form_body-title">Submit your application before July 27th and receive an email with technical specifications for entries.</div>
 
 						<?php echo do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
 
@@ -42,7 +42,7 @@ get_header(); ?>
 <section class="homepage__banner-background" >
 
 	<div class="homepage__banner-title">
-	submit your digital creations before July 20.
+	submit your digital creations before July 27.
 	</div>
 	<video autoplay="" muted="" loop="" playsinline="" id="videoback" poster="<?= get_template_directory_uri(); ?>/assets/img/demo_banner.jpg">
 								<source src="<?= get_template_directory_uri(); ?>/assets/img/info-banner__video.mp4" type="video/mp4">
@@ -70,7 +70,7 @@ get_header(); ?>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="title_ui">Duration</div>
 					<div class="about-col__descript">
-						Submissions will be open until July 20th. Over the span of two weeks, anyone can sign up for the competition and upload their design. Three winners will be selected by the community vote starting on July 21st and ending on August 4th. Winners will be announced a week after, and their digital clothes will be available in the ZERO10 app.
+						Submissions will be open until July 27th. Over the span of two weeks, anyone can sign up for the competition and upload their design. Three winners will be selected by the community vote starting on July 21st and ending on August 4th. Winners will be announced a week after, and their digital clothes will be available in the ZERO10 app.
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
@@ -97,7 +97,7 @@ get_header(); ?>
 		<div class="form-block__title d-none d-sm-block">Join Open Call</div>
 		<div class="form-block__title d-block d-sm-none">Join <br>Open Call</div>
 		<div class="form-block__body">
-			<div class="header-form_body-title">Submit your application before July 20th and receive an email with technical specifications for entries.</div>
+			<div class="header-form_body-title">Submit your application before July 27th and receive an email with technical specifications for entries.</div>
 
 			<?php echo do_shortcode('[contact-form-7 id="35" title="Sign up" html_class="homepage-form"]'); ?>
 		</div>
