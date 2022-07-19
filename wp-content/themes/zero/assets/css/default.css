@@ -1453,7 +1453,8 @@ section.homepage__form-block .form-block__body {
 
 .works-item__img img{
     margin: 0 auto;
-    display: block
+    display: block;
+    max-height: 100%;
 }
 
 
