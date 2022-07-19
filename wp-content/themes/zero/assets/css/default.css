@@ -397,7 +397,7 @@ button.close-search {
     align-items: center;
     justify-content: center;
     min-width: 86px;
-    padding: 0.65em 0.625em;
+    padding: 0.65em 0.56em 0.65em 0.55em;
     font-size: 1em;
     line-height: 1;
     font-weight: normal;
@@ -426,7 +426,7 @@ button.close-search {
     margin-right: 0.3125em;
     font-family: 'Arial Unicode MS', Arial, sans-serif;
     vertical-align: middle;
-    margin-top: -1px;
+    margin-top: 0px;
 }
 
 
