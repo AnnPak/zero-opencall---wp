@@ -426,7 +426,7 @@ button.close-search {
     margin-right: 0.3125em;
     font-family: 'Arial Unicode MS', Arial, sans-serif;
     vertical-align: middle;
-    margin-top: 0px;
+    margin-top: -2px;
 }
 
 
