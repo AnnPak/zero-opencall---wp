@@ -70,7 +70,7 @@ get_header(); ?>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="title_ui">Duration</div>
 					<div class="about-col__descript">
-					Submissions will be open until July 27. Over the span of two weeks, anyone can sign up for the competition and upload their design. Three winners will be selected by the community vote starting on July 28 and ending on August 11. Winners will be announced a week after, and their digital clothes will be available in the ZERO10 app.
+					Submissions will be open until July 27. Over the span of two weeks, anyone can sign up for the competition and upload their design. Three winners will be selected by the community vote starting on July 28 and ending on August 7. Winners will be announced a week after, and their digital clothes will be available in the ZERO10 app.
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
