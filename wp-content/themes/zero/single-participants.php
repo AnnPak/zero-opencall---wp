@@ -144,11 +144,11 @@ get_header();
                                     <div class="product__image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)"></div>
 
                                 </div>
-                                <?phpwhile (the_repeater_field('works_photo-group')) : ?>
+                                <?php while (the_repeater_field('works_photo-group')) : ?>
                                     <div class="swiper-slide">
                                         <div class="product__image" style="background-image:url(<?= get_sub_field('works_photo') ?>)"></div>
                                     </div>
-                                <?phpendwhile; ?>
+                                <?php endwhile; ?>
                             </div>
 
                         </div>
