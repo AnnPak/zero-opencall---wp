@@ -212,6 +212,10 @@
         border-right: 1px solid #B3B3B3;
     }
 
+    .header-banner__title h1.title_ui{
+        margin-bottom: 23px;
+    }
+
 }
 
 @media (max-width: 768px) { 
