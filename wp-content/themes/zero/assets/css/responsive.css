@@ -14,6 +14,17 @@
     }
 
 } */
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) { 
+    .works-auth_buttons-auth a{
+        font-size: 17px;
+    }
+    .works-auth_buttons-auth img {
+        margin-right: 7px;
+        width: 21px;
+    }
+
+}
 @media (max-width: 991px) { 
     .site-header__mobile-menu {
         display: block;

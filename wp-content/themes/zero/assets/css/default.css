@@ -1461,8 +1461,11 @@ section.homepage__form-block .form-block__body {
 
 .works-auth_buttons-auth a {
     color: #fff;
-    padding: 14px 37px;
-    display: block;
+    padding: 14px 0;
+    padding-left: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
     border-radius: 100px;
     text-align: center;
@@ -1474,9 +1477,7 @@ section.homepage__form-block .form-block__body {
     max-width: 329px;
     margin: 0 auto;
     margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    white-space: nowrap;
 }
 
 .works-auth_buttons-auth img{
@@ -1512,6 +1513,7 @@ section.homepage__form-block .form-block__body {
     width: 100%;
     height: 100%;
     transition: all 0.3s ease;
+    z-index: -1;
 }
 .nonuath .works-auth_block { 
     opacity: 1;
@@ -1526,7 +1528,6 @@ section.homepage__form-block .form-block__body {
     flex-flow: column;
     background-color: #fff;
     padding: 15px;
-    z-index: 2;
 }
 
 .works-auth_close {
