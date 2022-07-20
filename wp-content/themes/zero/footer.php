@@ -90,7 +90,7 @@
 					</div>
 
 					
-				<?endif;?>
+				<?php endif;?>
 			</div>
 			
 			<div class="col-lg-6">

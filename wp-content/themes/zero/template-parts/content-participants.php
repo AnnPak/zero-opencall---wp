@@ -71,7 +71,7 @@
                 
                 <?php if ($args['stageNum'] != 3) : ?>
                     <div class="works-item__like"><?php echo get_simple_likes_button(get_the_ID()); ?></div>
-                <?endif;?>
+                <?php endif;?>
             </div>
         </a>
 

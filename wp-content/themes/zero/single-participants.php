@@ -39,7 +39,7 @@ get_header();
                                     <span class="sl-wrapper stage-3 item-page-winner__btn">
                                         <a href="#" class="sl-button sl-button-43 stage-3__app-btn" >TRY ON IN THE APP </a>
                                     </span>
-                                <?else:?>
+                                <?php else:?>
                                     <span class="sl-wrapper stage-3">
                                         <a href="#" class="sl-button sl-button-43 stage-3__app-btn" >VOTING IS OVER </a>
                                     </span>
