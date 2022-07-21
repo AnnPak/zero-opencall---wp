@@ -28,7 +28,28 @@ jQuery(document).ready(function ($) {
 
     }, false);
 
-    
+    $('.sl-button').click(function(){
+        let currentBtn = $(this);
+        let parentWrap = currentBtn.closest('.works-item_simple');
+        
+        setTimeout(
+            function(){
+                if($(parentWrap).hasClass('nonuath')){
+                    ga('send', 'event', 'vote_initiated', 'click');
+                }else{
+                    if(currentBtn.hasClass('liked')){
+                        ga('send', 'event', 'voted_for_item', 'click');
+                    }else{
+                        ga('send', 'event', 'vote_removed', 'click');
+                    }
+                }
+            }, 1000
+        )
+        
+        
+    })
+
+
 
 })
 
