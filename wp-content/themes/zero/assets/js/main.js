@@ -144,5 +144,6 @@
     setTimeout(function(){
         $('#subscrube-modal').removeClass('hide');
     }, 180000)
+
  
 }(jQuery));	

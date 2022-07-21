@@ -1003,6 +1003,12 @@ input[type=submit].button_form,
     margin-right: auto;
 }
 
+.vote-block__vote-button .sl-wrapper a:hover{
+    max-width: 380px;
+    width: 100%; 
+    border: 1.5px solid #1DFF18;
+}
+
 input[type=submit].button_form:hover,
 input[type=submit].button_form:focus
 .vote-block__vote-button .sl-wrapper a:focus{
@@ -1746,6 +1752,8 @@ section.homepage__header.homepage__header_st2{
 .item-page__descr-block .vote-block__description p{
     font-weight: 400;
     font-size: 20px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
 }
 
 .text-next {
@@ -2457,4 +2465,32 @@ form.submitting .wpcf7-spinner {
 
 .p-0{
     padding: 0;
+}
+
+.subscribe-section{
+    border-right: 1px solid #B3B3B3;
+}
+
+.border_row .col-lg-6:first-child::-webkit-scrollbar { width: 0; }
+
+.border_row .col-lg-6:first-child { -ms-overflow-style: none; }
+
+.border_row .col-lg-6:first-child { overflow: -moz-scrollbars-none; }
+
+#authWrapper .modal-dialog{
+    max-width: 480px;
+}
+
+#authWrapper .works-auth_buttons-auth {
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+
+.vote-block__vote-button{
+    position: relative;
+}
+
+.vote-block__vote-button span#sl-loader {
+    top: 34%;
+    left: 50%;
 }

@@ -36,10 +36,11 @@
                     var count = response.count;
                     allbuttons.html(icon + count);
                     if (response.status === 'unauth') {
+                        $('#authWrapper').modal('show');
                         $('.works-item[data-postid="'+post_id+'"]').addClass('nonuath');
                         var unlike_text = simpleLikes.unlike;
                         allbuttons.prop('title', unlike_text);
-                        allbuttons.addClass('liked');
+                        // allbuttons.addClass('liked');
                     } else {
                         if (response.status === 'unliked') {
                             var like_text = simpleLikes.like;

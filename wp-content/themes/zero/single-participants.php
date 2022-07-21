@@ -13,11 +13,17 @@ get_header();
 
 <?php while (have_posts()) : the_post(); ?>
 
-    <main id="main" class="site-main">
+    <main id="main" class="site-main noscroll">
         <section class="item-page">
             <div class="container-fluid">
                 <div class="row border_row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 " style="    padding: 30px 15px;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    top: 110px;
+    height: 100vh;">
+
                         <div class="item-page__title-block">
                             <div class="item-page__title"><?= get_field('works_author'); ?></div>
 
@@ -26,26 +32,26 @@ get_header();
                                     <span class="title-sub__category">Item </span>
                                     <span class="title-sub__name"><?= get_field('works_name'); ?></span>
                                 </div>
-                                <?php if (get_field('works_is-winner')) : ?>
+                                <!-- <?php if (get_field('works_is-winner')) : ?>
                                     <span class="title-sub__winner">The Winner of Week 1 </span>
-                                <?php endif ?>
+                                <?php endif ?> -->
                             </div>
 
 
                         </div>
                         <div class="item-page__vote-block">
                             <div class="vote-block__vote-button">
-                                <?php if (get_field('works_is-winner')) : ?>
+                                <!-- <?php if (get_field('works_is-winner')) : ?>
                                     <span class="sl-wrapper stage-3 item-page-winner__btn">
-                                        <a href="#" class="sl-button sl-button-43 stage-3__app-btn" >TRY ON IN THE APP </a>
+                                        <a href="#" class="sl-button sl-button-43 stage-3__app-btn">TRY ON IN THE APP </a>
                                     </span>
-                                <?php else:?>
+                                <?php else : ?>
                                     <span class="sl-wrapper stage-3">
-                                        <a href="#" class="sl-button sl-button-43 stage-3__app-btn" >VOTING IS OVER </a>
+                                        <a href="#" class="sl-button sl-button-43 stage-3__app-btn">VOTING IS OVER </a>
                                     </span>
-                                <?php endif ?>
+                                <?php endif ?> -->
                                 <?php
-                                // echo get_simple_likes_button(get_the_ID()); 
+                                echo get_simple_likes_button(get_the_ID());
                                 ?>
                             </div>
 
@@ -89,77 +95,58 @@ get_header();
                                 <p><?= get_field('works_descriptions'); ?></p>
                                 <div class="descr-block__read-more ">+ read more</div>
 
-                                <?
-                                // $str = get_field('works_descriptions');;
-                                // $str = strip_tags($str);
-
-                                // if (strlen($str) > 180) {
-
-                                //     $textPrev = substr($str, 0, 180);
-                                //     $textPrev = rtrim($textPrev, "!,.-");
-                                //     $textPrev = substr($textPrev, 0, strrpos($textPrev, ' '));
-                                //     $textNext = substr($str, strlen($textPrev));
-                                ?>
-
-                                <!-- <div class="review-text">
-                                        <p class="text-prev"><?php $textPrev ?></p><p class="text-next"><?php $textNext ?></p>
-                                        <a href="#" class="text-more descr-block__read-more">+ read more</a>
-                                    </div> -->
-
-                                <?
-                                // } else {
-                                // 
-                                ?>
-
-                                <!-- <div class="review-text"><?= $str ?></div> -->
-
-                                <?
-                                // }
-                                // 
-                                ?>
                             </div>
                         </div>
+
+
+
                     </div>
-                    <div class="col-lg-6 gallery-wrapper">
+                    <div class="offset-6 col-lg-6 gallery-wrapper ">
+                        <div class="msc-content2">
 
-                        <a href="#" class="all-works__btn">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="6" height="6" fill="black" />
-                                <rect y="8" width="6" height="6" fill="black" />
-                                <rect y="16" width="6" height="6" fill="black" />
-                                <rect x="8" width="6" height="6" fill="black" />
-                                <rect x="8" y="8" width="6" height="6" fill="black" />
-                                <rect x="8" y="16" width="6" height="6" fill="black" />
-                                <rect x="16" width="6" height="6" fill="black" />
-                                <rect x="16" y="8" width="6" height="6" fill="black" />
-                                <rect x="16" y="16" width="6" height="6" fill="black" />
-                            </svg>
+                            <a href="#" class="all-works__btn">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="6" height="6" fill="black" />
+                                    <rect y="8" width="6" height="6" fill="black" />
+                                    <rect y="16" width="6" height="6" fill="black" />
+                                    <rect x="8" width="6" height="6" fill="black" />
+                                    <rect x="8" y="8" width="6" height="6" fill="black" />
+                                    <rect x="8" y="16" width="6" height="6" fill="black" />
+                                    <rect x="16" width="6" height="6" fill="black" />
+                                    <rect x="16" y="8" width="6" height="6" fill="black" />
+                                    <rect x="16" y="16" width="6" height="6" fill="black" />
+                                </svg>
 
-                            All works
-                        </a>
+                                All works
+                            </a>
 
-                        <div class="swiper-container gallery-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="product__image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)"></div>
-
-                                </div>
-                                <?php while (the_repeater_field('works_photo-group')) : ?>
+                            <div class="swiper-container gallery-slider">
+                                <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="product__image" style="background-image:url(<?= get_sub_field('works_photo') ?>)"></div>
+                                        <div class="product__image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)"></div>
+
+                                    </div>
+                                    <?php while (the_repeater_field('works_photo-group')) : ?>
+                                        <div class="swiper-slide">
+                                            <div class="product__image" style="background-image:url(<?= get_sub_field('works_photo') ?>)"></div>
+                                        </div>
+                                    <?php endwhile; ?>
+                                </div>
+
+                            </div>
+                            <div class="gallery-thumbs">
+
+                                <?php while (the_repeater_field('works_photo-group')) : ?>
+                                    <div class="product__image-wrap">
+                                        <div class="product__image-thumb" style="background-image:url(<?= get_sub_field('works_photo') ?>)"></div>
                                     </div>
                                 <?php endwhile; ?>
                             </div>
 
-                        </div>
-                        <div class="gallery-thumbs">
 
-                            <?php while (the_repeater_field('works_photo-group')) : ?>
-                                <div class="product__image-wrap">
-                                    <div class="product__image-thumb" style="background-image:url(<?= get_sub_field('works_photo') ?>)"></div>
-                                </div>
-                            <?php endwhile; ?>
+
                         </div>
+
 
                     </div>
                 </div>
@@ -167,6 +154,46 @@ get_header();
         </section>
 
 
+        <div class="modal">
+            <div class="works-auth_block">
+                <div class="works-auth_wrapper">
+                    <div class="works-auth_close">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.77675 1.76618L48.2336 47.223L47.2235 48.2332L1.7666 2.77633L2.77675 1.76618Z" fill="black"></path>
+                            <path d="M1.7666 47.223L47.2235 1.76617L48.2336 2.77633L2.77675 48.2332L1.7666 47.223Z" fill="black"></path>
+                        </svg>
+                    </div>
+                    <div class="works-auth_text">Just a quick move to leave a vote</div>
+                    <div class="works-auth_buttons-auth">
+                        <a rel="nofollow" href="/wp-json/wslu-social-login/type/google" class="g-button"><img src="http://dev.zero.ru/wp-content/themes/zero/assets/img/icon/google.svg"> Sign in with GOOGLE </a>
+                        <a rel="nofollow" href="/wp-json/wslu-social-login/type/facebook" class="f-button"><img src="http://dev.zero.ru/wp-content/themes/zero/assets/img/icon/fb-icon.svg"> Sign in with FACEBOOK </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="authWrapper" aria-hidden="true" aria-labelledby="authWrapper" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="works-auth_wrapper">
+                        <div class="works-auth_close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.77675 1.76618L48.2336 47.223L47.2235 48.2332L1.7666 2.77633L2.77675 1.76618Z" fill="black"></path>
+                                <path d="M1.7666 47.223L47.2235 1.76617L48.2336 2.77633L2.77675 48.2332L1.7666 47.223Z" fill="black"></path>
+                            </svg>
+                        </div>
+                        <div class="works-auth_text">Just a quick move to leave a vote</div>
+                        <div class="works-auth_buttons-auth">
+                            <a rel="nofollow" href="/wp-json/wslu-social-login/type/google" class="g-button"><img src="http://dev.zero.ru/wp-content/themes/zero/assets/img/icon/google.svg"> Sign in with GOOGLE </a>
+                            <a rel="nofollow" href="/wp-json/wslu-social-login/type/facebook" class="f-button"><img src="http://dev.zero.ru/wp-content/themes/zero/assets/img/icon/fb-icon.svg"> Sign in with FACEBOOK </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
 
 
@@ -177,5 +204,4 @@ get_header();
 <?php endwhile; // End of the loop. 
 ?>
 
-<?php
-get_footer();
+<?php wp_footer(); ?>
