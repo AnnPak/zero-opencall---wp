@@ -18,13 +18,26 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name=“facebook-domain-verification” content="kmpuxjxuqd3yydvr0wziot9dnd5ti4" />
-	<meta property="og:image" content="/wp-content/themes/zero/assets/img/opengraf-st1.png"/>
-	<meta property="og:title" content="ZERO10 | Open Call"/>
-	<meta property="og:description" content="Join a competition for digital fashion creators."/>
+	<meta property="og:image" content="/wp-content/themes/zero/assets/img/opengraf-st1.png" />
+	<meta property="og:title" content="ZERO10 | Open Call" />
+	<meta property="og:description" content="Join a competition for digital fashion creators." />
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-L1S085ZN98"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-L1S085ZN98');
+	</script>
 
 	<!-- Facebook Pixel Code -->
 	<script>
