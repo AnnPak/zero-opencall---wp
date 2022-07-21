@@ -25,6 +25,8 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-L1S085ZN98"></script>
@@ -36,7 +38,7 @@
 		}
 		gtag('js', new Date());
 
-		gtag('config', 'G-L1S085ZN98');
+		gtag('create', 'G-L1S085ZN98', 'auto');
 	</script>
 
 	<!-- Facebook Pixel Code -->
