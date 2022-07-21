@@ -1657,7 +1657,9 @@ section.homepage__header.homepage__header_st2{
 
 .item-page__title-block {
     border-bottom: 1px solid #B3B3B3;
-    padding: 12px 0 37px;
+    padding-bottom: 37px;
+    margin-top: -10px;
+
 }
 
 .item-page__title-block .item-page__title{
@@ -1665,6 +1667,8 @@ section.homepage__header.homepage__header_st2{
     font-size: 48px;
     text-transform: uppercase;
     padding: 0 15px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
 }
 
 .item-page__title-sub{
@@ -1736,6 +1740,7 @@ section.homepage__header.homepage__header_st2{
 
 .item-page__descr-block{
     padding: 22px 15px;
+    padding-top: 5px;
 }
 
 .item-page__descr-block .vote-block__description p{
@@ -1915,10 +1920,6 @@ section.homepage__header.homepage__header_st2{
     width: 50%;
 }
 
-.subscribe-section {
-    border-right: 1px solid #B3B3B3;
-}
-
 .subscribe-section__title{
     font-size: 48px;
     line-height: 100%;
@@ -2006,6 +2007,10 @@ color: transparent
 
 .subscribe-form .form-control:focus:-ms-input-placeholder {
 color: transparent
+}
+
+.footer__bottom-wrapper_stage2 .title_ui{
+    padding: 21px 15px;
 }
 
 /* homepage stage 3 */
@@ -2146,6 +2151,7 @@ section.homepage__header.participants-section{
 .item-page__title-sub-wrap {
     display: flex;
     justify-content: space-between;
+    margin-top: 12px;
 }
 
 span.title-sub__winner {
@@ -2439,3 +2445,16 @@ form.submitting .wpcf7-spinner {
     line-height: 0;
 }
 
+.footer__right-part {
+    min-height: 100%;
+}
+
+.footer__right-part video {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+}
+
+.p-0{
+    padding: 0;
+}
