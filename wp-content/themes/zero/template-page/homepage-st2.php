@@ -143,29 +143,3 @@ get_header(); ?>
 
 <?php
 get_footer();?>
-
-<section class="subscribe-section col-lg-6">
-    <div class="subscribe-section__title">SUBSCRIBE</div>  
-    
-    <div class="subscribe-section__form-container">
-        <div class="subscribe-section__subtitle">?Stay tune about the future of AR fashion. Subscribe?</div>  
-        <?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>            
-    </div>
-
-    <div class="footer__bottom-contact">
-        <div class="footer__bottom-social">
-            <a href="https://www.instagram.com/zero10.app/">INSTAGRAM</a>
-            <a href="https://www.tiktok.com/@zero10.app">TIKTOK</a>
-            <a href="https://discord.com/invite/zero10?utm_source=stories&utm_medium=link&utm_campaign=discord">DISCORD</a>
-            <a href="https://twitter.com/zero10_app">TWITTER</a>
-        </div>
-        <div class="footer__bottom-contact_mobile">
-            <a href="mailto:opencall@zero10.app">opencall@zero10.app</a>
-            <a href="/privacy-legal">Privacy & Legal</a>
-            <a href="/cookie-policy">Cookie policy</a>
-            <a href="/terms-conditions">Terms & Conditions</a>
-        </div>
-    </div>
-
-
-</section>
