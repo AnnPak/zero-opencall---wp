@@ -316,8 +316,8 @@ get_header();
                         </div>
                         <div class="works-auth_text">Just a quick move to leave a vote</div>
                         <div class="works-auth_buttons-auth">
-                            <a rel="nofollow" href="/wp-json/wslu-social-login/type/google" class="g-button"><img src="http://dev.zero.ru/wp-content/themes/zero/assets/img/icon/google.svg"> Sign in with GOOGLE </a>
-                            <a rel="nofollow" href="/wp-json/wslu-social-login/type/facebook" class="f-button"><img src="http://dev.zero.ru/wp-content/themes/zero/assets/img/icon/fb-icon.svg"> Sign in with FACEBOOK </a>
+                            <a rel="nofollow" href="/wp-json/wslu-social-login/type/google" class="g-button"><img src="/wp-content/themes/zero/assets/img/icon/google.svg"> Sign in with GOOGLE </a>
+                            <a rel="nofollow" href="/wp-json/wslu-social-login/type/facebook" class="f-button"><img src="/wp-content/themes/zero/assets/img/icon/fb-icon.svg"> Sign in with FACEBOOK </a>
 
                         </div>
                     </div>
