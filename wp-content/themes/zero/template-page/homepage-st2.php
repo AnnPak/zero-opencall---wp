@@ -12,7 +12,8 @@ get_header(); ?>
             <div class="col-lg-6 right-part">
                 <div class="homepage__header-banner">
                     <div class="header-banner__title sticky-top">
-                        <h1 class="title_ui"> Open call is a competition for creators and digital fashion designers developed to support emerging talents and help them scale their visibility among the community and showcase their works in AR. </h1>
+                        <h1 class="title_ui d-sm-block d-none"> Open call is a competition for creators and digital fashion designers developed to support emerging talents and help them scale their visibility among the community and showcase their works in AR. </h1>
+                        <h1 class="title_ui d-sm-none d-xs-block"> We selected 5 most progressive fashion designers from all over the world and digitally recreated their most-wanted pieces. </h1>
 
                     </div>
                     <div class="header-banner__bottom">
