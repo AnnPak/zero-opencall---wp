@@ -39,6 +39,23 @@
         });
 
 
+        var slider2 = new Swiper('.item-page__gallery-block', {
+            slidesPerView: 1,
+            centeredSlides: true,
+            loop: true,
+            loopedSlides: 6,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: thumbs,
+            },
+        });
+
+       
+
+
     }); // end 
 
 

@@ -653,6 +653,20 @@
     .header-banner__bottom-items span:first-child{
         margin-right: 55px;
     }
+
+    .works-auth_close,
+    .works-auth_close svg{
+        width: 23px;
+        height: 23px; 
+    }
+
+    .works-auth_text{
+        margin-top: 60px;
+    }
+
+    #authWrapper .works-auth_buttons-auth{
+        margin-bottom: 37px;
+    }
 }
 
 @media (max-width: 450px) { 

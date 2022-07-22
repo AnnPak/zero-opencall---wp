@@ -1669,7 +1669,9 @@ section.homepage__header.homepage__header_st2{
 
 .item-page__title-block,
 .item-page__vote-block,
-.item-page__descr-block{
+.item-page__descr-block,
+.item-page__gallery-block,
+.item-page .bottom-img-block{
     margin-left: calc(var(--bs-gutter-x) * -0.5);
     margin-right: calc(var(--bs-gutter-x) * -0.5);
 }
@@ -1759,7 +1761,15 @@ section.homepage__header.homepage__header_st2{
 
 .item-page__descr-block{
     padding: 22px 15px;
-    padding-top: 5px;
+    padding-top: 9px;
+}
+
+.item-page .bottom-img-block{
+    flex-wrap: wrap;
+}
+
+.item-page .bottom-img-block .product__image-wrap{
+    width: 100%;
 }
 
 .item-page__descr-block .vote-block__description p{
@@ -1839,6 +1849,29 @@ section.homepage__header.homepage__header_st2{
     background: #fff;
     border: 1.5px solid #000000;
     border-bottom: 1.5px solid #000000;
+}
+
+.item-page__right-block{
+    padding: 30px 15px;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    top: 110px;
+    height: 100vh;
+}
+
+.item-page__right-block::-webkit-scrollbar { width: 0; }
+
+.item-page__right-block { -ms-overflow-style: none; }
+
+.item-page__right-block { overflow: -moz-scrollbars-none; }
+
+.item-page__gallery-block{
+    border-bottom: 1px solid #B3B3B3;
+}
+
+.item-page__gallery-block .swiper-slide{
+    padding: 60px 0;
 }
 
 /* Terms */
@@ -2032,6 +2065,23 @@ color: transparent
 
 .footer__bottom-wrapper_stage2 .title_ui{
     padding: 21px 15px;
+}
+
+.all-works-btn{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: -10px;
+}
+
+.all-works-btn:hover{
+    background: #4F4F4F;
+    color: #fff;
+}
+
+.all-works-btn svg{
+    margin-right: 12px;
 }
 
 /* homepage stage 3 */
@@ -2483,12 +2533,6 @@ form.submitting .wpcf7-spinner {
 .subscribe-section{
     border-right: 1px solid #B3B3B3;
 }
-
-.border_row .col-lg-6:first-child::-webkit-scrollbar { width: 0; }
-
-.border_row .col-lg-6:first-child { -ms-overflow-style: none; }
-
-.border_row .col-lg-6:first-child { overflow: -moz-scrollbars-none; }
 
 #authWrapper .modal-dialog{
     max-width: 480px;
