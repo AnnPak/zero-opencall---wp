@@ -1874,6 +1874,12 @@ section.homepage__header.homepage__header_st2{
     padding: 60px 0;
 }
 
+.item-page .footer-block{
+    display: flex;
+    justify-content: center;
+}
+
+
 /* Terms */
 
 .terms-page__descripition p{
@@ -2073,6 +2079,7 @@ color: transparent
     background-color: #000;
     color: #fff;
     margin-bottom: -10px;
+    max-width: 355px;
 }
 
 .all-works-btn:hover{
