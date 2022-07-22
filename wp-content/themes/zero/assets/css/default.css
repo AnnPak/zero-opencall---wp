@@ -406,20 +406,6 @@ button.close-search {
     z-index: 1;
 }
 
-.sl-button:not(.liked):hover{
-    background: #1DFF18;
-    border: 1px solid #1DFF18;
-    width: 90px;
-}
-
-.sl-button:not(.liked):hover .sl-vote{
-    display: block;
-}
-
-.sl-button:not(.liked):hover .sl-count{
-    display: none;
-}
-
 
 /* Icon */
 
@@ -429,7 +415,6 @@ button.close-search {
     vertical-align: middle;
     margin-top: -2px;
 }
-
 
 .sl-icon svg:after {
     content: "";
@@ -1011,7 +996,7 @@ input[type=submit].button_form,
 .vote-block__vote-button .sl-wrapper a:hover{
     max-width: 380px;
     width: 100%; 
-    border: 1.5px solid #1DFF18;
+    background: #80FF7D;
 }
 
 input[type=submit].button_form:hover,
@@ -1614,9 +1599,34 @@ span#sl-loader {
     width: 12px;
 }
 
+.sl-unvote{
+    display: none;
+}
+
+a.sl-button.sl-button.liked .sl-unvote{
+    display: block;
+}
+
 a.sl-button.sl-button.liked {
-    background: #1DFF18;
-    border: 1px solid #1DFF18;
+    background: #000000;;
+    border: 1px solid #000000;
+    color: #fff;
+}
+
+a.sl-button.sl-button.liked svg path {
+    fill: #fff;
+}
+
+a.sl-button.sl-button.liked svg{
+    transform: rotate(180deg);
+}
+
+a.sl-button.sl-button.liked span{
+    color: #fff;
+}
+
+a.sl-button.sl-button.liked .sl-vote{
+    display: none;
 }
 
 section.homepage__header.homepage__header_st2{
@@ -1708,17 +1718,17 @@ section.homepage__header.homepage__header_st2{
 }
 
 .item-page__vote-block .sl-button .sl-count,
-.item-page__vote-block .sl-button span.sl-vote{
+.item-page__vote-block .sl-button span.sl-vote,
+.item-page__vote-block .sl-button span.sl-unvote{
     font-weight: 600;
     font-size: 26px;
     line-height: 110%;
     letter-spacing: -0.02em;
 }
 
-.sl-vote{
-    display: none;
-    color: #000;
-    font-weight: 600;
+.item-page__vote-block .sl-button span.sl-vote,
+.item-page__vote-block .sl-button span.sl-unvote{
+    margin-right: 13px;
 }
 
 .item-page__vote-block .sl-button svg {
@@ -1769,6 +1779,10 @@ section.homepage__header.homepage__header_st2{
 }
 
 .item-page .bottom-img-block .product__image-wrap{
+    width: 100%;
+}
+
+.item-page .bottom-img-block .product__image-wrap img{
     width: 100%;
 }
 
@@ -1843,12 +1857,6 @@ section.homepage__header.homepage__header_st2{
 
 .gallery-wrapper{
     position: relative;
-}
-
-.vote-block__vote-button .sl-wrapper a{
-    background: #fff;
-    border: 1.5px solid #000000;
-    border-bottom: 1.5px solid #000000;
 }
 
 .item-page__right-block{
