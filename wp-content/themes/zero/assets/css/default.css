@@ -1579,6 +1579,14 @@ span#sl-loader {
     margin-top: 3px;
 }
 
+.works-item__like .sl-vote{
+    display: none;
+}
+
+.works-item__like  .sl-button.liked{
+    background: #1DFF18;
+}
+
 .sl-button .sl-count {
     font-size: 16px;
     line-height: 110%;
@@ -1603,25 +1611,25 @@ span#sl-loader {
     display: none;
 }
 
-a.sl-button.sl-button.liked .sl-unvote{
+.vote-block__vote-button a.sl-button.sl-button.liked .sl-unvote{
     display: block;
 }
 
-a.sl-button.sl-button.liked {
+.vote-block__vote-button a.sl-button.sl-button.liked {
     background: #000000;;
     border: 1px solid #000000;
     color: #fff;
 }
 
-a.sl-button.sl-button.liked svg path {
+.vote-block__vote-button a.sl-button.sl-button.liked svg path {
     fill: #fff;
 }
 
-a.sl-button.sl-button.liked svg{
+.vote-block__vote-button a.sl-button.sl-button.liked svg{
     transform: rotate(180deg);
 }
 
-a.sl-button.sl-button.liked span{
+.vote-block__vote-button a.sl-button.sl-button.liked span{
     color: #fff;
 }
 
