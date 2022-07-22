@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-<section class="homepage__header">
+<section class="homepage__header homepage__header_st1">
 	<div class="container-fluid h-100">
 		<div class="row border_row h-100">
 			<div class="col-lg-6">

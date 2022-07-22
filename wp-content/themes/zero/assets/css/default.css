@@ -859,6 +859,11 @@ span.wpcf7-list-item {
 
 #content{
     margin-top: 110px;
+    border-right: 1px solid #bdbdbd;
+}
+
+.site-header, .footer__bottom{
+    border-right: 1px solid #bdbdbd;
 }
 
 section.homepage__header {
@@ -1616,7 +1621,6 @@ a.sl-button.sl-button.liked {
 
 section.homepage__header.homepage__header_st2{
     height: auto;
-    /* min-height: 1056px; */
 }
 
 .header-banner__title.sticky-top{
@@ -1625,6 +1629,14 @@ section.homepage__header.homepage__header_st2{
 
 .works-item.empty-item:not(:last-child){
     border-right: 0;
+}
+
+.homepage__header_st1 .header-banner__bottom{
+    margin-top: 70px;
+}
+
+.homepage__header_st1 .header-banner__title .button_ui{
+    margin-top: 20px;
 }
 
 /* Item */
