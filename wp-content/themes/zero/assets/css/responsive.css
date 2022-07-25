@@ -691,6 +691,10 @@
         padding: 16px 10px 21px;
     }
 
+    .works-item__info-wrapper .works-item__name{
+        max-width: 46vw;
+    }
+
 }
 
 @media (max-width: 450px) { 

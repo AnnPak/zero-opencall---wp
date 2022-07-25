@@ -1564,7 +1564,7 @@ section.homepage__form-block .form-block__body {
     letter-spacing: -0.02em;
     color: #000000;
     text-overflow: ellipsis;
-    overflow-x: hidden;
+    overflow: hidden;
     white-space: nowrap;
     max-width: 14vw;
 }
