@@ -160,19 +160,18 @@ get_header(); ?>
                         Sign in with GOOGLE 
                     </a>
                     <a rel="nofollow" href="/wp-json/wslu-social-login/type/facebook" class="f-button auth-btn">
-                    <?xml version="1.0" encoding="utf-8"?>
-                        <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                        <svg width="33" height="33" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                            <title>facebook</title>
                             <g>
-                                <title>facebook</title>
-                                <g>
-                                    <path fill="white" d="M481,258.1c0-124.3-100.8-225-225-225c-124.3,0-225,100.7-225,225c0,112.3,82.3,205.4,189.8,222.2V323.1h-57.1v-65h57.1
-                                        v-49.6c0-56.4,33.5-87.5,85-87.5c24.6,0,50.4,4.4,50.4,4.4v55.4h-28.4c-27.9,0-36.6,17.4-36.6,35.2v42.2h62.4l-10,65h-52.4v157.2
-                                        C398.7,463.4,481,370.3,481,258.1L481,258.1z"/>
-                                </g>
+                                <path d="M481,258.1c0-124.3-100.8-225-225-225c-124.3,0-225,100.7-225,225c0,112.3,82.3,205.4,189.8,222.2V323.1h-57.1v-65h57.1
+                                    v-49.6c0-56.4,33.5-87.5,85-87.5c24.6,0,50.4,4.4,50.4,4.4v55.4h-28.4c-27.9,0-36.6,17.4-36.6,35.2v42.2h62.4l-10,65h-52.4v157.2
+                                    C398.7,463.4,481,370.3,481,258.1L481,258.1z"/>
                             </g>
+                        </g>
                         </svg>
+
 
                         Sign in with FACEBOOK 
                     </a>
