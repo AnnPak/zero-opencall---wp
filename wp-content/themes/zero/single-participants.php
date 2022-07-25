@@ -147,7 +147,7 @@ get_header();
 
 
 
-                    <div class="col-lg-6 d-block d-lg-none">
+                    <div class="col-lg-6 d-block d-lg-none item-page__mobile-block">
 
                         <div class="item-page__title-block">
                             <div class="item-page__title"><?= get_field('works_author'); ?></div>
@@ -167,7 +167,7 @@ get_header();
 
                         <div class="item-page__gallery-block">
                             <div class="swiper-slide">
-                                    <div class="product__image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)"></div>
+                                    <img  src="<?= get_the_post_thumbnail_url(); ?>" class=""></img>
 
                             </div>
                         </div>

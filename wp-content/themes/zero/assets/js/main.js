@@ -79,10 +79,10 @@
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
         if (scroll >= 10) {
-            $('#cookie-law-info-bar, #subscrube-modal').addClass('scroll');
+            $('#cookie-law-info-bar, #subscrube-modal, .item-page .item-page__right-block').addClass('scroll');
             $("#mastheadx").addClass('smaller');
         } else {
-            $('#cookie-law-info-bar, #subscrube-modal').removeClass('scroll');
+            $('#cookie-law-info-bar, #subscrube-modal, .item-page .item-page__right-block').removeClass('scroll');
             $("#mastheadx").removeClass("smaller");
         }
     });
