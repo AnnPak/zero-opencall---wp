@@ -87,8 +87,23 @@ get_header();
 
                         <div class="item-page__descr-block">
                             <div class="vote-block__description">
-                                <p><?= get_field('works_descriptions'); ?></p>
-                                <div class="descr-block__read-more ">+ read more</div>
+                                <?php
+                                    $descr = get_field('works_descriptions');
+                                    if (mb_strlen($descr) > 280):
+                                        $text = substr($descr,0,180) . "...";?>
+
+                                        <div class="vote-block__description_short"><?=$text?></div>
+                                        
+                                        <div class="vote-block__description_full hidden"><?=$descr?></div>
+
+                                        
+                                        <div class="descr-block__read-more">+ read more</div>
+                                        <div class="descr-block__read-less hidden">- read less</div>
+                                        
+                                    <?php else:?>
+                                        <?=get_field('works_descriptions');?>
+                                    <?php endif;?>
+
 
                             </div>
                         </div>
@@ -225,8 +240,26 @@ get_header();
 
                         <div class="item-page__descr-block">
                             <div class="vote-block__description">
-                                <p><?= get_field('works_descriptions'); ?></p>
-                                <div class="descr-block__read-more ">+ read more</div>
+                            
+                                <?php 
+                                    $descr = get_field('works_descriptions');
+
+                                    if (mb_strlen($descr) > 280):
+                                        $text = substr($descr,0,180) . "...";?>
+
+                                        <div class="vote-block__description_short"><?=$text?></div>
+                                        
+                                        <div class="vote-block__description_full hidden"><?=$descr?></div>
+
+                                        
+                                        <div class="descr-block__read-more">+ read more</div>
+                                        <div class="descr-block__read-less hidden">- read less</div>
+
+                                    <?php else:?>
+                                        <?=get_field('works_descriptions');?>
+                                    <?php endif;?>
+
+                
 
                             </div>
                         </div>

@@ -175,5 +175,17 @@
         $('.works-item_simple.nonuath').removeClass('nonuath');
     })
 
+    $('.descr-block__read-more').click(() => {
+        $('.vote-block__description_short, .descr-block__read-more').addClass('hidden');
+        $('.vote-block__description_full, .descr-block__read-less').removeClass('hidden');
+
+    })
+
+    $('.descr-block__read-less').click(() => {
+        $('.vote-block__description_short, .descr-block__read-more').removeClass('hidden');
+        $('.vote-block__description_full, .descr-block__read-less').addClass('hidden');
+
+    })
+
  
 }(jQuery));	
