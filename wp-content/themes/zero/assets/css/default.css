@@ -1224,6 +1224,10 @@ section.homepage__form-block .form-block__body {
     margin-bottom: 58px;
 }
 
+.footer__bottom-wrap-btns{
+    padding: 0 10px;
+}
+
 .footer__bottom-button a.button_ui {
     height: 60px;
 }
@@ -2582,11 +2586,11 @@ form.submitting .wpcf7-spinner {
     padding: 0;
 }
 
-#authWrapper .modal-dialog{
+.auth-modal .modal-dialog{
     max-width: 480px;
 }
 
-#authWrapper .works-auth_buttons-auth {
+.auth-modal .works-auth_buttons-auth {
     margin-top: 50px;
     margin-bottom: 65px;
 }

@@ -18,6 +18,7 @@
 @media only screen and (min-width: 991px) and (max-width: 1200px) { 
     .works-auth_buttons-auth a{
         font-size: 17px;
+        padding-left: 1vw;
     }
     .works-auth_buttons-auth img {
         margin-right: 7px;
@@ -336,6 +337,10 @@
         width: 28px;
     }
 
+    .works-auth_block{
+        display: none;
+    }
+
 }
 
 @media (max-width: 680px) { 
@@ -641,7 +646,7 @@
     .subscribe-section .footer__bottom-social{
         padding-top: 0;
         padding-bottom: 0;
-        padding-left: 15px;
+        padding-left: 10px;
 
     }
 
@@ -681,9 +686,14 @@
         margin-top: 60px;
     }
 
-    #authWrapper .works-auth_buttons-auth{
+    .auth-modal .works-auth_buttons-auth{
         margin-bottom: 37px;
     }
+
+    .works-item.subscribe-item{
+        padding: 16px 10px 21px;
+    }
+
 }
 
 @media (max-width: 450px) { 

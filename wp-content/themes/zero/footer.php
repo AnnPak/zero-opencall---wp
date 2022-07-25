@@ -33,7 +33,7 @@ $isStage2 = strpos($url, 'test-stejdzh-2') != false;
 						<div class="title_ui">
 							A contemporary fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion.
 						</div>
-						<div>
+						<div class="footer__bottom-wrap-btns">
 							<div class="footer__bottom-button">
 								<a href="https://zero10.app/" class="button_ui">Know more at ZERO10.APP</a>
 							</div>

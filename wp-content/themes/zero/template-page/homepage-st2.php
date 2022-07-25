@@ -60,60 +60,60 @@ get_header(); ?>
         <div class="row border_row h-100">
             <div class="col-lg-12">
                 <div class="homepage__header-form">
-                   
+
                     <div class="works-items items-col-4">
-                <?php
-                                    endif;
-                                    $count++;
+            <?php
+                                endif;
+                                $count++;
 
-                                endwhile;
+                            endwhile;
 
-                                wp_reset_postdata();
-                            else :
-                                echo 'Ничего не найдено';
-                            endif;
-                ?>
+                            wp_reset_postdata();
+                        else :
+                            echo 'Ничего не найдено';
+                        endif;
+            ?>
 
-                        <div class="works-item subscribe-item">
-                            <div class="subscribe-item__top">
-                                <div class="subscribe-item__title">
-                                    SUBSCRIBE
-                                </div>
-                                <div class="subscribe-item__subtitle">
-                                    ?Stay tune about the future of AR fashion. Subscribe?
-                                </div>
-                            </div>
+            <div class="works-item subscribe-item">
+                <div class="subscribe-item__top">
+                    <div class="subscribe-item__title">
+                        SUBSCRIBE
+                    </div>
+                    <div class="subscribe-item__subtitle">
+                        ?Stay tune about the future of AR fashion. Subscribe?
+                    </div>
+                </div>
 
-                            <div class="subscribe-item__bottom">
-                                <?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
+                <div class="subscribe-item__bottom">
+                    <?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
 
-                            </div>
+                </div>
 
 
 
-                        </div>
+            </div>
 
-                        <?php 
-                        // добавление пустых элементов 
+            <?php
+            // добавление пустых элементов 
 
-                            if ($count % 4 != 0):
-                                $t = 1; #остаток от деления
-                                $n = 0;
+            if ($count % 4 != 0) :
+                $t = 1; #остаток от деления
+                $n = 0;
 
-                                while($t > 0):
-                                    $n++;
-                                    $t = (($count + $n) % 4); 
-                                ?>
-                                    
-                                    <div class="works-item empty-item <?= ( $count % 2 != 0 && $n == 1) ? "first-odd-item" : "" ?>"></div>
+                while ($t > 0) :
+                    $n++;
+                    $t = (($count + $n) % 4);
+            ?>
 
-                                <?php 
-                                endwhile;
-                            endif;
-                        
-                        ?>
+                    <div class="works-item empty-item <?= ($count % 2 != 0 && $n == 1) ? "first-odd-item" : "" ?>"></div>
 
-                       
+            <?php
+                endwhile;
+            endif;
+
+            ?>
+
+
                     </div>
                 </div>
             </div>
@@ -140,6 +140,27 @@ get_header(); ?>
     </div>
 </div>
 
+<div class="modal fade auth-modal" id="authWrapperStage2" aria-hidden="true" aria-labelledby="authWrapperStage2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+            <div class="works-auth_wrapper">
+                <div class="works-auth_close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.77675 1.76618L48.2336 47.223L47.2235 48.2332L1.7666 2.77633L2.77675 1.76618Z" fill="black"></path>
+                        <path d="M1.7666 47.223L47.2235 1.76617L48.2336 2.77633L2.77675 48.2332L1.7666 47.223Z" fill="black"></path>
+                    </svg>
+                </div>
+                <div class="works-auth_text">Just a quick move to leave a vote</div>
+                <div class="works-auth_buttons-auth">
+                    <a rel="nofollow" href="/wp-json/wslu-social-login/type/google" class="g-button"><img src="/wp-content/themes/zero/assets/img/icon/google.svg"> Sign in with GOOGLE </a>
+                    <a rel="nofollow" href="/wp-json/wslu-social-login/type/facebook" class="f-button"><img src="/wp-content/themes/zero/assets/img/icon/fb-icon.svg"> Sign in with FACEBOOK </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <?php
-get_footer();?>
+get_footer(); ?>

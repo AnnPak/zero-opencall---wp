@@ -304,7 +304,7 @@ get_header();
             </div>
         </div>
 
-        <div class="modal fade" id="authWrapper" aria-hidden="true" aria-labelledby="authWrapper" tabindex="-1">
+        <div class="modal fade auth-modal" id="authWrapper" aria-hidden="true" aria-labelledby="authWrapper" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered ">
                 <div class="modal-content">
                     <div class="works-auth_wrapper">
