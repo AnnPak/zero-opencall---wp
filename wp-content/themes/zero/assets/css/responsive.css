@@ -5,15 +5,12 @@
         border-left: 1px solid #B3B3B3;
     }
 
+    #content, .footer__bottom{
+        border-right: none;
+    }
+    
   
 }
-
-/* @media (max-width: 1200px) { 
-    .sticky-top.homepage__about{
-        position: inherit;
-    }
-
-} */
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) { 
     .works-auth_buttons-auth a{

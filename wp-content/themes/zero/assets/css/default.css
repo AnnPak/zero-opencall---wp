@@ -1563,6 +1563,10 @@ section.homepage__form-block .form-block__body {
     line-height: 110%;
     letter-spacing: -0.02em;
     color: #000000;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+    max-width: 14vw;
 }
 
 .works-item__info-wrapper  .works-item__about{
@@ -2101,18 +2105,18 @@ form.subscribe-form{
 
 .subscribe-form .form-control:focus::-webkit-input-placeholder {
     color: transparent
-  }
+}
   
 .subscribe-form .form-control:focus::-moz-placeholder {
-color: transparent
+    color: transparent
 }
 
 .subscribe-form .form-control:focus:-moz-placeholder {
-color: transparent
+    color: transparent
 }
 
 .subscribe-form .form-control:focus:-ms-input-placeholder {
-color: transparent
+    color: transparent
 }
 
 .footer__bottom-wrapper_stage2 .title_ui{
@@ -2271,6 +2275,7 @@ section.homepage__header.participants-section{
 .subscribe-form .form-control{
     text-align: center;
     margin-bottom: 10px;
+    padding-left: 21px;
 }
 
 
