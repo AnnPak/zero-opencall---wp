@@ -1493,6 +1493,14 @@ section.homepage__form-block .form-block__body {
     background: #DF4933;
 }
 
+.auth-btn svg{
+    margin-right: 10px;
+}
+
+.auth-btn.f-button svg{
+    margin-right: 7px;
+}
+
 .works-auth_buttons-auth .f-button {
     background: #1777F2;
 }
