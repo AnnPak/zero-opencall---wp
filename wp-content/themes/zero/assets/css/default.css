@@ -2452,7 +2452,7 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
 
 .footer__bottom-img video#videoback{
     max-width: 358px;
-    height: auto;
+    height: 71vh;
     margin: 70px 0;
 }
 
