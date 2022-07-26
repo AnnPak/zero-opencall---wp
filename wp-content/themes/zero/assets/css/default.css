@@ -1634,7 +1634,6 @@ span#sl-loader {
 
 .vote-block__vote-button a.sl-button.sl-button.liked {
     background: #000000;;
-    border: 1px solid #000000;
     color: #fff;
 }
 
@@ -2135,11 +2134,6 @@ form.subscribe-form{
     position: relative;
 }
 
-.subscribe-form .wpcf7-not-valid-tip{
-    transform: translate(69%, 0);
-    min-width: 116px;
-}
-
 .subscribe-form .wpcf7-spinner{
     position: absolute;
     left: 32%;
@@ -2366,6 +2360,19 @@ span.title-sub__winner {
     display: none;
 }
 
+form.subscribe-form .wpcf7-not-valid-tip{
+    position: relative;
+    top: -68px;
+    height: 0;
+    text-align: center;
+    left: 0;
+}
+
+.subscribe-item form.subscribe-form .wpcf7-not-valid-tip{
+    top: -74px;
+}
+
+
 .wpcf7-not-valid-tip{
     position: absolute;
     top: 4px;
@@ -2585,13 +2592,6 @@ p.subscrube-modal__title {
 
 .subscrube-modal__form{
     margin-top: 36px;
-}
-
-
-.subscrube-modal .wpcf7-not-valid-tip{
-    min-width: 116px;
-    left: 0;
-    transform: translate(50%, 0);
 }
 
 .wpcf7-spinner {
