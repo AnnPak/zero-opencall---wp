@@ -716,3 +716,18 @@
 
 }
 
+@media only screen and (max-height: 900px) {
+    .footer__bottom-img video#videoback {
+        max-width: 300px;
+        margin: 50px 0;
+    }
+
+}
+
+@media only screen and (max-height: 700px) {
+    .footer__bottom-img video#videoback {
+        max-width: 250px;
+    }
+
+}
+
