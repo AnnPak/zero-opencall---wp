@@ -144,16 +144,22 @@ get_header();
                                 </div>
 
                             </div>
-                            <div class="gallery-thumbs">
+                            <div>
 
                                 <?php while (the_repeater_field('works_photo-group')) : ?>
-                                    <div class="product__image-wrap">
-                                        <div class="product__image-thumb" style="background-image:url(<?= get_sub_field('works_photo') ?>)"></div>
-                                    </div>
+                                    <img class="product__image-thumb" src="<?= get_sub_field('works_photo') ?>"></img>
                                 <?php endwhile; ?>
                             </div>
 
+                            <div class="item-page__video-wrap">
 
+                                <?php while (the_repeater_field('works_video-group')) : ?>
+                                    <video autoplay="" muted="" loop="" playsinline="" id="videoback">
+                                        <source src="<?= get_sub_field('works_video') ?>" type="video/mp4">
+                                    </video>
+                                
+                                <?php endwhile; ?>
+                            </div>
 
                         </div>
 

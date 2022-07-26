@@ -1697,9 +1697,20 @@ section.homepage__header.homepage__header_st2{
 
 .product__image-thumb {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-size: cover;
 }
+
+.item-page__video-wrap video{
+    max-height: 800px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.item-page__video-wrap{
+    background-color: #000;
+}
+
 
 .item-page__title-block,
 .item-page__vote-block,
@@ -1849,7 +1860,8 @@ section.homepage__header.homepage__header_st2{
 
 .gallery-thumbs{
     display: flex;
-    height: 360px;
+    flex-wrap: wrap;
+    /* height: 360px; */
     margin-left: calc(var(--bs-gutter-x) * -0.5);
     margin-right: calc(var(--bs-gutter-x) * -0.5);
 }
@@ -1887,6 +1899,7 @@ section.homepage__header.homepage__header_st2{
 
 .gallery-wrapper{
     position: relative;
+    padding: 0;
 }
 
 .item-page__right-block{
