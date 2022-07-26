@@ -12,13 +12,16 @@ get_header(); ?>
             <div class="col-lg-6 right-part">
                 <div class="homepage__header-banner">
                     <div class="header-banner__title sticky-top">
-                        <h1 class="title_ui"> Open call is a competition for creators and digital fashion designers developed to support emerging talents and help them scale their visibility among the community and showcase their works in AR. </h1>
+                        <h1 class="title_ui">
+                            Open call is a competition for digital fashion designers developed by ZERO10 to support emerging talents and a growing community of creators. Upvote your favorites now and choose what to wear in AR next!
+                        </h1>
 
                     </div>
                     <div class="header-banner__bottom">
                         <div class="header-banner__bottom-items">
-                            <span>1 winner per week</span>
-                            <span>4 prizes </span>
+                            <span>"X" items</span>
+                            <span>3 winners</span>
+                            <span>6 prizes </span>
                         </div>
                     </div>
                 </div>
@@ -27,7 +30,7 @@ get_header(); ?>
             <div class="col-lg-6 left-part">
                 <div class="homepage__header-form">
                     <div class="header-form__head">
-                        PARTICIPANTS
+                        Voting
                     </div>
 
                     <div class="works-items items-col-2">

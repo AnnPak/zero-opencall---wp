@@ -51,10 +51,10 @@ $isStage2 = strpos($url, 'test-stejdzh-2') != false;
 
 					</div>
 					<div class="subscribe-section">
-						<div class="subscribe-section__title">SUBSCRIBE</div>
+						<div class="subscribe-section__title">Missed submission?</div>
 
 						<div class="subscribe-section__form-container">
-							<div class="subscribe-section__subtitle">?Stay tune about the future of AR fashion. Subscribe?</div>
+							<div class="subscribe-section__subtitle">Leave your email here, and you’ll be the first to know about Zero10’s new competitions.</div>
 							<?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
 						</div>
 
