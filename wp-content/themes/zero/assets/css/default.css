@@ -1801,6 +1801,10 @@ section.homepage__header.homepage__header_st2{
     cursor: pointer;
 }
 
+.vote-block__share  .vote-block__share__links .copy-link:hover svg circle{
+    fill: #4F4F4F;
+}
+
 .vote-block__share  .vote-block__share__links .vote-block__share__link{
     margin: 0 2px;
 }
