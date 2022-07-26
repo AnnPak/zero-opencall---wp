@@ -24,7 +24,6 @@ get_header();
 
                             <div class="item-page__title-sub-wrap">
                                 <div class="item-page__title-sub">
-                                    <span class="title-sub__category">Item </span>
                                     <span class="title-sub__name"><?= get_field('works_name'); ?></span>
                                 </div>
                                 <!-- <?php if (get_field('works_is-winner')) : ?>
@@ -97,8 +96,8 @@ get_header();
                                     <div class="vote-block__description_full hidden"><?= $descr ?></div>
 
 
-                                    <div class="descr-block__read-more">+ read more</div>
-                                    <div class="descr-block__read-less hidden">- read less</div>
+                                    <div class="descr-block__read-more">+ Read more</div>
+                                    <div class="descr-block__read-less hidden">- Read less</div>
 
                                 <?php else : ?>
                                     <?= get_field('works_descriptions'); ?>
@@ -175,7 +174,6 @@ get_header();
 
                             <div class="item-page__title-sub-wrap">
                                 <div class="item-page__title-sub">
-                                    <span class="title-sub__category">Item </span>
                                     <span class="title-sub__name"><?= get_field('works_name'); ?></span>
                                 </div>
                                 <!-- <?php if (get_field('works_is-winner')) : ?>

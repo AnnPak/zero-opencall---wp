@@ -669,7 +669,7 @@
         margin-top: 28px;
     }
 
-    .header-banner__bottom-items span:first-child{
+    .header-banner__bottom-items span:not(:last-child){
         margin-right: 55px;
     }
 

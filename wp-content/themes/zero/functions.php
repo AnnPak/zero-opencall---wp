@@ -578,7 +578,7 @@ function get_like_count( $like_count ) {
 	} else {
 		$number = 0;
 	}
-	$count = '<span class="sl-vote"> VOTE </span> <span class="sl-unvote"> UNVOTE </span> <span class="sl-count">' . $number . '</span>';
+	$count = '<span class="sl-vote"> VOTE </span> <span class="sl-upvote"> UPVOTE </span> <span class="sl-unvote"> UNVOTE </span> <span class="sl-count">' . $number . '</span>';
 	return $count;
 } // get_like_count()
 

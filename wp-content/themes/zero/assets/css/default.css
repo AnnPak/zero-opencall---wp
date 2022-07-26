@@ -896,7 +896,7 @@ section.homepage__header {
     font-size: 16px;
 }
 
-.header-banner__bottom-items span:first-child{
+.header-banner__bottom-items span:not(:last-child){
     margin-right: 155px;
 }
 
@@ -1649,7 +1649,8 @@ span#sl-loader {
     color: #fff;
 }
 
-a.sl-button.sl-button.liked .sl-vote{
+a.sl-button.sl-button.liked .sl-vote,
+a.sl-button.sl-button.liked .sl-upvote{
     display: none;
 }
 
@@ -1754,15 +1755,22 @@ section.homepage__header.homepage__header_st2{
 
 .item-page__vote-block .sl-button .sl-count,
 .item-page__vote-block .sl-button span.sl-vote,
-.item-page__vote-block .sl-button span.sl-unvote{
+.item-page__vote-block .sl-button span.sl-unvote,
+.vote-block__vote-button .sl-upvote{
     font-weight: 600;
     font-size: 26px;
     line-height: 110%;
     letter-spacing: -0.02em;
 }
 
+.vote-block__vote-button .sl-button span.sl-vote,
+.works-item__like .sl-upvote{
+    display: none;
+}
+
 .item-page__vote-block .sl-button span.sl-vote,
-.item-page__vote-block .sl-button span.sl-unvote{
+.item-page__vote-block .sl-button span.sl-unvote,
+.vote-block__vote-button .sl-upvote{
     margin-right: 13px;
 }
 
@@ -2635,4 +2643,12 @@ form.submitting .wpcf7-spinner {
 
 .info-page .title_ui{
     margin-top: 15px;
+}
+
+.auth-modal{
+    z-index: 2709;
+}
+
+.modal-backdrop{
+    z-index: 2708;
 }
