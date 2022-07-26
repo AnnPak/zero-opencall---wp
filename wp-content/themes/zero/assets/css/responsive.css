@@ -239,6 +239,10 @@
     }
 
     .subscribe-form input[type=submit].button_form{
+        margin-top: 0;
+    }
+
+    .subscribe-form input[type=submit].button_form{
         height: 60px;
         line-height: 0;
     }
@@ -336,6 +340,10 @@
 
     .works-auth_block{
         display: none;
+    }
+
+    .item-page__title-block .item-page__title{
+        font-size: 30px;
     }
 
 }

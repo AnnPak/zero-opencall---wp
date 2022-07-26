@@ -1509,6 +1509,7 @@ section.homepage__form-block .form-block__body {
     max-width: 310px;
     line-height: 110%;
     margin: 10px auto;
+    margin-top: 19px;
     font-weight: 600;
 }
 
@@ -1819,6 +1820,10 @@ section.homepage__header.homepage__header_st2{
 .item-page__descr-block .hidden{
     visibility: hidden;
     height: 0;
+}
+
+.item-page__descr-block .vote-block__description{
+    padding-top: 16px;
 }
 
 
@@ -2429,9 +2434,9 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
 }
 
 .footer__bottom-img video#videoback{
-    max-width: 358px;
+    max-width: 320px;
     height: auto;
-    margin: 70px 0;
+    margin: 50px 0;
 }
 
 .privacy-policy-block h2,
@@ -2629,7 +2634,7 @@ form.submitting .wpcf7-spinner {
 
 .auth-modal .works-auth_buttons-auth {
     margin-top: 50px;
-    margin-bottom: 65px;
+    margin-bottom: 36px;
 }
 
 .vote-block__vote-button{
