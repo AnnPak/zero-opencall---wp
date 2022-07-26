@@ -2650,6 +2650,10 @@ form.submitting .wpcf7-spinner {
     margin-top: 15px;
 }
 
+.info-page .about-col {
+    padding-bottom: 47px;
+}
+
 .auth-modal{
     z-index: 2709;
 }
