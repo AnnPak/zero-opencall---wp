@@ -131,12 +131,13 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                             <div class="swiper-container gallery-slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="product__image" style="background-image:url(<?= get_the_post_thumbnail_url(); ?>)"></div>
+                                        
+                                        <img class="product__image" src="<?= get_the_post_thumbnail_url(); ?>"/>
 
                                     </div>
                                     <?php while (the_repeater_field('works_photo-group')) : ?>
                                         <div class="swiper-slide">
-                                            <div class="product__image" style="background-image:url(<?= get_sub_field('works_photo') ?>)"></div>
+                                            <img class="product__image" src="<?= get_sub_field('works_photo');?>"/>
                                         </div>
                                     <?php endwhile; ?>
                                 </div>
@@ -385,7 +386,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         </div>
 
         <div class="modal__form-submit copy-notification">
-            link copied
+            Link copied
         </div>
 
 
