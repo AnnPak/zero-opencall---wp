@@ -707,6 +707,10 @@
         max-width: 46vw;
     }
 
+    .subscribe-item__bottom{
+        margin-top: 85px;
+    }
+
 }
 
 @media (max-width: 450px) { 
