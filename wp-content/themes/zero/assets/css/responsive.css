@@ -13,7 +13,7 @@
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) { 
-    .works-auth_buttons-auth a{
+    .works-auth_buttons-auth a:not(.auth-modal .works-auth_buttons-auth a){
         font-size: 17px;
         padding-left: 1vw;
     }
