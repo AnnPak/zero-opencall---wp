@@ -1013,7 +1013,7 @@ input[type=submit].button_form:focus
 .modal__form-submit {
     position: fixed;
     right: 0;
-    left: 0;
+    left: 50%;
     top: -100%;
     background: #000000;
     border-radius: 8px;
@@ -1026,6 +1026,7 @@ input[type=submit].button_form:focus
     font-weight: 600;
     font-size: 18px;
     margin: 0 10px;
+    margin-left: -215px;
 }
 .modal__form-submit.show{
     
@@ -1678,19 +1679,16 @@ section.homepage__header.homepage__header_st2{
 /* Item */
 
 .product__image {
-    height: 420px;
-    width: 53%;
+    height: auto;
+    width: 100%;
     margin: 0 auto;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .swiper-container {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding: 144px 0;
+    padding: 70px 0;
 }
 
 .swiper-thumbs {
@@ -1800,15 +1798,24 @@ section.homepage__header.homepage__header_st2{
     margin-top: 10px;
 }
 
-.vote-block__share  .vote-block__share__links a{
+.vote-block__share  .vote-block__share__links .copy-link{
+    display: inline;
+    cursor: pointer;
+}
+
+.vote-block__share  .vote-block__share__links .vote-block__share__link{
     margin: 0 2px;
 }
 
-.vote-block__share  .vote-block__share__links a:hover svg path{
+.vote-block__share  .vote-block__share__links .vote-block__share__link:hover svg path{
    fill: #4F4F4F;
 }
 
-.vote-block__share  .vote-block__share__links a:hover svg circle{
+.vote-block__share  .vote-block__share__links .copy-link:hover svg path{
+    fill: #fff;
+}
+
+.vote-block__share  .vote-block__share__links .vote-block__share__link:hover svg circle{
     stroke: #4F4F4F;
 }
  
@@ -2660,4 +2667,8 @@ form.submitting .wpcf7-spinner {
 
 .modal-backdrop{
     z-index: 2708;
+}
+
+.modal__form-submit.copy-notification{
+    margin-left: -75px;
 }

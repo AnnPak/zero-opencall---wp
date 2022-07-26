@@ -9,7 +9,7 @@ get_header(); ?>
 <section class="homepage__banner-background info-page">
 
 	<div class="homepage__banner-title">
-	choose 3 winners
+	choose <br>3 winners
 	</div>
 	<video autoplay="" muted="" loop="" playsinline="" id="videoback" poster="<?= get_template_directory_uri(); ?>/assets/img/demo_banner.jpg">
 		<source src="<?= get_template_directory_uri(); ?>/assets/img/info-banner__video.mp4" type="video/mp4">
@@ -20,10 +20,7 @@ get_header(); ?>
 		<div class="title_ui"> Decide the winners in a competition for digital fashion creators. Vote for your favorite garments. Top-voted entries will be presented in AR in the ZERO10 app and their creators will get $1000 prizes. </div>
 		<div class="homepage__about-subtitle">
 			<a href="/" class="button_ui">VOTE</a>
-			<div class="subtitle-text">
-				We expect participants to be engaged in digital fashion, have gigabytes of ideas waiting to happen, and be familiar with 3D cloth-making programs.
-				To pass moderation, a work submitted for the competition should meet the technical specifications and be uniquely your own.
-			</div>
+			
 		</div>
 
 

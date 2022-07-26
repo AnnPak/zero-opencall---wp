@@ -187,5 +187,22 @@
 
     })
 
+    $('#copyBtn').click(function(){
+        var $tmp = $("<input>");
+        $("body").append($tmp);
+
+        $tmp.val($(this).attr('data-copy')).select();
+
+        document.execCommand("copy");
+
+        $('.modal__form-submit').addClass('show');
+
+        setTimeout(function () {
+            $(".modal__form-submit").removeClass('show');
+        }, 4000);
+        
+        $tmp.remove();
+    })
+
  
 }(jQuery));	
