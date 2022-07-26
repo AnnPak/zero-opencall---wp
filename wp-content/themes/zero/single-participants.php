@@ -89,7 +89,7 @@ get_header();
                                 <?php
                                 $descr = get_field('works_descriptions');
                                 if (mb_strlen($descr) > 280) :
-                                    $text = substr($descr, 0, 180) . "..."; ?>
+                                    $text = substr($descr, 0, 280) . "..."; ?>
 
                                     <div class="vote-block__description_short"><?= $text ?></div>
 
