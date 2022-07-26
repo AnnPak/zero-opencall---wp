@@ -28,6 +28,7 @@ wp-config.php
 # Log files
 *.log
 *.zip
+*.sql
 
 # !wp-content/themes/my-theme/
 mysql/*
