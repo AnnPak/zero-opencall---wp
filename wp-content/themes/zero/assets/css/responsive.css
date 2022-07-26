@@ -21,6 +21,10 @@
         margin-right: 7px;
         width: 21px;
     }
+    .auth-btn svg {
+        width: 21px;
+        margin-right: 8px;
+    }
 
 }
 @media (max-width: 991px) { 
