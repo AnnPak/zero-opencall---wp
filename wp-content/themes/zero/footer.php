@@ -31,11 +31,11 @@ $isStage2 = strpos($url, 'test-stejdzh-2') != false;
 
 					<div class="footer__bottom-wrapper footer__bottom-wrapper_stage2">
 						<div class="title_ui">
-							A contemporary fashion brand run by family duo, Ksenia and Anton Schnaider. The masterminds behind the brand are constantly working hand in hand-creating fashion.
+						ZERO10 platform connects fashion brands and designers to users all over the world and makes it possible to present digital garments in Augmented Reality.
 						</div>
 						<div class="footer__bottom-wrap-btns">
 							<div class="footer__bottom-button">
-								<a href="https://zero10.app/" class="button_ui">Know more at ZERO10.APP</a>
+								<a href="https://zero10.app/" class="button_ui">About ZERO10</a>
 							</div>
 
 							<a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="footer__bottom-qr">

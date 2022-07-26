@@ -83,7 +83,7 @@ get_header(); ?>
                         SUBSCRIBE
                     </div>
                     <div class="subscribe-item__subtitle">
-                        ?Stay tune about the future of AR fashion. Subscribe?
+                        Leave your email here, and you’ll be the first to know about Zero10’s new competitions.
                     </div>
                 </div>
 
@@ -135,7 +135,7 @@ get_header(); ?>
 
     </div>
     <div class="subscrube-modal__container">
-        <p class=subscrube-modal__title>?Stay tune about the future of AR fashion. Subscribe? ?Stay tune about future.</p>
+        <p class=subscrube-modal__title>Leave your email here, and you’ll be the first to know about Zero10’s new competitions.</p>
 
         <div class="subscrube-modal__form">
             <?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
