@@ -1685,6 +1685,7 @@ section.homepage__header.homepage__header_st2{
 }
 
 .swiper-container {
+    height: 83vh;
     position: relative;
     overflow: hidden;
     width: 100%;
