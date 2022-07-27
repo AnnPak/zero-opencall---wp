@@ -1678,8 +1678,9 @@ section.homepage__header.homepage__header_st2{
 /* Item */
 
 .product__image {
-    height: auto;
     width: 100%;
+    height: 60vh;
+    object-fit: contain;
     margin: 0 auto;
 }
 
