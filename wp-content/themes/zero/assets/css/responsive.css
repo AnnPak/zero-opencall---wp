@@ -208,8 +208,7 @@
         margin-bottom: 75px;
     }
 
-    .works-item_simple:nth-child(4n),
-    .works-item.empty-item:not(:last-child){
+    .works-item_simple:nth-child(4n){
         border-right: 1px solid #B3B3B3;
     }
 
@@ -669,11 +668,23 @@
     }
     
     .homepage__items_st2 .works-item:last-child{
-        border-right: 1px solid #B3B3B3;
+        /* border-right: 1px solid #B3B3B3; */
+    }
+    
+    .works-item.subscribe-item_last.subscribe-item_even-count{
+        display: block;
+    }
+
+    .works-item.subscribe-item_even-count{
+        display: none;
     }
 
     .works-item.empty-item.first-odd-item{
         display: none;
+    }
+
+    .works-item.empty-item.first-even-item{
+        display: block;
     }
 
     .works-item__img{

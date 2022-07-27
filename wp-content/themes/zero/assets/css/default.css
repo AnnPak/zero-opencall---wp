@@ -2254,6 +2254,10 @@ section.homepage__header.homepage__header_st3{
     justify-content: space-between;
 }
 
+.works-item.subscribe-item_last{
+    display: none;
+}
+
 section.homepage__header.homepage__header_st3 .participants-block .header-form__head{
     border: none;
     border-bottom: 1px solid #B3B3B3;

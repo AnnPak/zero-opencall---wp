@@ -76,8 +76,12 @@ get_header(); ?>
                             echo 'Ничего не найдено';
                         endif;
             ?>
+            
+            <?php $isEvenNum = $count % 2 == 0;?>
+            
 
-            <div class="works-item subscribe-item">
+
+            <div class="works-item subscribe-item <?=$isEvenNum ? "subscribe-item_even-count" : "" ?>">
                 <div class="subscribe-item__top">
                     <div class="subscribe-item__title">
                         SUBSCRIBE
@@ -108,13 +112,30 @@ get_header(); ?>
                     $t = (($count + $n) % 4);
             ?>
 
-                    <div class="works-item empty-item <?= ($count % 2 != 0 && $n == 1) ? "first-odd-item" : "" ?>"></div>
+                    <div class="works-item empty-item <?= (!$isEvenNum && $n == 1) ? "first-odd-item" : "" ?> <?= ($isEvenNum && $n == 1) ? "first-even-item" : "" ?>"></div>
 
             <?php
                 endwhile;
             endif;
 
             ?>
+
+                    <div class="works-item subscribe-item subscribe-item_last <?=$isEvenNum ? "subscribe-item_even-count" : "" ?>">
+                        <div class="subscribe-item__top">
+                            <div class="subscribe-item__title">
+                                SUBSCRIBE
+                            </div>
+                            <div class="subscribe-item__subtitle">
+                                Leave your email here, and you’ll be the first to know about Zero10’s new competitions.
+                            </div>
+                        </div>
+
+                        <div class="subscribe-item__bottom">
+                            <?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
+
+                        </div>
+
+                    </div>
 
 
                     </div>
