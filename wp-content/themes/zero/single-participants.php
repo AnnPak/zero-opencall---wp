@@ -113,7 +113,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                     <div class="offset-6 col-lg-6 gallery-wrapper d-none d-lg-block">
                         <div class="msc-content2">
 
-                            <a href="#" class="all-works__btn">
+                            <a href="/" class="all-works__btn">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="6" height="6" fill="black" />
                                     <rect y="8" width="6" height="6" fill="black" />
