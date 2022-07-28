@@ -103,7 +103,7 @@ get_header(); ?>
                                         SUBSCRIBE
                                     </div>
                                     <div class="subscribe-item__subtitle">
-                                        Leave your email here, and you’ll be the first to know about Zero10’s new competitions.
+                                        Leave your email here, and you’ll be the first to know about ZERO10’s new competitions.
                                     </div>
                                 </div>
 

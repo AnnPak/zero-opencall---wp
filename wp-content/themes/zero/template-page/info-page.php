@@ -41,7 +41,7 @@ get_header(); ?>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="title_ui">Prizes</div>
 					<div class="about-col__descript">
-						Three winners will get a signature drop in the Zero10 app. Our team will adapt your design to AR and showcase it alongside the works of Tommy Cash or Barragán. Ultimately, $1000 for each winner tops the prize list!
+						Three winners will get a signature drop in the ZERO10 app. Our team will adapt your design to AR and showcase it alongside the works of Tommy Cash or Barragán. Ultimately, $1000 for each winner tops the prize list!
 					</div>
 				</div>
 			</div>
