@@ -25,7 +25,7 @@
 
 wp-config.php
 
-wp-content/plugins/2022/*
+wp-content/uploads/2022/*
 
 # Log files
 *.log

@@ -31,7 +31,7 @@
 
         <a href="<?= get_permalink() ?>" class="work-item__wrapper">
             <div class="works-item__img">
-                <img src="<?= get_the_post_thumbnail_url(); ?>">
+                <img src="<?= get_the_post_thumbnail_url($size = 'medium'); ?>">
             </div>
             <div class="works-item__info-wrapper">
                 <div class="works-item__title-block">

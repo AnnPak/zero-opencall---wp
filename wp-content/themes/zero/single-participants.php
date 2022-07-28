@@ -87,8 +87,9 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                             <div class="vote-block__description">
                                 <?php
                                 $descr = get_field('works_descriptions');
-                                if (mb_strlen($descr) > 280) :
-                                    $text = substr($descr, 0, 280) . "..."; ?>
+
+                                if (mb_strlen($descr) > 140) :
+                                    $text = substr($descr, 0, 140) . "..."; ?>
 
                                     <div class="vote-block__description_short"><?= $text ?></div>
 
