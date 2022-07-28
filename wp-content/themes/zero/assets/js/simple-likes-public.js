@@ -38,6 +38,9 @@
                     if (response.status === 'unauth') {
                         $('#authWrapper').modal('show');
                         $('.works-item[data-postid="'+post_id+'"]').addClass('nonuath');
+                        if ($(window).width() < 768){
+                            $('#authWrapperStage2').modal('show');
+                        }
                         var unlike_text = simpleLikes.unlike;
                         allbuttons.prop('title', unlike_text);
                         // allbuttons.addClass('liked');

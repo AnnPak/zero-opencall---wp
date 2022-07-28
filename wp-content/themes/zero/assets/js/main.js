@@ -165,10 +165,6 @@
     $('.works-item__like .sl-button').click(function(){
         
         $('.works-item_simple.nonuath').removeClass('nonuath');
-        
-        if ($(window).width() < 768){
-            $('#authWrapperStage2').modal('show');
-        }
     })
 
     $('#authWrapperStage2 .works-auth_close').click(() => {
