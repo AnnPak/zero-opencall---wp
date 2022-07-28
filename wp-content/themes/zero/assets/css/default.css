@@ -2185,6 +2185,10 @@ form.subscribe-form{
     margin-right: 12px;
 }
 
+.works-item__like .sl-button:hover{
+    background: #1DFF18;
+}
+
 /* homepage stage 3 */
 
 
