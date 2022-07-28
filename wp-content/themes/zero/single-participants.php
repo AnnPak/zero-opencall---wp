@@ -70,7 +70,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                         </svg>
 
                                     </a>
-                                    <div id="copyBtn" data-copy="<?=$actual_link ?>" class="vote-block__share__link copy-link" >
+                                    <div id="copyBtn" data-copy="<?= $actual_link ?>" class="vote-block__share__link copy-link">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="20" cy="20" r="18" fill="black" stroke="black" stroke-width="4" />
                                             <path d="M15.6408 17.5387C15.97 17.2094 16.3353 16.9379 16.7238 16.7234C18.8892 15.5302 21.6659 16.1647 23.058 18.2751L21.3734 19.9588C20.8904 18.8571 19.691 18.2301 18.4977 18.4971C18.0484 18.5976 17.6216 18.8219 17.2729 19.1706L14.0446 22.4C13.0643 23.3802 13.0643 24.9747 14.0446 25.9549C15.025 26.9351 16.6196 26.9351 17.5999 25.9549L18.5952 24.9597C19.5005 25.3189 20.4711 25.4622 21.4296 25.3909L19.2327 27.5876C17.3494 29.4708 14.2959 29.4708 12.4125 27.5876C10.5292 25.7044 10.5292 22.6513 12.4125 20.7681L15.6408 17.5387ZM20.7681 12.4118L18.5712 14.6085C19.529 14.5365 20.5003 14.6805 21.4056 15.039L22.4002 14.0445C23.3805 13.0643 24.9751 13.0643 25.9555 14.0445C26.9358 15.0247 26.9358 16.6192 25.9555 17.5994L22.7265 20.8281C21.7432 21.8113 20.1463 21.803 19.1712 20.8281C18.944 20.6008 18.7482 20.3181 18.626 20.0398L16.9413 21.7235C17.1184 21.992 17.3021 22.2238 17.5384 22.46C18.1474 23.069 18.923 23.5227 19.8155 23.738C20.9721 24.0162 22.2112 23.8625 23.2755 23.2752C23.664 23.0607 24.0293 22.7893 24.3586 22.46L27.5868 19.2314C29.4709 17.3482 29.4709 14.295 27.5876 12.4118C25.7042 10.5294 22.6515 10.5294 20.7681 12.4118Z" fill="white" />
@@ -132,13 +132,13 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                             <div class="swiper-container gallery-slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        
-                                        <img class="product__image" src="<?= get_the_post_thumbnail_url(); ?>"/>
+
+                                        <img class="product__image" src="<?= get_the_post_thumbnail_url(); ?>" />
 
                                     </div>
                                     <?php while (the_repeater_field('works_photo-group')) : ?>
                                         <div class="swiper-slide">
-                                            <img class="product__image" src="<?= get_sub_field('works_photo');?>"/>
+                                            <img class="product__image" src="<?= get_sub_field('works_photo'); ?>" />
                                         </div>
                                     <?php endwhile; ?>
                                 </div>
@@ -225,7 +225,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                         </svg>
 
                                     </a>
-                                    <div id="copyBtn" data-copy="<?=$actual_link ?>" class="vote-block__share__link copy-link" >
+                                    <div id="copyBtn" data-copy="<?= $actual_link ?>" class="vote-block__share__link copy-link">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="20" cy="20" r="18" fill="black" stroke="black" stroke-width="4" />
                                             <path d="M15.6408 17.5387C15.97 17.2094 16.3353 16.9379 16.7238 16.7234C18.8892 15.5302 21.6659 16.1647 23.058 18.2751L21.3734 19.9588C20.8904 18.8571 19.691 18.2301 18.4977 18.4971C18.0484 18.5976 17.6216 18.8219 17.2729 19.1706L14.0446 22.4C13.0643 23.3802 13.0643 24.9747 14.0446 25.9549C15.025 26.9351 16.6196 26.9351 17.5999 25.9549L18.5952 24.9597C19.5005 25.3189 20.4711 25.4622 21.4296 25.3909L19.2327 27.5876C17.3494 29.4708 14.2959 29.4708 12.4125 27.5876C10.5292 25.7044 10.5292 22.6513 12.4125 20.7681L15.6408 17.5387ZM20.7681 12.4118L18.5712 14.6085C19.529 14.5365 20.5003 14.6805 21.4056 15.039L22.4002 14.0445C23.3805 13.0643 24.9751 13.0643 25.9555 14.0445C26.9358 15.0247 26.9358 16.6192 25.9555 17.5994L22.7265 20.8281C21.7432 21.8113 20.1463 21.803 19.1712 20.8281C18.944 20.6008 18.7482 20.3181 18.626 20.0398L16.9413 21.7235C17.1184 21.992 17.3021 22.2238 17.5384 22.46C18.1474 23.069 18.923 23.5227 19.8155 23.738C20.9721 24.0162 22.2112 23.8625 23.2755 23.2752C23.664 23.0607 24.0293 22.7893 24.3586 22.46L27.5868 19.2314C29.4709 17.3482 29.4709 14.295 27.5876 12.4118C25.7042 10.5294 22.6515 10.5294 20.7681 12.4118Z" fill="white" />
@@ -272,6 +272,17 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
                                 </div>
                             <?php endwhile; ?>
+
+                            <div class="item-page__video-wrap">
+
+                                <?php while (the_repeater_field('works_video-group')) : ?>
+                                    <video autoplay="" muted="" loop="" playsinline="" id="videoback">
+                                        <source src="<?= get_sub_field('works_video') ?>" type="video/mp4">
+                                    </video>
+
+                                <?php endwhile; ?>
+                            </div>
+
                         </div>
 
 
