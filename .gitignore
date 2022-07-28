@@ -25,6 +25,8 @@
 
 wp-config.php
 
+wp-content/plugins/2022/*
+
 # Log files
 *.log
 *.zip
