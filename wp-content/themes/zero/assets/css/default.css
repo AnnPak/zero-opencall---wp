@@ -2112,6 +2112,7 @@ section.homepage__header.homepage__header_st2{
 }
 
 .homepage__items_st2 .works-item:last-child,
+.homepage__items_st2 .works-item:nth-last-child(2).subscribe-item_even-count,
 .works-item_simple:nth-child(4n){
     border-right: 0;
 }
