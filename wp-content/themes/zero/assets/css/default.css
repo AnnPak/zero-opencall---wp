@@ -401,7 +401,6 @@ button.close-search {
     font-size: 1em;
     line-height: 1;
     font-weight: normal;
-    width: 86px;
     transition: border 0.5s, background-color 0.5s, width 0.2s;
     z-index: 1;
 }
@@ -602,6 +601,10 @@ header#mastheadx .site-header__logo a img{
 .bottom-bar {
     background: #000;
     z-index: 2030;
+}
+
+.bottom-bar__item-page{
+    background: #111111;
 }
 
 .bottom-bar__wrapper {
@@ -1599,10 +1602,41 @@ span#sl-loader {
 
 .works-item__like .sl-vote{
     display: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #000000;
 }
 
-.works-item__like  .sl-button.liked{
-    background: #1DFF18;
+.works-item__like .sl-button:hover:not(.liked) .sl-count{
+    display: none;
+}
+
+.works-item__like .sl-button:hover .sl-vote{
+    display: block;
+}
+
+.works-item__like .sl-button.liked{
+    background: #000;
+    border: 1px solid #000;
+}
+
+.works-item__like .sl-button.liked:hover{
+    background: #4F4F4F;
+    border: 1px solid #4F4F4F;
+}
+
+.works-item__like .sl-button.liked .sl-count{
+    color: #fff;
+}
+
+.works-item__like .sl-button.liked .sl-icon{
+    transform: rotate(180deg);
+}
+
+.works-item__like .sl-button.liked .sl-icon path{
+    fill: #fff;
 }
 
 .sl-button .sl-count {
@@ -1679,15 +1713,15 @@ section.homepage__header.homepage__header_st2{
 
 .product__image {
     width: 100%;
-    height: 60vh;
+    height: 100%;
     object-fit: contain;
     margin: 0 auto;
 }
 
 .swiper-container {
-    height: 83vh;
     position: relative;
     overflow: hidden;
+    height: 70vh;
     width: 100%;
     padding: 70px 0;
 }
@@ -1705,7 +1739,7 @@ section.homepage__header.homepage__header_st2{
 .item-page__video-wrap video{
     max-height: 800px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .item-page__video-wrap{
@@ -2185,8 +2219,10 @@ form.subscribe-form{
     margin-right: 12px;
 }
 
-.works-item__like .sl-button:hover{
+.works-item__like .sl-button:not(.liked):hover{
     background: #1DFF18;
+    border: 1px solid #1DFF18;
+    padding: 0.65em 1.4em 0.65em 1.1em;
 }
 
 /* homepage stage 3 */
