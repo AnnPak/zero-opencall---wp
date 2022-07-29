@@ -1956,6 +1956,20 @@ section.homepage__header.homepage__header_st2{
     margin-right: 12px;
 }
 
+.all-works__btn_white{
+    border: 1px solid #4a4848;
+    color: #fff;
+}
+
+.all-works__btn_white:hover{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.all-works__btn_white rect{
+    fill: #fff;
+}
+
 .gallery-wrapper{
     position: relative;
     padding: 0;
@@ -2005,6 +2019,10 @@ section.homepage__header.homepage__header_st2{
 .item-page .footer-block{
     display: flex;
     justify-content: center;
+}
+
+.gallery-slider video{
+    width: 100%;
 }
 
 

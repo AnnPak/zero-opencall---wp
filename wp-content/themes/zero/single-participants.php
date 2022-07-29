@@ -137,7 +137,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
                                     </div>
                                     <?php while (the_repeater_field('works_video-group')) : ?>
-                                        <div class="swiper-slide">
+                                        <div class="swiper-slide video-slide">
                                             <video autoplay="" muted="" loop="" playsinline="" id="videoback">
                                                 <source src="<?= get_sub_field('works_video') ?>" type="video/mp4">
                                             </video>
