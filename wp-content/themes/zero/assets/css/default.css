@@ -1616,10 +1616,12 @@ span#sl-loader {
 
 .works-item__like .sl-button.liked{
     background: #000;
+    border: 1px solid #000;
 }
 
 .works-item__like .sl-button.liked:hover{
     background: #4F4F4F;
+    border: 1px solid #4F4F4F;
 }
 
 .works-item__like .sl-button.liked .sl-count{
@@ -2216,6 +2218,7 @@ form.subscribe-form{
 
 .works-item__like .sl-button:not(.liked):hover{
     background: #1DFF18;
+    border: 1px solid #1DFF18;
     width: 99px;
 }
 
