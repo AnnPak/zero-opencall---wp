@@ -19,7 +19,7 @@ get_header(); ?>
                     </div>
                     <div class="header-banner__bottom">
                         <div class="header-banner__bottom-items">
-                            <span>191 items</span>
+                            <span>186 items</span>
                             <span>3 winners</span>
                             <span>6 prizes </span>
                         </div>
