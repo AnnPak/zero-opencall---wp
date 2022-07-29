@@ -25,7 +25,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
-	
+
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -130,7 +130,14 @@
 			</div>
 		</div>
 
-		<div class="bottom-bar fixed-bottom">
+		<?php
+		$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+
+		$isItemPage = strpos($url, '/participants/') != false;
+
+		?>
+
+		<div class="bottom-bar fixed-bottom <?= $isItemPage ? 'bottom-bar__item-page' : ''?>">
 			<div class="container-fluid">
 				<div class="bottom-bar__wrapper">
 					<a href="mailto:opencall@zero10.app">opencall@zero10.app</a>

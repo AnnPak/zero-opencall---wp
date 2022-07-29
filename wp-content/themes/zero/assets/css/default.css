@@ -604,6 +604,10 @@ header#mastheadx .site-header__logo a img{
     z-index: 2030;
 }
 
+.bottom-bar__item-page{
+    background: #111111;
+}
+
 .bottom-bar__wrapper {
     display: flex;
     justify-content: space-between;
