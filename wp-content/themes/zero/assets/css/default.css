@@ -1599,10 +1599,39 @@ span#sl-loader {
 
 .works-item__like .sl-vote{
     display: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #000000;
 }
 
-.works-item__like  .sl-button.liked{
-    background: #1DFF18;
+.works-item__like .sl-button:hover:not(.liked) .sl-count{
+    display: none;
+}
+
+.works-item__like .sl-button:hover .sl-vote{
+    display: block;
+}
+
+.works-item__like .sl-button.liked{
+    background: #000;
+}
+
+.works-item__like .sl-button.liked:hover{
+    background: #4F4F4F;
+}
+
+.works-item__like .sl-button.liked .sl-count{
+    color: #fff;
+}
+
+.works-item__like .sl-button.liked .sl-icon{
+    transform: rotate(180deg);
+}
+
+.works-item__like .sl-button.liked .sl-icon path{
+    fill: #fff;
 }
 
 .sl-button .sl-count {
@@ -2185,8 +2214,9 @@ form.subscribe-form{
     margin-right: 12px;
 }
 
-.works-item__like .sl-button:hover{
+.works-item__like .sl-button:not(.liked):hover{
     background: #1DFF18;
+    width: 99px;
 }
 
 /* homepage stage 3 */
