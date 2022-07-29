@@ -345,10 +345,6 @@
         display: none;
     }
 
-    .item-page__title-block .item-page__title{
-        font-size: 30px;
-    }
-
 }
 
 @media (max-width: 680px) { 
@@ -731,6 +727,14 @@
 
     .works-item__img {
         height: 150px;
+    }
+
+    .item-page__title-block .item-page__title{
+        font-size: 30px;
+    }
+
+    .item-page__mobile-block .item-page__gallery-block .swiper-slide img {
+        max-height: 100%;
     }
 
 }
