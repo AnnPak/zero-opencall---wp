@@ -1436,6 +1436,9 @@ section.homepage__form-block .form-block__body {
 
 .works-items.items-col-4 .works-item {
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .works-item {
@@ -2320,7 +2323,7 @@ section.homepage__header.homepage__header_st3{
     justify-content: space-between;
 }
 
-.works-item.subscribe-item_last{
+.works-items.items-col-4 .works-item.subscribe-item_last{
     display: none;
 }
 
