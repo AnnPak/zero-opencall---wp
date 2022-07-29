@@ -8,6 +8,11 @@
     #content, .footer__bottom{
         border-right: none;
     }
+
+    .item-page__right-block{
+        left: auto;
+        max-width: 958px;
+    }
     
   
 }
