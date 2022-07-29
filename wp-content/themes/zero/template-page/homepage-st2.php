@@ -38,8 +38,8 @@ get_header(); ?>
                         $args = array(
                             'posts_per_page'   => -1,
                             'post_type' => 'participants',
-                            'orderby' => 'menu_order',
-                            'order' => 'DESC', // по убыванию (сначала - свежие посты)
+                            'orderby' => 'rand',
+                            // 'order' => 'rand', // по убыванию (сначала - свежие посты)
                         );
 
                         $query = new WP_Query($args);
