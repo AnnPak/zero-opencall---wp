@@ -49,6 +49,10 @@ jQuery(document).ready(function ($) {
         
     })
 
+    $('.works-auth_buttons-auth .auth-btn').click(function(){
+        ga('send', 'event', 'sign_in_initiated', 'click');
+    })
+
 
 
 })
