@@ -1094,10 +1094,6 @@ section.homepage__banner {
     position: relative;
     height: 530px;
     z-index: 5;
-    background-image: url(/wp-content/themes/zero/assets/img/demo_banner.jpg);
-    background-position: center;
-    background-size: contain;
-    /* color: #fff; */
 }
 
 .homepage__banner-background video{
