@@ -129,28 +129,11 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                 All works
                             </a>
 
-                            <div class="swiper gallery-slider">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-
-                                        <img class="product__image" src="<?= get_the_post_thumbnail_url(); ?>" />
-
-                                    </div>
-                                    <?php while (the_repeater_field('works_video-group')) : ?>
-                                        <div class="swiper-slide video-slide">
-                                            <video autoplay="" muted="" loop="" playsinline="" id="videoback">
-                                                <source src="<?= get_sub_field('works_video') ?>" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    <?php endwhile; ?>
-                                    <?php while (the_repeater_field('works_photo-group')) : ?>
-                                        <div class="swiper-slide">
-                                            <img class="product__image" src="<?= get_sub_field('works_photo'); ?>" />
-                                        </div>
-                                    <?php endwhile; ?>
-                                </div>
+                            <div class="item-page__img-wrap">
+                                <img class="product__image" src="<?= get_the_post_thumbnail_url(); ?>" />
 
                             </div>
+
                             <div>
 
                                 <?php while (the_repeater_field('works_photo-group')) : ?>
@@ -192,11 +175,19 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
                         </div>
 
-                        <div class="item-page__gallery-block">
-                            <div class="swiper-slide">
-                                <img src="<?= get_the_post_thumbnail_url(); ?>" class=""></img>
-
-                            </div>
+                        <div class="swiper-container item-page__gallery-block">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="product__image" src="<?= get_the_post_thumbnail_url(); ?>" />
+                                    </div>
+                                    <?php while (the_repeater_field('works_video-group')) : ?>
+                                        <div class="swiper-slide video-slide">
+                                            <video autoplay="" muted="" loop="" playsinline="" id="videoback">
+                                                <source src="<?= get_sub_field('works_video') ?>" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    <?php endwhile; ?>
+                                </div>
                         </div>
 
                         <div class="item-page__vote-block">

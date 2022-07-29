@@ -24,7 +24,7 @@
             },
         });
 
-        var slider = new Swiper('.gallery-slider', {
+        var slider = new Swiper('.item-page__gallery-block', {
             slidesPerView: 'auto',
             spaceBetween: 0,
             slideToClickedSlide: true,
@@ -35,39 +35,21 @@
     
         });
 
-        slider.on('slideChange', function () {
-            let allWorksBtn = $('.all-works__btn');
+        // slider.on('slideChange', function () {
+        //     let allWorksBtn = $('.all-works__btn');
 
-            if(allWorksBtn.hasClass('all-works__btn_white')){
-                allWorksBtn.removeClass('all-works__btn_white');
-            }
+        //     if(allWorksBtn.addhasClassClass('all-works__btn_white')){
+        //         allWorksBtn.removeClass('all-works__btn_white');
+        //     }
             
-            setTimeout(function () {
-                if($('.video-slide').hasClass('swiper-slide-active')){
-                    allWorksBtn.addClass('all-works__btn_white');
-                }
-            }, 0);
+        //     setTimeout(function () {
+        //         if($('.video-slide').hasClass('swiper-slide-active')){
+        //             $('.all-works__btn').addClass('all-works__btn_white');
+        //         }
+        //     }, 0);
 
             
-        });
-
-
-        var slider2 = new Swiper('.item-page__gallery-block', {
-            slidesPerView: 1,
-            centeredSlides: true,
-            loop: true,
-            loopedSlides: 6,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            thumbs: {
-                swiper: thumbs,
-            },
-        });
-
-       
-
+        // });
 
     }); // end 
 
