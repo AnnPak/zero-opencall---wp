@@ -32,24 +32,27 @@
             watchSlidesProgress: true,
             preloadImages: false,
             lazy: true,
+            pagination: {
+                el: '.swiper-pagination'
+            }
     
         });
 
-        // slider.on('slideChange', function () {
-        //     let allWorksBtn = $('.all-works__btn');
+        slider.on('slideChange', function () {
+            let pagiation = $('.item-page__gallery-block .swiper-pagination ');
 
-        //     if(allWorksBtn.addhasClassClass('all-works__btn_white')){
-        //         allWorksBtn.removeClass('all-works__btn_white');
-        //     }
+            if(pagiation.hasClass('swiper-pagination_white')){
+                pagiation.removeClass('swiper-pagination_white');
+            }
             
-        //     setTimeout(function () {
-        //         if($('.video-slide').hasClass('swiper-slide-active')){
-        //             $('.all-works__btn').addClass('all-works__btn_white');
-        //         }
-        //     }, 0);
+            setTimeout(function () {
+                if($('.video-slide').hasClass('swiper-slide-active')){
+                    pagiation.addClass('swiper-pagination_white');
+                }
+            }, 0);
 
             
-        // });
+        });
 
     }); // end 
 

@@ -742,9 +742,11 @@
         font-size: 30px;
     }
 
-    .item-page__mobile-block .item-page__gallery-block .swiper-slide img {
-        max-height: 100%;
+    .item-page__mobile-block .item-page__gallery-block .swiper-slide img,
+    .item-page__mobile-block .item-page__gallery-block .swiper-slide video{
+        max-height: 320px;
     }
+    
 
 }
 

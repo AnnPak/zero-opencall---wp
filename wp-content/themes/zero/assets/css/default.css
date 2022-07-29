@@ -2020,7 +2020,8 @@ section.homepage__header.homepage__header_st2{
 }
 
 .item-page__gallery-block .swiper-slide{
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 .item-page__mobile-block .item-page__gallery-block .swiper-slide img{
@@ -2033,17 +2034,33 @@ section.homepage__header.homepage__header_st2{
 }
 
 .video-slide video{
-    min-height: 500px;
+    height: 500px;
     object-fit: contain;
     max-width: 100%;
 }
 
 .video-slide {
+    text-align: center;
     max-width: 100%;
     background: #000;
 }
 
 
+.item-page__gallery-block .swiper-pagination-bullet{
+    width: 4px;
+    height: 4px;
+    border-radius: 100%; 
+    background: #858585;
+    opacity: 1;
+}
+
+.item-page__gallery-block .swiper-pagination-bullet-active{
+    background: #000;
+}
+
+.swiper-pagination_white .swiper-pagination-bullet-active{
+    background: #FFFFFF;
+}
 
 /* Terms */
 

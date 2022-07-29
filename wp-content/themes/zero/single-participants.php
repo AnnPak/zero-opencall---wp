@@ -188,6 +188,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                         </div>
                                     <?php endwhile; ?>
                                 </div>
+                                <div class="swiper-pagination"></div>
                         </div>
 
                         <div class="item-page__vote-block">
@@ -260,27 +261,6 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 
                             </div>
-                        </div>
-
-                        <div class=" bottom-img-block">
-
-                            <?php while (the_repeater_field('works_photo-group')) : ?>
-                                <div class="product__image-wrap">
-                                    <img src="<?= get_sub_field('works_photo') ?>" alt="">
-
-                                </div>
-                            <?php endwhile; ?>
-
-                            <div class="item-page__video-wrap">
-
-                                <?php while (the_repeater_field('works_video-group')) : ?>
-                                    <video autoplay="" muted="" loop="" playsinline="" id="videoback">
-                                        <source src="<?= get_sub_field('works_video') ?>" type="video/mp4">
-                                    </video>
-
-                                <?php endwhile; ?>
-                            </div>
-
                         </div>
 
 
