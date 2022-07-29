@@ -1740,7 +1740,7 @@ section.homepage__header.homepage__header_st2{
 .item-page__video-wrap video{
     max-height: 800px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .item-page__video-wrap{
