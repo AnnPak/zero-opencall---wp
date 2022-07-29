@@ -741,22 +741,7 @@
 
 @media (max-width: 450px) and (max-height: 840px) {
     .footer__bottom-img video#videoback {
-        max-width: 320px;
         margin: 50px 0;
-    }
-
-}
-
-@media only screen and (max-height: 750px) {
-    .footer__bottom-img video#videoback {
-        max-width: 272px;
-    }
-
-}
-
-@media only screen and (max-height: 668px) {
-    .footer__bottom-img video#videoback {
-        max-width: 250px;
     }
 
 }
