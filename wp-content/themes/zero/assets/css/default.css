@@ -412,6 +412,10 @@ button.close-search {
     margin-right: 0.3125em;
     font-family: 'Arial Unicode MS', Arial, sans-serif;
     vertical-align: middle;
+    margin-top: -2px;
+}
+
+.vote-block__vote-button .sl-icon{
     margin-top: -6px;
 }
 
