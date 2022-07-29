@@ -723,6 +723,10 @@
         margin-top: 85px;
     }
 
+    .works-item__info-wrapper .work-item__wrapper{
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 450px) { 
