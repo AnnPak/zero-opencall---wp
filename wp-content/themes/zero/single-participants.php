@@ -129,7 +129,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                 All works
                             </a>
 
-                            <div class="item-page__img-wrap">
+                            <div class="item-page__img-wrap d-flex">
                                 <img class="product__image" src="<?= get_the_post_thumbnail_url(); ?>" />
 
                             </div>
@@ -175,7 +175,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
                         </div>
 
-                        <div class="swiper-container item-page__gallery-block">
+                        <div class="swiper item-page__gallery-block">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img class="product__image" src="<?= get_the_post_thumbnail_url(); ?>" />

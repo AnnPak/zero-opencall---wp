@@ -1729,7 +1729,7 @@ section.homepage__header.homepage__header_st2{
     margin: 0 auto;
 }
 
-.swiper-container {
+.item-page__img-wrap{
     position: relative;
     overflow: hidden;
     height: 70vh;
@@ -1742,7 +1742,7 @@ section.homepage__header.homepage__header_st2{
 }
 
 .product__image-thumb {
-    width: 100%;
+    width: 80%;
     height: auto;
     background-size: cover;
 }
@@ -2000,6 +2000,11 @@ section.homepage__header.homepage__header_st2{
     margin-top: 30px;
 }
 
+.item-page__mobile-block .swiper{
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+}
+
 .item-page__right-block.scroll{
     top: 70px;
 }
@@ -2018,11 +2023,6 @@ section.homepage__header.homepage__header_st2{
     padding: 60px 0;
 }
 
-.item-page__mobile-block .item-page__gallery-block .swiper-slide{
-    display: flex;
-    justify-content: center;
-}
-
 .item-page__mobile-block .item-page__gallery-block .swiper-slide img{
    max-height: 500px;
 }
@@ -2032,13 +2032,17 @@ section.homepage__header.homepage__header_st2{
     justify-content: center;
 }
 
-.gallery-slider video{
-    width: 100%;
+.video-slide video{
+    min-height: 500px;
+    object-fit: contain;
+    max-width: 100%;
 }
 
 .video-slide {
+    max-width: 100%;
     background: #000;
 }
+
 
 
 /* Terms */
