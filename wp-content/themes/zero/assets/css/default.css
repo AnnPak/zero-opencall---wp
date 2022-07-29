@@ -1710,15 +1710,15 @@ section.homepage__header.homepage__header_st2{
 
 .product__image {
     width: 100%;
-    height: 60vh;
+    height: 100%;
     object-fit: contain;
     margin: 0 auto;
 }
 
 .swiper-container {
-    height: 83vh;
     position: relative;
     overflow: hidden;
+    height: 70vh;
     width: 100%;
     padding: 70px 0;
 }
