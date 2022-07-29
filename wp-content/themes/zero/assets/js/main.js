@@ -25,17 +25,30 @@
         });
 
         var slider = new Swiper('.gallery-slider', {
-            slidesPerView: 1,
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            slideToClickedSlide: true,
             centeredSlides: true,
-            loop: true,
-            loopedSlides: 6,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            thumbs: {
-                swiper: thumbs,
-            },
+            watchSlidesProgress: true,
+            preloadImages: false,
+            lazy: true,
+    
+        });
+
+        slider.on('slideChange', function () {
+            let allWorksBtn = $('.all-works__btn');
+
+            if(allWorksBtn.hasClass('all-works__btn_white')){
+                allWorksBtn.removeClass('all-works__btn_white');
+            }
+            
+            setTimeout(function () {
+                if($('.video-slide').hasClass('swiper-slide-active')){
+                    allWorksBtn.addClass('all-works__btn_white');
+                }
+            }, 0);
+
+            
         });
 
 
