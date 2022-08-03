@@ -1631,6 +1631,7 @@ span#sl-loader {
 .works-item__like .sl-button.liked{
     background: #000;
     border: 1px solid #000;
+    height: 40px;
 }
 
 .works-item__like .sl-button.liked:hover{
@@ -1644,6 +1645,8 @@ span#sl-loader {
 
 .works-item__like .sl-button.liked .sl-icon{
     transform: rotate(180deg);
+    margin-top: 3px;
+
 }
 
 .works-item__like .sl-button.liked .sl-icon path{
