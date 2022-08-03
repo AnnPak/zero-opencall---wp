@@ -5,16 +5,17 @@
  */
 
 get_header();
+
 ?>
 
 
 <div id="placeholder" class="content-placeholder _disabled">
-		<div class="content-placeholder__loader">
-		</div>
+    <div class="content-placeholder__loader">
+    </div>
 </div>
 
-<?php
-    header('Location: http://'.$_SERVER["HTTP_HOST"].$cookie);
-?>
+<script>
+    window.location.replace(localStorage.getItem('url'));
+</script>
 
 <?php wp_footer(); ?>

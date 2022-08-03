@@ -200,14 +200,7 @@
 
     $('.auth-btn').click((e) => {
         const currentUrl = document.location.href;
-
-        let date = new Date();
-        date.setTime(date.getTime() + 3600 );
-        let cookieexpire = date.toGMTString();
-
-        let cookiepath = "/";
-
-        document.cookie="URL=" + currentUrl + "; expires=" + cookieexpire + "; path=" + cookiepath;
+        localStorage.url = currentUrl;
     })
  
 }(jQuery));	
