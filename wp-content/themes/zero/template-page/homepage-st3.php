@@ -34,9 +34,9 @@ get_header(); ?>
                         <div class="works-items items-winner">
                             <?php
                             $args = array(
+                                'posts_per_page'   => -1,
                                 'post_type' => 'participants',
-                                'orderby' => 'menu_order',
-                                'order' => 'DESC', // по убыванию (сначала - свежие посты)
+                                'orderby' => 'rand',
                             );
 
                             $query = new WP_Query($args);
@@ -78,9 +78,9 @@ get_header(); ?>
                         <div class="works-items items-col-4">
                             <?php
                             $args = array(
+                                'posts_per_page'   => -1,
                                 'post_type' => 'participants',
-                                'orderby' => 'menu_order',
-                                'order' => 'DESC', // по убыванию (сначала - свежие посты)
+                                'orderby' => 'rand',
                             );
 
                             $query = new WP_Query($args);
