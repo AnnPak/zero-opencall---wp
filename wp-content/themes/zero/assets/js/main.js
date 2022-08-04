@@ -154,7 +154,7 @@
 
     $('.close-btn').on('click', function(){
         const modalId = $(this).attr('data-close');
-        console.log(modalId);
+
         $(`#${modalId}`).addClass('hide');
     })
 
@@ -162,7 +162,7 @@
         $('#subscrube-modal').removeClass('hide');
     }, 180000)
 
-    $('#votin-over').removeClass('hide');
+    $('#votin-over-modal').removeClass('hide');
 
     $('.works-item__like .sl-button').click(function(){
         

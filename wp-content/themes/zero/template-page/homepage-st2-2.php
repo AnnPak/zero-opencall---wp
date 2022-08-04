@@ -13,7 +13,7 @@ get_header(); ?>
                 <div class="homepage__header-banner">
                     <div class="header-banner__title sticky-top">
                         <h1 class="title_ui">
-                            Open call is a competition for digital fashion designers developed by ZERO10 to support emerging talents and a growing community of creators. Upvote your favorites now and choose what to wear in AR next!
+                            Open call is a competition for digital fashion designers developed by ZERO10 to support emerging talents and a growing community of creators. The voting is over. The winners will be announced soon. 
                         </h1>
 
                     </div>
@@ -164,8 +164,8 @@ get_header(); ?>
     </div>
 </div>
 
-<div id="votin-over" class="votin-over hide">
-    <div class="votin-over__close-btn close-btn" data-close="votin-over">
+<div id="votin-over-modal" class="votin-over-modal hide">
+    <div class="votin-over__close-btn close-btn" data-close="votin-over-modal">
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.38838 0.882813L24.1168 23.6112L23.6117 24.1163L0.883301 1.38789L1.38838 0.882813Z" fill="black" />
             <path d="M0.883301 23.6112L23.6117 0.882812L24.1168 1.38789L1.38838 24.1163L0.883301 23.6112Z" fill="black" />
@@ -177,7 +177,7 @@ get_header(); ?>
     <div class="votin-over__container">
         <p class="votin-over__title">The voting is over. Download the app to see the winner’s designs in AR. </p>
         
-        <a href="#" class="votin-over__btn btn">Download</a>
+        <a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="votin-over__btn btn">Download</a>
        
     </div>
 </div>

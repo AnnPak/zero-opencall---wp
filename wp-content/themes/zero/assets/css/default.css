@@ -2633,7 +2633,7 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
 }
 
 .subscrube-modal,
-.votin-over{
+.votin-over-modal{
     position: fixed;
     background-color: #000;
     padding: 20px 16px;
@@ -2648,7 +2648,7 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
 }
 
 .subscrube-modal.hide,
-.votin-over.hide{
+.votin-over-modal.hide{
     right: -100%;
 }
 
@@ -2833,6 +2833,10 @@ form.submitting .wpcf7-spinner {
 
 .voting-over .sl-button {
     visibility: hidden;
+}
+
+.votin-over-modal{
+    bottom: 50%;
 }
 
 a.votin-over__btn.btn {
