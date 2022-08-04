@@ -41,7 +41,7 @@
                     <div class="works-item__about"><?= get_field('works_name'); ?></div>
                 </div>
                 <div class="works-item__like">
-                    <a href="#" class="winner-item__btn">Try on in the app</a>
+                    <a href="#" class="winner-item__btn">Try on in AR</a>
                 </div>
             </div>
         </a>
