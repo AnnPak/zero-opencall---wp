@@ -30,7 +30,7 @@ get_header(); ?>
             <div class="col-lg-6 left-part">
                 <div class="homepage__header-form">
                     <div class="header-form__head">
-                        Voting
+                    PARTICIPANTS
                     </div>
 
                     <div class="works-items items-col-2">
