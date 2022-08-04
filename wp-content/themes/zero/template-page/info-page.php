@@ -35,7 +35,7 @@ get_header(); ?>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="title_ui">Voting</div>
 					<div class="about-col__descript">
-						Winners will be voted by the community: ask friends and network to support you and other deserving talents. Participants can vote, too, but please don’t cheat. Rule of thumb: one vote per each work. The three top-voted designs will score a prize pack!
+						Winners will be voted on by the community: ask friends and those in your network to support you. Participants can vote, too, but please don’t cheat. Rule of thumb: one vote per each work. The three top-voted designs will score a prize pack!					
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">

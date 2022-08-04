@@ -87,7 +87,7 @@ get_header(); ?>
                         SUBSCRIBE
                     </div>
                     <div class="subscribe-item__subtitle">
-                        Leave your email here, and you’ll be the first to know about ZERO10’s new competitions.
+                        Leave your email here, and be the first to know about upcoming ZERO10 competitions.
                     </div>
                 </div>
 
@@ -126,7 +126,7 @@ get_header(); ?>
                                 SUBSCRIBE
                             </div>
                             <div class="subscribe-item__subtitle">
-                                Leave your email here, and you’ll be the first to know about ZERO10’s new competitions.
+                                Leave your email here, and be the first to know about upcoming ZERO10 competitions.
                             </div>
                         </div>
 
@@ -156,7 +156,7 @@ get_header(); ?>
 
     </div>
     <div class="subscrube-modal__container">
-        <p class=subscrube-modal__title>Leave your email here, and you’ll be the first to know about ZERO10’s new competitions.</p>
+        <p class=subscrube-modal__title>Leave your email here, and be the first to know about upcoming ZERO10 competitions.</p>
 
         <div class="subscrube-modal__form">
             <?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
