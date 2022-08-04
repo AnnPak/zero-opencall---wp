@@ -146,7 +146,7 @@ get_header(); ?>
 </section>
 
 <div id="subscrube-modal" class="subscrube-modal hide">
-    <div class="subscrube-modal__close-btn">
+    <div class="subscrube-modal__close-btn close-btn" data-close="subscrube-modal">
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.38838 0.882813L24.1168 23.6112L23.6117 24.1163L0.883301 1.38789L1.38838 0.882813Z" fill="black" />
             <path d="M0.883301 23.6112L23.6117 0.882812L24.1168 1.38789L1.38838 24.1163L0.883301 23.6112Z" fill="black" />

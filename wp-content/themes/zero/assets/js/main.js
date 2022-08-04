@@ -152,13 +152,17 @@
 
       }, false );
 
-    $('.subscrube-modal__close-btn').on('click', function(){
-        $('#subscrube-modal').addClass('hide');
+    $('.close-btn').on('click', function(){
+        const modalId = $(this).attr('data-close');
+        console.log(modalId);
+        $(`#${modalId}`).addClass('hide');
     })
 
     setTimeout(function(){
         $('#subscrube-modal').removeClass('hide');
     }, 180000)
+
+    $('#votin-over').removeClass('hide');
 
     $('.works-item__like .sl-button').click(function(){
         
