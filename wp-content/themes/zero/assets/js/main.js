@@ -198,5 +198,9 @@
         $tmp.remove();
     })
 
+    $('.auth-btn').click((e) => {
+        const currentUrl = document.location.href;
+        localStorage.url = currentUrl;
+    })
  
 }(jQuery));	
