@@ -185,17 +185,10 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
                         <div class="item-page__vote-block">
                             <div class="vote-block__vote-button">
-                                <!-- <?php if (get_field('works_is-winner')) : ?>
-                                    <span class="sl-wrapper stage-3 item-page-winner__btn">
-                                        <a href="#" class="sl-button sl-button-43 stage-3__app-btn">TRY ON IN THE APP </a>
-                                    </span>
-                                <?php else : ?>
-                                    <span class="sl-wrapper stage-3">
-                                        <a href="#" class="sl-button sl-button-43 stage-3__app-btn">VOTING IS OVER </a>
-                                    </span>
-                                <?php endif ?> -->
+                                <a href="#" class="sl-button sl-button-43 voting-over__btn">VOTING IS OVER </a>
+
                                 <?php
-                                echo get_simple_likes_button(get_the_ID());
+                                // echo get_simple_likes_button(get_the_ID());
                                 ?>
                             </div>
 
