@@ -2683,6 +2683,10 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
     transition: all 0.5s ease;
 }
 
+.subscrube-modal_voting-over{
+    bottom: 32%;
+}
+
 .subscrube-modal.hide,
 .votin-over-modal.hide{
     right: -100%;
@@ -2872,11 +2876,7 @@ form.submitting .wpcf7-spinner {
 }
 
 .votin-over-modal{
-    bottom: 42%;
-}
-
-.votin-over-modal.scroll{
-    bottom: calc(42% + 48px);
+    bottom: 34px;
 }
 
 a.votin-over__btn.btn {
@@ -2895,9 +2895,9 @@ a.votin-over__btn.btn {
 }
 
 .votin-over__title {
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 108%;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 110%;
     letter-spacing: -0.02em;
     color: #FFFFFF;
     margin-bottom: 20px;
