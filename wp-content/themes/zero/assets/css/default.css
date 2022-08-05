@@ -1564,10 +1564,8 @@ section.homepage__form-block .form-block__body {
     justify-content: space-between;
     padding: 15px;
     padding-bottom: 20px;
-    margin-top: 0;
-    align-items: center;
-    max-width: 100%;
-    overflow: hidden;
+    margin-top: 42px;
+    align-items: flex-start;
 }
 
 .works-item__info-wrapper .work-item__wrapper{
@@ -2878,6 +2876,10 @@ form.submitting .wpcf7-spinner {
 
 .voting-over .works-item .sl-button {
     visibility: hidden;
+}
+
+.voting-over  .works-item__like{
+    display: none;
 }
 
 .votin-over-modal{
