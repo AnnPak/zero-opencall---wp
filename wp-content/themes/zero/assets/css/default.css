@@ -1460,8 +1460,8 @@ section.homepage__form-block .form-block__body {
 }
 
 .works-item__img {
-    height: 450px;
-    margin-top: 46px;
+    height: 300px;
+    margin-top: 60px;
 }
 
 .works-item__img img{
@@ -2458,6 +2458,11 @@ section.homepage__header.participants-section{
     padding: 18px 0;
     margin-left: calc(var(--bs-gutter-x) * -0.5);
     margin-right: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.works-items.items-winner .works-item__img {
+    height: 450px;
+    margin-top: 46px;
 }
 
 
