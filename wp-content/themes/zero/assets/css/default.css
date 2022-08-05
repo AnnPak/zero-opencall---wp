@@ -2839,7 +2839,11 @@ form.submitting .wpcf7-spinner {
 }
 
 .votin-over-modal{
-    bottom: 50%;
+    bottom: 42%;
+}
+
+.votin-over-modal.scroll{
+    bottom: calc(42% + 48px);
 }
 
 a.votin-over__btn.btn {
