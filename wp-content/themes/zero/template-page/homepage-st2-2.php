@@ -79,7 +79,10 @@ get_header(); ?>
             
             <?php $isEvenNum = $count % 2 == 0;?>
             
-
+            <?php
+            if ($count % 4 == 0) :?>
+                <div class="works-item empty-item muilt-eight"></div>
+            <?php endif;?>
 
             <div class="works-item subscribe-item <?=$isEvenNum ? "subscribe-item_even-count" : "" ?>">
                 <div class="subscribe-item__top">
@@ -95,8 +98,6 @@ get_header(); ?>
                     <?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
 
                 </div>
-
-
 
             </div>
 
@@ -116,9 +117,7 @@ get_header(); ?>
 
             <?php
                 endwhile;
-            endif;
-
-            ?>
+            endif;?>
 
                     <div class="works-item subscribe-item subscribe-item_last <?=$isEvenNum ? "subscribe-item_even-count" : "" ?>">
                         <div class="subscribe-item__top">
