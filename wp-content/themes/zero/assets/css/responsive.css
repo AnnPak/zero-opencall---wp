@@ -727,6 +727,10 @@
         width: 80%;
     }
 
+    .works-item.empty-item.muilt-eight {
+        display: flex;
+    }
+
 }
 
 @media (max-width: 450px) { 
