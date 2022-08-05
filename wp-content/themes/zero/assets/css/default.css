@@ -2139,13 +2139,13 @@ section.homepage__header.homepage__header_st2{
     border-bottom: 0;
 }
 
-.homepage__items_st2 .works-item{
+ .works-item{
     border-top: 1px solid #B3B3B3;
     border-bottom: 0;
 }
 
-.homepage__items_st2 .works-item:last-child,
-.homepage__items_st2 .works-item:nth-last-child(2).subscribe-item_even-count,
+.works-item:last-child,
+.works-item:nth-last-child(2).subscribe-item_even-count,
 .works-item_simple:nth-child(4n){
     border-right: 0;
 }
@@ -2166,7 +2166,8 @@ section.homepage__header.homepage__header_st2{
     border-top: 0;
 }
 
-.homepage__header_st2 .col-lg-6.left-part{
+.homepage__header_st2 .col-lg-6.left-part,
+.homepage__header_st3 .col-lg-6.left-part{
     padding: 0;
     width: 50%;
 }
@@ -2365,8 +2366,13 @@ section.homepage__header.homepage__header_st3{
 
 section.homepage__header.homepage__header_st3 .participants-block .header-form__head{
     border: none;
-    border-bottom: 1px solid #B3B3B3;
     border-top: 1px solid #B3B3B3;
+    font-size: 76px;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+    text-align: left;
+    font-weight: 400;
+    padding-left: 10px;
 }
 
 section.homepage__header.participants-section{
@@ -2430,6 +2436,28 @@ section.homepage__header.participants-section{
     text-align: center;
     margin-bottom: 10px;
     padding-left: 21px;
+}
+
+.homepage__header_st3 .header-form__head {
+    border-bottom: 0;
+}
+
+.homepage__header_st3 .works-items.items-winner .works-item{
+    border-left: 1px solid #B3B3B3;
+    border-bottom: 0;
+    border-top: 1px solid #B3B3B3;
+    border-right: 0;
+}
+
+.header-form__subhead{
+    text-align: center;
+    letter-spacing: -0.04em;
+    font-size: 40px;
+    line-height: 95%;
+    border-top: 1px solid #B3B3B3;
+    padding: 18px 0;
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
 }
 
 
@@ -2909,15 +2937,4 @@ a.votin-over__btn.btn {
     color: #000;
 }
 
-.voting-over .works-item__title-block,
-.homepage__header_st3 .works-item__title-block{
-    width: 100%;
-}
-
-.voting-over .works-item__info-wrapper .works-item__name,
-.voting-over .works-item__info-wrapper .works-item__about,
-.homepage__header_st3  .works-item__info-wrapper .works-item__name,
-.homepage__header_st3  .works-item__info-wrapper .works-item__about{
-    max-width: 70%;
-}
 

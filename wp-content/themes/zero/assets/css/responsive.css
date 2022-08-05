@@ -242,6 +242,10 @@
         border-right: 0;
     }
 
+    .homepage__header_st3 .works-items.items-winner .works-item{
+        border-left: 0;
+    }
+
 }
 
 @media (max-width: 768px) { 
@@ -321,6 +325,10 @@
         margin-top: 140px;
     }
 
+    section.homepage__header.homepage__header_st3.participants-section {
+        margin-top: 0;
+    }
+
     .wpcf7-acceptance input[type="checkbox"]{
         margin-top: 2px;
     }
@@ -352,6 +360,14 @@
 
     .works-auth_block{
         display: none;
+    }
+
+    .header-form__subhead{
+        font-size: 37px;
+    }
+
+    section.homepage__header.homepage__header_st3 .participants-block .header-form__head{
+        font-size: 65px;
     }
 
 }
@@ -693,6 +709,10 @@
         margin-top: 28px;
     }
 
+    .items-winner .works-item__img{
+        height: 350px;
+    }
+
     .header-banner__bottom-items span:not(:last-child){
         margin-right: 55px;
     }
@@ -729,6 +749,19 @@
 
     .works-item.empty-item.muilt-eight {
         display: flex;
+    }
+
+    section.homepage__header.homepage__header_st3 .participants-block .header-form__head{
+        font-size: 50px;
+        padding: 16px 6px;
+    }
+
+    .header-form__subhead{
+        font-size: 31px;
+    }
+
+    .homepage__header_st3 .works-item__info-wrapper .works-item__name{
+        max-width: 100%;
     }
 
 }

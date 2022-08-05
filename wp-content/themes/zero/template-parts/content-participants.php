@@ -60,6 +60,7 @@
         </a>
 
         <div class="works-item__info-wrapper">
+            <a href="http://zerowp.demoserver.website/participants/cyber-tuxedo-suit/" class="work-item__wrapper">
                 <div class="works-item__title-block">
                     <div class="works-item__name"><?= get_field('works_author'); ?></div>
                     <div class="works-item__about"><?= get_field('works_name'); ?></div>
@@ -68,7 +69,10 @@
                 <?php if ($args['stageNum'] != 3) : ?>
                     <div class="works-item__like"><?php echo get_simple_likes_button(get_the_ID()); ?></div>
                 <?php endif; ?>
-            </div>
+
+            </a>
+               
+        </div>
 
     </div>
 
