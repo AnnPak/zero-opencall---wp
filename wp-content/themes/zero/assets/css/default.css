@@ -1460,8 +1460,8 @@ section.homepage__form-block .form-block__body {
 }
 
 .works-item__img {
-    height: 300px;
-    margin-top: 60px;
+    height: 450px;
+    margin-top: 46px;
 }
 
 .works-item__img img{
@@ -1564,8 +1564,10 @@ section.homepage__form-block .form-block__body {
     justify-content: space-between;
     padding: 15px;
     padding-bottom: 20px;
-    margin-top: 42px;
-    align-items: flex-start;
+    margin-top: 0;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .works-item__info-wrapper .work-item__wrapper{
@@ -1608,7 +1610,7 @@ span#sl-loader {
 .works-item__like {
     position: relative;
     z-index: 1;
-    margin-top: 3px;
+    height: 60px;
 }
 
 .works-item__like .sl-vote{
@@ -2314,15 +2316,17 @@ section.homepage__header.homepage__header_st3{
 }
 
 .winner-item__btn{
+    display: flex;
+    align-items: center;
     margin-bottom: -17px;
-    display: inline-block;
     background: #000000;
     border-radius: 50px;
     letter-spacing: -0.03em;
     color: #FFFFFF;
     font-size: 18px;
     line-height: 105%;
-    padding: 23px 45px;
+    height: 100%;
+    padding: 0 45px;
     font-weight: 600;
 }
 
@@ -2362,6 +2366,7 @@ section.homepage__header.homepage__header_st3{
 section.homepage__header.homepage__header_st3 .participants-block .header-form__head{
     border: none;
     border-bottom: 1px solid #B3B3B3;
+    border-top: 1px solid #B3B3B3;
 }
 
 section.homepage__header.participants-section{
@@ -2902,5 +2907,17 @@ a.votin-over__btn.btn {
 
 .voting-over__btn:hover{
     color: #000;
+}
+
+.voting-over .works-item__title-block,
+.homepage__header_st3 .works-item__title-block{
+    width: 100%;
+}
+
+.voting-over .works-item__info-wrapper .works-item__name,
+.voting-over .works-item__info-wrapper .works-item__about,
+.homepage__header_st3  .works-item__info-wrapper .works-item__name,
+.homepage__header_st3  .works-item__info-wrapper .works-item__about{
+    max-width: 70%;
 }
 
