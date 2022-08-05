@@ -1699,9 +1699,11 @@ span#sl-loader {
 }
 
 a.sl-button.sl-button.liked .sl-vote,
-a.sl-button.sl-button.liked .sl-upvote{
+a.sl-button.sl-button.liked .sl-upvote,
+.sl-over{
     display: none;
 }
+
 
 section.homepage__header.homepage__header_st2{
     height: auto;
@@ -1804,7 +1806,8 @@ section.homepage__header.homepage__header_st2{
 .item-page__vote-block .sl-button .sl-count,
 .item-page__vote-block .sl-button span.sl-vote,
 .item-page__vote-block .sl-button span.sl-unvote,
-.vote-block__vote-button .sl-upvote{
+.vote-block__vote-button .sl-upvote,
+.voting-over .vote-block__vote-button .sl-upvote{
     font-weight: 600;
     font-size: 26px;
     line-height: 110%;
@@ -2831,7 +2834,7 @@ form.submitting .wpcf7-spinner {
 
 /* stage 2 - the voting is over */
 
-.voting-over .sl-button {
+.voting-over .works-item .sl-button {
     visibility: hidden;
 }
 
@@ -2862,3 +2865,38 @@ a.votin-over__btn.btn {
     color: #FFFFFF;
     margin-bottom: 20px;
 }
+
+.voting-over .vote-block__vote-button .sl-wrapper a,
+.voting-over .vote-block__vote-button a.sl-button.sl-button.liked{
+    background: #EFEFEF;
+    cursor: default;
+    color: #000;
+} 
+
+.voting-over .vote-block__vote-button .sl-over{
+    display: block;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-size: 26px;
+}
+
+.voting-over__btn{
+    background: #EFEFEF;
+    cursor: default;
+    color: #000;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-size: 26px;
+    width: 380px;
+    height: 95px;
+    border-radius: 60px;
+    border: none;
+    margin: 0 auto;
+}
+
+.voting-over__btn:hover{
+    color: #000;
+}
+
