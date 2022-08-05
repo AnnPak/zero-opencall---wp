@@ -53,6 +53,10 @@ jQuery(document).ready(function ($) {
         ga('send', 'event', 'sign_in_initiated', 'click');
     })
 
+    if(window.location.href.indexOf('redirect') > -1){
+        ga('send', 'event', 'signed_in', 'submit');
+    }
+
 
 
 })

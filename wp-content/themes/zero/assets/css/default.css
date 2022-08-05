@@ -1699,9 +1699,11 @@ span#sl-loader {
 }
 
 a.sl-button.sl-button.liked .sl-vote,
-a.sl-button.sl-button.liked .sl-upvote{
+a.sl-button.sl-button.liked .sl-upvote,
+.sl-over{
     display: none;
 }
+
 
 section.homepage__header.homepage__header_st2{
     height: auto;
@@ -1804,7 +1806,8 @@ section.homepage__header.homepage__header_st2{
 .item-page__vote-block .sl-button .sl-count,
 .item-page__vote-block .sl-button span.sl-vote,
 .item-page__vote-block .sl-button span.sl-unvote,
-.vote-block__vote-button .sl-upvote{
+.vote-block__vote-button .sl-upvote,
+.voting-over .vote-block__vote-button .sl-upvote{
     font-weight: 600;
     font-size: 26px;
     line-height: 110%;
@@ -2632,7 +2635,8 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
     text-decoration: underline;
 }
 
-.subscrube-modal{
+.subscrube-modal,
+.votin-over-modal{
     position: fixed;
     background-color: #000;
     padding: 20px 16px;
@@ -2646,11 +2650,8 @@ form .btn-check:focus+.btn-primary, .btn-primary:focus{
     transition: all 0.5s ease;
 }
 
-/* .subscrube-modal.scroll{
-    top: 291px;
-} */
-
-.subscrube-modal.hide{
+.subscrube-modal.hide,
+.votin-over-modal.hide{
     right: -100%;
 }
 
@@ -2711,7 +2712,8 @@ form.submitting .wpcf7-spinner {
 	display: inline-block;
 }
 
-.subscrube-modal__close-btn {
+.subscrube-modal__close-btn,
+.votin-over__close-btn {
     position: absolute;
     top: -38px;
     right: 11px;
@@ -2780,3 +2782,125 @@ form.submitting .wpcf7-spinner {
 .modal__form-submit.copy-notification{
     margin-left: -75px;
 }
+
+.content-placeholder {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100000;
+    display: flex;
+    background: #fff;
+}
+
+.content-placeholder__loader {
+    position: relative;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+}
+
+.content-placeholder__loader:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #ddd;
+    border-color: #ddd transparent #ddd transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: loader 0.7s linear infinite;
+    -webkit-animation: loader 0.7s linear infinite;
+   -moz-animation: loader 0.7s linear infinite;
+    -ms-animation: loader 0.7s linear infinite;
+     -o-animation: loader 0.7s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* stage 2 - the voting is over */
+
+.voting-over .works-item .sl-button {
+    visibility: hidden;
+}
+
+.votin-over-modal{
+    bottom: 42%;
+}
+
+.votin-over-modal.scroll{
+    bottom: calc(42% + 48px);
+}
+
+a.votin-over__btn.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.votin-over__title {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 108%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.voting-over .vote-block__vote-button .sl-wrapper a,
+.voting-over .vote-block__vote-button a.sl-button.sl-button.liked{
+    background: #EFEFEF;
+    cursor: default;
+    color: #000;
+} 
+
+.voting-over .vote-block__vote-button .sl-over{
+    display: block;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-size: 26px;
+}
+
+.voting-over__btn{
+    background: #EFEFEF;
+    cursor: default;
+    color: #000;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-size: 26px;
+    width: 380px;
+    height: 95px;
+    border-radius: 60px;
+    border: none;
+    margin: 0 auto;
+}
+
+.voting-over__btn:hover{
+    color: #000;
+}
+

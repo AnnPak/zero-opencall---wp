@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Template Name: Главная, Stage 2 (template-page/homepage-st2.php)
+ * Template Name: Stage 2 - voting over (template-page/homepage-st2-2.php)
  */
 
 get_header(); ?>
 
-<section class="homepage__header homepage__header_st2">
+<section class="homepage__header homepage__header_st2 voting-over">
     <div class="container-fluid h-100">
         <div class="row border_row h-100">
             <div class="col-lg-6 right-part">
                 <div class="homepage__header-banner">
                     <div class="header-banner__title sticky-top">
                         <h1 class="title_ui">
-                            Open call is a competition for digital fashion designers developed by ZERO10 to support emerging talents and a growing community of creators. Upvote your favorites now and choose what to wear in AR next!
+                            Open call is a competition for digital fashion designers developed by ZERO10 to support emerging talents and a growing community of creators. The voting is over. The winners will be announced soon. 
                         </h1>
 
                     </div>
@@ -30,7 +30,7 @@ get_header(); ?>
             <div class="col-lg-6 left-part">
                 <div class="homepage__header-form">
                     <div class="header-form__head">
-                        Voting
+                    PARTICIPANTS
                     </div>
 
                     <div class="works-items items-col-2">
@@ -58,7 +58,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="homepage__items homepage__items_st2">
+<section class="homepage__items homepage__items_st2 voting-over">
     <div class="container-fluid h-100">
         <div class="row border_row h-100">
             <div class="col-lg-12">
@@ -79,7 +79,10 @@ get_header(); ?>
             
             <?php $isEvenNum = $count % 2 == 0;?>
             
-
+            <?php
+            if ($count % 4 == 0) :?>
+                <div class="works-item empty-item muilt-eight"></div>
+            <?php endif;?>
 
             <div class="works-item subscribe-item <?=$isEvenNum ? "subscribe-item_even-count" : "" ?>">
                 <div class="subscribe-item__top">
@@ -87,7 +90,7 @@ get_header(); ?>
                         SUBSCRIBE
                     </div>
                     <div class="subscribe-item__subtitle">
-                        Leave your email here, and be the first to know about upcoming ZERO10 competitions.
+                    Leave your email here, and be the first to know about upcoming ZERO10 competitions
                     </div>
                 </div>
 
@@ -95,8 +98,6 @@ get_header(); ?>
                     <?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
 
                 </div>
-
-
 
             </div>
 
@@ -116,9 +117,7 @@ get_header(); ?>
 
             <?php
                 endwhile;
-            endif;
-
-            ?>
+            endif;?>
 
                     <div class="works-item subscribe-item subscribe-item_last <?=$isEvenNum ? "subscribe-item_even-count" : "" ?>">
                         <div class="subscribe-item__top">
@@ -126,7 +125,7 @@ get_header(); ?>
                                 SUBSCRIBE
                             </div>
                             <div class="subscribe-item__subtitle">
-                                Leave your email here, and be the first to know about upcoming ZERO10 competitions.
+                            Leave your email here, and be the first to know about upcoming ZERO10 competitions
                             </div>
                         </div>
 
@@ -156,11 +155,29 @@ get_header(); ?>
 
     </div>
     <div class="subscrube-modal__container">
-        <p class=subscrube-modal__title>Leave your email here, and be the first to know about upcoming ZERO10 competitions.</p>
+        <p class=subscrube-modal__title>Leave your email here, and be the first to know about upcoming ZERO10 competitions</p>
 
         <div class="subscrube-modal__form">
             <?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
         </div>
+    </div>
+</div>
+
+<div id="votin-over-modal" class="votin-over-modal hide">
+    <div class="votin-over__close-btn close-btn" data-close="votin-over-modal">
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.38838 0.882813L24.1168 23.6112L23.6117 24.1163L0.883301 1.38789L1.38838 0.882813Z" fill="black" />
+            <path d="M0.883301 23.6112L23.6117 0.882812L24.1168 1.38789L1.38838 24.1163L0.883301 23.6112Z" fill="black" />
+            <path d="M1.38838 0.882813L24.1168 23.6112L23.6117 24.1163L0.883301 1.38789L1.38838 0.882813Z" stroke="black" stroke-width="0.5" />
+            <path d="M0.883301 23.6112L23.6117 0.882812L24.1168 1.38789L1.38838 24.1163L0.883301 23.6112Z" stroke="black" stroke-width="0.5" />
+        </svg>
+
+    </div>
+    <div class="votin-over__container">
+        <p class="votin-over__title">The voting is over. Download the app to see the winner’s designs in AR. </p>
+        
+        <a href="https://apps.apple.com/us/app/zero10-ar-fashion-platform/id1580413828" class="votin-over__btn btn">Download</a>
+       
     </div>
 </div>
 

@@ -77,10 +77,10 @@
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
         if (scroll >= 10) {
-            $('#cookie-law-info-bar, #subscrube-modal, .item-page .item-page__right-block').addClass('scroll');
+            $('#cookie-law-info-bar, #subscrube-modal, .item-page .item-page__right-block, #votin-over-modal').addClass('scroll');
             $("#mastheadx").addClass('smaller');
         } else {
-            $('#cookie-law-info-bar, #subscrube-modal, .item-page .item-page__right-block').removeClass('scroll');
+            $('#cookie-law-info-bar, #subscrube-modal, .item-page .item-page__right-block, #votin-over-modal').removeClass('scroll');
             $("#mastheadx").removeClass("smaller");
         }
     });
@@ -152,13 +152,17 @@
 
       }, false );
 
-    $('.subscrube-modal__close-btn').on('click', function(){
-        $('#subscrube-modal').addClass('hide');
+    $('.close-btn').on('click', function(){
+        const modalId = $(this).attr('data-close');
+
+        $(`#${modalId}`).addClass('hide');
     })
 
     setTimeout(function(){
         $('#subscrube-modal').removeClass('hide');
     }, 180000)
+
+    $('#votin-over-modal').removeClass('hide');
 
     $('.works-item__like .sl-button').click(function(){
         
@@ -198,5 +202,9 @@
         $tmp.remove();
     })
 
+    $('.auth-btn').click((e) => {
+        const currentUrl = document.location.href;
+        localStorage.url = currentUrl;
+    })
  
 }(jQuery));	

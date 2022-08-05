@@ -45,7 +45,7 @@
 					<div class="subscribe-section__title">Missed submission?</div>
 
 					<div class="subscribe-section__form-container">
-						<div class="subscribe-section__subtitle">Leave your email here, and you’ll be the first to know about ZERO10’s new competitions.</div>
+						<div class="subscribe-section__subtitle">Leave your email here, and be the first to know about upcoming ZERO10 competitions.</div>
 						<?php echo do_shortcode('[contact-form-7 id="63" title="Subscribe html_class="subscribe-form"]'); ?>
 					</div>
 
