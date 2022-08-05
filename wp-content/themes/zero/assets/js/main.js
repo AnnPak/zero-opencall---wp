@@ -77,10 +77,10 @@
     $(window).scroll(function() {
         let scroll = $(window).scrollTop();
         if (scroll >= 10) {
-            $('#cookie-law-info-bar, #subscrube-modal, .item-page .item-page__right-block').addClass('scroll');
+            $('#cookie-law-info-bar, #subscrube-modal, .item-page .item-page__right-block, #votin-over-modal').addClass('scroll');
             $("#mastheadx").addClass('smaller');
         } else {
-            $('#cookie-law-info-bar, #subscrube-modal, .item-page .item-page__right-block').removeClass('scroll');
+            $('#cookie-law-info-bar, #subscrube-modal, .item-page .item-page__right-block, #votin-over-modal').removeClass('scroll');
             $("#mastheadx").removeClass("smaller");
         }
     });
