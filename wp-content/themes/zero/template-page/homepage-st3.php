@@ -76,9 +76,6 @@ get_header(); ?>
                     <div class="header-form__head">
                         PARTICIPANTS
                     </div>
-                    <div class="header-form__subhead">
-                        THE VOTING IS OVER
-                    </div>
                     <div>
                         <div class="works-items items-col-4">
                             <?php
