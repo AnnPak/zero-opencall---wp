@@ -1564,7 +1564,7 @@ section.homepage__form-block .form-block__body {
     justify-content: space-between;
     padding: 15px;
     padding-bottom: 20px;
-    margin-top: 19px;
+    margin-top: 42px;
     align-items: flex-start;
 }
 
@@ -2960,4 +2960,6 @@ a.votin-over__btn.btn {
     display: none;
 }
 
-
+.items-winner .works-item__info-wrapper{
+    margin-top: 14px;
+}
