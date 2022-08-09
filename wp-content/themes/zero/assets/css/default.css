@@ -2475,6 +2475,7 @@ section.homepage__header.participants-section{
 
 span.title-sub__winner {
     margin-right: 16px;
+    font-weight: 600;
 }
 
 .vote-block__vote-button .stage-3 .sl-button{
@@ -2945,7 +2946,14 @@ a.votin-over__btn.btn {
 }
 
 .voting-over__btn:hover{
-    color: #000;
+    background: #4F4F4F;
+    color: #fff;
+}
+
+.voting-over__btn__winner{
+    background: #000;
+    cursor: pointer;
+    color: #fff;
 }
 
 .works-items.items-col-4 .works-item.muilt-eight{
