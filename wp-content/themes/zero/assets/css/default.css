@@ -7,6 +7,13 @@
 
 @font-face {
     font-family: "ONY-FORM";
+    src: url("/wp-content/themes/zero/assets/webfonts/ONYFormDigi-Regular.otf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ONY-FORM";
     src: url("/wp-content/themes/zero/assets/webfonts/ony-form-medium-webfont.woff");
     font-weight: 600;
     font-style: normal;
