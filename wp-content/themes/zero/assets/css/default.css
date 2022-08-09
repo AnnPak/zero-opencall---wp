@@ -1609,6 +1609,7 @@ span#sl-loader {
     position: relative;
     z-index: 1;
     height: 60px;
+    top: -4px;
 }
 
 .works-item__like .sl-vote{
@@ -2369,7 +2370,7 @@ section.homepage__header.homepage__header_st3 .participants-block .header-form__
     line-height: 95%;
     letter-spacing: -0.04em;
     text-align: left;
-    font-weight: 400;
+    font-weight: 600;
     padding-left: 10px;
 }
 
@@ -2452,6 +2453,7 @@ section.homepage__header.participants-section{
     letter-spacing: -0.04em;
     font-size: 40px;
     line-height: 95%;
+    font-weight: 600;
     border-top: 1px solid #B3B3B3;
     padding: 18px 0;
     margin-left: calc(var(--bs-gutter-x) * -0.5);
@@ -2939,6 +2941,7 @@ a.votin-over__btn.btn {
     border-radius: 60px;
     border: none;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .voting-over__btn:hover{

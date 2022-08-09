@@ -497,7 +497,8 @@
     }
 
     .works-item__like{
-        margin-top: 10px;
+        margin-top: 19px;
+        margin-bottom: 10px;
     }
 
     a.work-item__wrapper {
@@ -505,7 +506,7 @@
         margin-top: 15px;
     }
 
-    .works-item__info-wrapper .works-item__about{
+    .works-item__info-wrapper .works-item__about:not(.items-winner .works-item__info-wrapper .works-item__about){
         display: none;
     }
 
@@ -709,7 +710,7 @@
         margin-top: 28px;
     }
 
-    .items-winner .works-item__img{
+    .works-items.items-winner .works-item__img{
         height: 350px;
     }
 
@@ -780,6 +781,7 @@
     }
 
     .item-page__mobile-block .item-page__gallery-block .swiper-slide img,
+
     .item-page__mobile-block .item-page__gallery-block .swiper-slide video{
         max-height: 320px;
     }
