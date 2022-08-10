@@ -2468,7 +2468,7 @@ section.homepage__header.participants-section{
 }
 
 .works-items.items-winner .works-item__img {
-    height: 450px;
+    height: 420px;
     margin-top: 46px;
 }
 
@@ -2953,6 +2953,10 @@ a.votin-over__btn.btn {
 }
 
 .voting-over__btn:hover{
+    color: #000;
+}
+
+.voting-over__btn__winner:hover{
     background: #4F4F4F;
     color: #fff;
 }
