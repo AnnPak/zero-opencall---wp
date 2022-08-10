@@ -163,9 +163,9 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                 <div class="item-page__title-sub">
                                     <span class="title-sub__name"><?= get_field('works_name'); ?></span>
                                 </div>
-                                <!-- <?php if (get_field('works_is-winner')) : ?>
-                                    <span class="title-sub__winner">The Winner of Week 1 </span>
-                                <?php endif ?> -->
+                                <?php if (get_field('works_is-winner')) : ?>
+                                    <span class="title-sub__winner">The Winner </span>
+                                <?php endif ?>
                             </div>
 
 
@@ -189,7 +189,11 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
                         <div class="item-page__vote-block">
                             <div class="vote-block__vote-button">
-                                <a href="#" class="sl-button sl-button-43 voting-over__btn">VOTING IS OVER </a>
+                            <?php if (get_field('works_is-winner')) : ?>
+                                    <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner">TRY ON IN THE APP </a>
+                                <?php else: ?> 
+                                    <a href="#" class="sl-button sl-button-43 voting-over__btn">VOTING IS OVER </a>
+                                <?php endif ?> 
 
                                 <?php
                                 // echo get_simple_likes_button(get_the_ID());
