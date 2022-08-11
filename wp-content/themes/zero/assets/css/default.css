@@ -1462,6 +1462,10 @@ section.homepage__form-block .form-block__body {
     background: #F1F1F1;
 }
 
+.items-winner .works-item.hovered{
+    background: none;
+}
+
 .works-items.items-col-2 .works-item:nth-last-child(-n+2){
     border-bottom: none;
 }
@@ -2346,7 +2350,8 @@ section.homepage__header.homepage__header_st3{
     background: #EFEFEF;
     cursor: default;
     color: #919191;
-    padding: 0px 49px;
+    padding: 0px 39px;
+    min-width: 229px;
 }
 
 .participants-block .works-item:nth-child(4n){
