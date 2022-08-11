@@ -2342,6 +2342,13 @@ section.homepage__header.homepage__header_st3{
     color: #fff;
 }
 
+.winner-item__btn.disable{
+    background: #EFEFEF;
+    cursor: default;
+    color: #919191;
+    padding: 0px 49px;
+}
+
 .participants-block .works-item:nth-child(4n){
     border-right: none;
 }
@@ -2469,7 +2476,7 @@ section.homepage__header.participants-section{
 
 .works-items.items-winner .works-item__img {
     height: 420px;
-    margin-top: 46px;
+    margin-top: 30px;
 }
 
 
@@ -2967,10 +2974,16 @@ a.votin-over__btn.btn {
     color: #fff;
 }
 
+.voting-over__btn__winner.disabled{
+    background: #EFEFEF;
+    color: #919191;
+    cursor: default;
+}
+
 .works-items.items-col-4 .works-item.muilt-eight{
     display: none;
 }
 
 .items-winner .works-item__info-wrapper{
-    margin-top: 14px;
+    margin-top: 5px;
 }

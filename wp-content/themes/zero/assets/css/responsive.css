@@ -748,7 +748,7 @@
         width: 80%;
     }
 
-    .works-item.empty-item.muilt-eight {
+    .works-items.items-col-4 .works-item.muilt-eight{
         display: flex;
     }
 
