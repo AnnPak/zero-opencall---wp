@@ -497,7 +497,6 @@
     }
 
     .works-item__like{
-        margin-top: 19px;
         margin-bottom: 10px;
     }
 
@@ -763,6 +762,10 @@
 
     .homepage__header_st3 .works-item__info-wrapper .works-item__name{
         max-width: 100%;
+    }
+
+    .works-item .sl-button{
+        margin-top: 10px;
     }
 
 }

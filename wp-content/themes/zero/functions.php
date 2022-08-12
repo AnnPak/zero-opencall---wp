@@ -527,8 +527,11 @@ function sl_get_ip() {
  */
 function get_liked_icon() {
 	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart"></i> */
-	$icon = '<span class="sl-icon"><svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path d="M6 0L11.1962 9H0.803848L6 0Z" fill="black"/></svg></span>';
+
+
+	// $icon = '<span class="sl-icon"><svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+	// <path d="M6 0L11.1962 9H0.803848L6 0Z" fill="black"/></svg></span>';
+	$icon = '';
 	return $icon;
 } // get_liked_icon()
 
@@ -538,8 +541,11 @@ function get_liked_icon() {
  */
 function get_unliked_icon() {
 	/* If already using Font Awesome with your theme, replace svg with: <i class="fa fa-heart-o"></i> */
-	$icon = '<span class="sl-icon"><svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path d="M6 0L11.1962 9H0.803848L6 0Z" fill="black"/></svg></span>';
+	
+	// $icon = '<span class="sl-icon"><svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+	// <path d="M6 0L11.1962 9H0.803848L6 0Z" fill="black"/></svg></span>';
+
+	$icon = '';
 	return $icon;
 } // get_unliked_icon()
 
@@ -578,7 +584,8 @@ function get_like_count( $like_count ) {
 	} else {
 		$number = 0;
 	}
-	$count = '<span class="sl-vote"> VOTE </span> <span class="sl-upvote"> UPVOTE </span> <span class="sl-unvote"> UNVOTE </span> <span class="sl-count">' . $number . '</span>';
+	// $count = '<span class="sl-vote"> VOTE </span> <span class="sl-upvote"> UPVOTE </span> <span class="sl-unvote"> UNVOTE </span> <span class="sl-count">' . $number . '</span>';
+	$count = '<span class="sl-count">' . $number . '</span>';
 	return $count;
 } // get_like_count()
 

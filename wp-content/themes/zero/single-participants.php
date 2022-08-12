@@ -37,7 +37,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                                 case "first_place":
                                                     echo "The 1st winner";
                                                 break;
-                                                case "second_place ":
+                                                case "second_place":
                                                     echo "The 2nd winner";
                                                 break;
                                                 case "third_place":
@@ -56,14 +56,8 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                         </div>
                         <div class="item-page__vote-block voting-over">
                             <div class="vote-block__vote-button">
-                                <?php if (get_field('works_is-winner')) : ?>
-                                    <!-- <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner">TRY ON IN THE APP </a> -->
-                                    <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner disabled">Coming soon in AR </a>
-                                <?php else: ?> 
-                                    <a href="#" class="sl-button sl-button-43 voting-over__btn">VOTING IS OVER </a>
-                                <?php endif ?> 
                                 <?php
-                                // echo get_simple_likes_button(get_the_ID());
+                                    echo get_simple_likes_button(get_the_ID());
                                 ?>
                             </div>
 
@@ -205,17 +199,10 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                 <div class="swiper-pagination"></div>
                         </div>
 
-                        <div class="item-page__vote-block">
+                        <div class="item-page__vote-block voting-over">
                             <div class="vote-block__vote-button">
-                            <?php if (get_field('works_is-winner')) : ?>
-                                    <!-- <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner">TRY ON IN THE APP </a> -->
-                                    <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner disabled">Coming soon in AR </a>
-                                <?php else: ?> 
-                                    <a href="#" class="sl-button sl-button-43 voting-over__btn">VOTING IS OVER </a>
-                                <?php endif ?> 
-
                                 <?php
-                                // echo get_simple_likes_button(get_the_ID());
+                                    echo get_simple_likes_button(get_the_ID());
                                 ?>
                             </div>
 

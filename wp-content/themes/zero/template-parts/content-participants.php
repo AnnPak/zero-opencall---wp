@@ -14,7 +14,8 @@
                 </div>
                 <div class="works-item__like">
                     <!-- <a href="#" class="winner-item__btn">Try on in AR</a> -->
-                    <a href="#" class="winner-item__btn disable">Coming soon in AR</a>
+                    <!-- <a href="#" class="winner-item__btn disable">Coming soon in AR</a> -->
+                    <?php echo get_simple_likes_button(get_the_ID());?>
                 </div>
             </div>
         </a>
@@ -67,9 +68,7 @@
                     <div class="works-item__about"><?= get_field('works_name'); ?></div>
                 </div>
 
-                <?php if ($args['stageNum'] != 3) : ?>
-                    <div class="works-item__like"><?php echo get_simple_likes_button(get_the_ID()); ?></div>
-                <?php endif; ?>
+                <?php echo get_simple_likes_button(get_the_ID()); ?>
 
             </a>
                

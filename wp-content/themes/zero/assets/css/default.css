@@ -1618,6 +1618,9 @@ span#sl-loader {
 
 .works-item__like {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 1;
     height: 60px;
     top: -4px;
@@ -1640,19 +1643,18 @@ span#sl-loader {
     display: block;
 }
 
-.works-item__like .sl-button.liked{
-    background: #000;
-    border: 1px solid #000;
+.works-item .sl-button{
+    background: #EFEFEF;
+    cursor: default;
+    color: #919191;
+    border: 1px solid #EFEFEF;
     height: 40px;
+    pointer-events: none;
 }
 
 .works-item__like .sl-button.liked:hover{
     background: #4F4F4F;
     border: 1px solid #4F4F4F;
-}
-
-.works-item__like .sl-button.liked .sl-count{
-    color: #fff;
 }
 
 .works-item__like .sl-button.liked .sl-icon{
@@ -1670,7 +1672,7 @@ span#sl-loader {
     line-height: 110%;
     letter-spacing: -0.02em;
     font-weight: 600;
-    color: #000;
+    color: #919191;
 }
 
 .sl-button span.hidden{
@@ -1707,7 +1709,7 @@ span#sl-loader {
 }
 
 .vote-block__vote-button a.sl-button.sl-button.liked span{
-    color: #fff;
+    color: #000;
 }
 
 a.sl-button.sl-button.liked .sl-vote,
@@ -2938,6 +2940,7 @@ a.votin-over__btn.btn {
     background: #EFEFEF;
     cursor: default;
     color: #000;
+    pointer-events: none;
 } 
 
 .voting-over .vote-block__vote-button .sl-over{

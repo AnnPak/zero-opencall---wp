@@ -206,5 +206,5 @@
         const currentUrl = document.location.href;
         localStorage.url = currentUrl;
     })
- 
+
 }(jQuery));	
