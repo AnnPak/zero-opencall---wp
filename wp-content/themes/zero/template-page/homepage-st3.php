@@ -33,13 +33,21 @@ get_header(); ?>
                     <div>
                         <div class="works-items items-winner">
                             <?php
+    
                             $args = array(
                                 'posts_per_page'   => -1,
                                 'post_type' => 'participants',
-                                'orderby' => 'rand',
+                                'orderby'   => 'meta_value',
+                                'meta_query' => array(
+                                                    array(
+                                                        'key' => 'mesto_pobeditelya',
+                                                    )
+                                                ),
+                                'order'         => 'ASC',
                             );
 
                             $query = new WP_Query($args);
+                            
                             if ($query->have_posts()) :
                                 while ($query->have_posts()) : $query->the_post();
                                     if (get_field('works_is-winner')) {

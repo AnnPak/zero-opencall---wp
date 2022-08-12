@@ -30,8 +30,25 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                 <div class="item-page__title-sub">
                                     <span class="title-sub__name"><?= get_field('works_name'); ?></span>
                                 </div>
-                               <?php if (get_field('works_is-winner')) : ?>
-                                    <span class="title-sub__winner">The Winner</span>
+                               <?php if (get_field('works_is-winner') && get_field('mesto_pobeditelya')) : ?>
+                                    <span class="title-sub__winner">
+                                        <?php
+                                            switch(get_field('mesto_pobeditelya')){
+                                                case "first_place":
+                                                    echo "The 1st winner";
+                                                break;
+                                                case "second_place ":
+                                                    echo "The 2nd winner";
+                                                break;
+                                                case "third_place":
+                                                    echo "The 3rd winner";
+                                                break;
+                                                
+                                                default:
+                                                break;
+                                            }
+                                        ?>
+                                    </span>
                                 <?php endif ?> 
                             </div>
 
