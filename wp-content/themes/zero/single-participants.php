@@ -35,13 +35,13 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                         <?php
                                         switch (get_field('mesto_pobeditelya')) {
                                             case "first_place":
-                                                echo "The 1st place";
+                                                echo "1st place";
                                                 break;
                                             case "second_place":
-                                                echo "The 2nd place";
+                                                echo "2nd place";
                                                 break;
                                             case "third_place":
-                                                echo "The 3rd place";
+                                                echo "3rd place";
                                                 break;
 
                                             default:
@@ -183,13 +183,13 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                         <?php
                                         switch (get_field('mesto_pobeditelya')) {
                                             case "first_place":
-                                                echo "The 1st place";
+                                                echo "1st place";
                                                 break;
                                             case "second_place":
-                                                echo "The 2nd place";
+                                                echo "2nd place";
                                                 break;
                                             case "third_place":
-                                                echo "The 3rd place";
+                                                echo "3rd place";
                                                 break;
 
                                             default:
