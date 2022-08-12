@@ -30,35 +30,38 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                 <div class="item-page__title-sub">
                                     <span class="title-sub__name"><?= get_field('works_name'); ?></span>
                                 </div>
-                               <?php if (get_field('works_is-winner') && get_field('mesto_pobeditelya')) : ?>
+                                <?php if (get_field('works_is-winner') && get_field('mesto_pobeditelya')) : ?>
                                     <span class="title-sub__winner">
                                         <?php
-                                            switch(get_field('mesto_pobeditelya')){
-                                                case "first_place":
-                                                    echo "The 1st winner";
+                                        switch (get_field('mesto_pobeditelya')) {
+                                            case "first_place":
+                                                echo "The 1st winner";
                                                 break;
-                                                case "second_place":
-                                                    echo "The 2nd winner";
+                                            case "second_place":
+                                                echo "The 2nd winner";
                                                 break;
-                                                case "third_place":
-                                                    echo "The 3rd winner";
+                                            case "third_place":
+                                                echo "The 3rd winner";
                                                 break;
-                                                
-                                                default:
+
+                                            default:
                                                 break;
-                                            }
+                                        }
                                         ?>
                                     </span>
-                                <?php endif ?> 
+                                <?php endif ?>
                             </div>
 
 
                         </div>
                         <div class="item-page__vote-block voting-over">
                             <div class="vote-block__vote-button">
-                                <?php
+                                <?php if (get_field('works_is-winner')) : ?>
+                                    <!-- <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner">TRY ON IN THE APP </a> -->
+                                    <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner disabled">Coming soon in AR </a>
+                                <?php else :
                                     echo get_simple_likes_button(get_the_ID());
-                                ?>
+                                endif ?>
                             </div>
 
                             <div class="vote-block__share">
@@ -175,8 +178,25 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                                 <div class="item-page__title-sub">
                                     <span class="title-sub__name"><?= get_field('works_name'); ?></span>
                                 </div>
-                                <?php if (get_field('works_is-winner')) : ?>
-                                    <span class="title-sub__winner">The Winner </span>
+                                <?php if (get_field('works_is-winner') && get_field('mesto_pobeditelya')) : ?>
+                                    <span class="title-sub__winner">
+                                        <?php
+                                        switch (get_field('mesto_pobeditelya')) {
+                                            case "first_place":
+                                                echo "The 1st winner";
+                                                break;
+                                            case "second_place":
+                                                echo "The 2nd winner";
+                                                break;
+                                            case "third_place":
+                                                echo "The 3rd winner";
+                                                break;
+
+                                            default:
+                                                break;
+                                        }
+                                        ?>
+                                    </span>
                                 <?php endif ?>
                             </div>
 
@@ -184,26 +204,30 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                         </div>
 
                         <div class="swiper item-page__gallery-block">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img class="product__image" src="<?= get_the_post_thumbnail_url(); ?>" />
-                                    </div>
-                                    <?php while (the_repeater_field('works_video-group')) : ?>
-                                        <div class="swiper-slide video-slide">
-                                            <video autoplay="" muted="" loop="" playsinline="" id="videoback">
-                                                <source src="<?= get_sub_field('works_video') ?>" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    <?php endwhile; ?>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="product__image" src="<?= get_the_post_thumbnail_url(); ?>" />
                                 </div>
-                                <div class="swiper-pagination"></div>
+                                <?php while (the_repeater_field('works_video-group')) : ?>
+                                    <div class="swiper-slide video-slide">
+                                        <video autoplay="" muted="" loop="" playsinline="" id="videoback">
+                                            <source src="<?= get_sub_field('works_video') ?>" type="video/mp4">
+                                        </video>
+                                    </div>
+                                <?php endwhile; ?>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
 
                         <div class="item-page__vote-block voting-over">
                             <div class="vote-block__vote-button">
-                                <?php
+                                <?php if (get_field('works_is-winner')) : ?>
+                                    <!-- <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner">TRY ON IN THE APP </a> -->
+                                    <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner disabled">Coming soon in AR </a>
+                                <?php else :
                                     echo get_simple_likes_button(get_the_ID());
-                                ?>
+                                endif ?>
+
                             </div>
 
                             <div class="vote-block__share">

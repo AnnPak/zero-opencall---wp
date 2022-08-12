@@ -14,8 +14,8 @@
                 </div>
                 <div class="works-item__like">
                     <!-- <a href="#" class="winner-item__btn">Try on in AR</a> -->
-                    <!-- <a href="#" class="winner-item__btn disable">Coming soon in AR</a> -->
-                    <?php echo get_simple_likes_button(get_the_ID());?>
+                    <a href="#" class="winner-item__btn disable">Coming soon in AR</a>
+                   
                 </div>
             </div>
         </a>

@@ -764,9 +764,11 @@
         max-width: 100%;
     }
 
-    .works-item .sl-button{
+    .works-item .sl-button,
+    .winner-item__btn{
         margin-top: 10px;
     }
+    
 
 }
 

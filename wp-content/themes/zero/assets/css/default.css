@@ -1580,7 +1580,7 @@ section.homepage__form-block .form-block__body {
 }
 
 .works-item__info-wrapper .work-item__wrapper{
-    width: 60%;
+    width: 55%;
 }
 
 .works-item__info-wrapper .works-item__name{
@@ -1623,7 +1623,7 @@ span#sl-loader {
     justify-content: center;
     z-index: 1;
     height: 60px;
-    top: -4px;
+    top: -14px;
 }
 
 .works-item__like .sl-vote{
@@ -2497,6 +2497,7 @@ section.homepage__header.participants-section{
 span.title-sub__winner {
     margin-right: 16px;
     font-weight: 600;
+    min-width: 118px;
 }
 
 .vote-block__vote-button .stage-3 .sl-button{
