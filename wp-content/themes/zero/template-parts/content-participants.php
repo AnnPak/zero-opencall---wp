@@ -14,7 +14,7 @@
                 </div>
                 <div class="works-item__like">
                     <!-- <a href="#" class="winner-item__btn">Try on in AR</a> -->
-                    <a href="#" class="winner-item__btn disable">Coming soon in AR</a>
+                    <a href="<?= get_field('ssylka_na_prilozhenie') ? get_field('ssylka_na_prilozhenie') : '#' ?>" class="winner-item__btn disable">Coming soon in AR</a>
                    
                 </div>
             </div>
