@@ -13,8 +13,11 @@
                     <div class="works-item__about"><?= get_field('works_name'); ?></div>
                 </div>
                 <div class="works-item__like">
-                    <!-- <a href="#" class="winner-item__btn">Try on in AR</a> -->
-                    <a href="<?= get_field('ssylka_na_prilozhenie') ? get_field('ssylka_na_prilozhenie') : '#' ?>" class="winner-item__btn">Try on in the app</a>
+                    <?php if (get_field('ssylka_na_prilozhenie')) :?>
+                        <a href="<?= get_field('ssylka_na_prilozhenie') ?>" class="winner-item__btn">TRY ON IN THE APP </a>
+                    <?php else:?>
+                        <a href="#" class="winner-item__btn disable">Coming soon in AR </a>
+                    <?php endif;?>
                    
                 </div>
             </div>
