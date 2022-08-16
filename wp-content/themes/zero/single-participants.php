@@ -58,7 +58,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                             <div class="vote-block__vote-button">
                                 <?php if (get_field('works_is-winner') && get_field('mesto_pobeditelya')) : ?>
                                     <!-- <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner">TRY ON IN THE APP </a> -->
-                                    <a href="<?= get_field('ssylka_na_prilozhenie') ? get_field('ssylka_na_prilozhenie') : '#' ?>" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner disabled">Coming soon in AR </a>
+                                    <a href="<?= get_field('ssylka_na_prilozhenie') ? get_field('ssylka_na_prilozhenie') : '#' ?>" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner">Coming soon in AR </a>
                                 <?php else :
                                     echo get_simple_likes_button(get_the_ID());
                                 endif ?>
@@ -223,7 +223,7 @@ $actual_link = "https" . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                             <div class="vote-block__vote-button">
                                 <?php if (get_field('works_is-winner') && get_field('mesto_pobeditelya')) : ?>
                                     <!-- <a href="https://zero10.app/" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner">TRY ON IN THE APP </a> -->
-                                    <a href="<?= get_field('ssylka_na_prilozhenie') ? get_field('ssylka_na_prilozhenie') : '#' ?>" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner disabled">Coming soon in AR </a>
+                                    <a href="<?= get_field('ssylka_na_prilozhenie') ? get_field('ssylka_na_prilozhenie') : '#' ?>" class="sl-button sl-button-43 voting-over__btn voting-over__btn__winner ">Coming soon in AR </a>
                                 <?php else :
                                     echo get_simple_likes_button(get_the_ID());
                                 endif ?>
